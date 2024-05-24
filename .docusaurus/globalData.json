@@ -1,48 +1,48 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/fr/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
+          "path": "/fr/docs",
           "mainDocId": "intro",
           "docs": [
             {
               "id": "FAQ",
-              "path": "/docs/FAQ",
+              "path": "/fr/docs/FAQ",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Frenglish's commitment",
-              "path": "/docs/commitment",
+              "path": "/fr/docs/commitment",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
-              "path": "/docs/intro",
+              "path": "/fr/docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Quickstart",
-              "path": "/docs/quickstart",
+              "path": "/fr/docs/quickstart",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Tutorial - Extras/manage-docs-versions",
-              "path": "/docs/Tutorial - Extras/manage-docs-versions",
+              "path": "/fr/docs/Tutorial - Extras/manage-docs-versions",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Tutorial - Extras/Translate your docs with Docusaurus",
-              "path": "/docs/Tutorial - Extras/Translate your docs with Docusaurus",
+              "path": "/fr/docs/Tutorial - Extras/Translate your docs with Docusaurus",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "/category/tutorial---extras",
-              "path": "/docs/category/tutorial---extras",
+              "path": "/fr/docs/category/tutorial---extras",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -50,7 +50,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
+                "path": "/fr/docs/intro",
                 "label": "intro"
               }
             }
