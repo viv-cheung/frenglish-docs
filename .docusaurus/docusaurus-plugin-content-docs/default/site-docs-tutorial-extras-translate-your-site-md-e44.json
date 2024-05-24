@@ -18,5 +18,9 @@
   "previous": {
     "title": "Translate your website",
     "permalink": "/docs/tutorial-extras/manage-docs-versions"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/FAQ"
   }
 }

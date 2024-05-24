@@ -1,8 +1,7 @@
 ---
+id: Translate your docs with Docusaurus
 sidebar_position: 2
 ---
-
-# Translate your docs with Docusaurus
 
 Let's translate `docs/intro.md` to French.
 

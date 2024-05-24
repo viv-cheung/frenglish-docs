@@ -1,0 +1,27 @@
+{
+  "id": "Tutorial - Extras/Translate your docs with Docusaurus",
+  "title": "Translate your docs with Docusaurus",
+  "description": "Let's translate docs/intro.md to French.",
+  "source": "@site/docs/Tutorial - Extras/translate-docusaurus.md",
+  "sourceDirName": "Tutorial - Extras",
+  "slug": "/Tutorial - Extras/Translate your docs with Docusaurus",
+  "permalink": "/docs/Tutorial - Extras/Translate your docs with Docusaurus",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "Translate your docs with Docusaurus",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Translate your website",
+    "permalink": "/docs/Tutorial - Extras/manage-docs-versions"
+  },
+  "next": {
+    "title": "Frenglish's commitment",
+    "permalink": "/docs/commitment"
+  }
+}
