@@ -6,7 +6,27 @@ slug: /FAQ
 ---
 
 ## How do you translate all your files?
-- If you commit the ```frenglishConfig.json``` file for the first time, it will translate all your files.  
+- If you commit the ```frenglishConfig.json``` file for the first time, and the target language locale files do not exist (or they do not belong under the target language folder) it will translate all your files. The origin language file name must match the target language file identically.
+
+Example, ```common.json``` will be translated in the `fr` folder since ```common.json``` does not exist in the fr folder: 
+
+```plaintext
+    docs/
+    ├─ locales/
+        ├─ en/
+        │  ├─ common.json
+        │  fr/
+        │  ├─ common1.json
+```
+
+Example 2, ```common.json``` will be translated in a newly created`fr` folder since in the ```frenglishConfig.json```, it has `fr` specified in the `languages` value: 
+
+```plaintext
+    docs/
+    ├─ locales/
+        ├─ en/
+        │  ├─ common.json
+```
 
 ## How do I know the quality is good?
 The Frenglish bot goes through the following validation steps:
