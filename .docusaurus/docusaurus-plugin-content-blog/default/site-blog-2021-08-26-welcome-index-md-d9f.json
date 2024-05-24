@@ -1,57 +1,45 @@
 {
-  "permalink": "/fr/blog/welcome",
+  "permalink": "/blog/welcome",
   "source": "@site/blog/2021-08-26-welcome/index.md",
   "title": "Welcome",
   "description": "Docusaurus blogging features are powered by the blog plugin.",
   "date": "2021-08-26T00:00:00.000Z",
   "tags": [
     {
-      "label": "facebook",
-      "permalink": "/fr/blog/tags/facebook"
+      "label": "frenglish",
+      "permalink": "/blog/tags/frenglish"
     },
     {
-      "label": "hello",
-      "permalink": "/fr/blog/tags/hello"
+      "label": "welcome",
+      "permalink": "/blog/tags/welcome"
     },
     {
-      "label": "docusaurus",
-      "permalink": "/fr/blog/tags/docusaurus"
+      "label": "blog",
+      "permalink": "/blog/tags/blog"
     }
   ],
-  "readingTime": 0.405,
+  "readingTime": 0.395,
   "hasTruncateMarker": false,
   "authors": [
     {
-      "name": "Sébastien Lorber",
-      "title": "Docusaurus maintainer",
-      "url": "https://sebastienlorber.com",
-      "imageURL": "https://github.com/slorber.png",
-      "key": "slorber"
-    },
-    {
-      "name": "Yangshun Tay",
-      "title": "Front End Engineer @ Facebook",
-      "url": "https://github.com/yangshun",
-      "imageURL": "https://github.com/yangshun.png",
-      "key": "yangshun"
+      "name": "Vivian Cheung",
+      "title": "Maintainer of Frenglish Docs",
+      "url": "https://github.com/viv-cheung",
+      "imageURL": "/assets/viv-cheung.png",
+      "key": "vivian"
     }
   ],
   "frontMatter": {
     "slug": "welcome",
     "title": "Welcome",
     "authors": [
-      "slorber",
-      "yangshun"
+      "vivian"
     ],
     "tags": [
-      "facebook",
-      "hello",
-      "docusaurus"
+      "frenglish",
+      "welcome",
+      "blog"
     ]
   },
-  "unlisted": false,
-  "nextItem": {
-    "title": "MDX Blog Post",
-    "permalink": "/fr/blog/mdx-blog-post"
-  }
+  "unlisted": false
 }

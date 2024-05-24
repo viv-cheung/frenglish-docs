@@ -5,7 +5,7 @@
   "source": "@site/docs/quickstart.md",
   "sourceDirName": ".",
   "slug": "/quickstart",
-  "permalink": "/fr/docs/quickstart",
+  "permalink": "/docs/quickstart",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Introduction",
-    "permalink": "/fr/docs/intro"
+    "permalink": "/docs/intro"
   },
   "next": {
     "title": "Tutorial - Extras",
-    "permalink": "/fr/docs/category/tutorial---extras"
+    "permalink": "/docs/category/tutorial---extras"
   }
 }

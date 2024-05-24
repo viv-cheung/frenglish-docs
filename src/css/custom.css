@@ -6,6 +6,10 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  --ifm-link-color: #111B47;
+  --ifm-breadcrumb-color-active: #111B47;
+  --ifm-menu-color-active: #111B47;
+  --ifm-navbar-link-hover-color: #111B47;
   --ifm-color-primary: #E7ECFF;
   --ifm-color-primary-dark: #091133;
   --ifm-color-primary-darker: #111B47;
@@ -19,6 +23,10 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
+  --ifm-link-color: #E7ECFF;
+  --ifm-breadcrumb-color-active: #E7ECFF;
+  --ifm-menu-color-active: #E7ECFF;
+  --ifm-navbar-link-hover-color: #E7ECFF;
   --ifm-color-primary: #505F98;
   --ifm-color-primary-dark: #091133;
   --ifm-color-primary-darker: #E7ECFF;
