@@ -39,15 +39,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'ed8'),
+    component: ComponentCreator('/docs', '9b0'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '9fc'),
+        component: ComponentCreator('/docs', '298'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '5a0'),
+            component: ComponentCreator('/docs', 'f77'),
             routes: [
               {
                 path: '/docs/category/tutorial---extras',
@@ -70,12 +70,6 @@ export default [
               {
                 path: '/docs/quickstart',
                 component: ComponentCreator('/docs/quickstart', '79e'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/Tutorial - Extras/manage-docs-versions',
-                component: ComponentCreator('/docs/Tutorial - Extras/manage-docs-versions', '80a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

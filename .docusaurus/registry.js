@@ -3,7 +3,6 @@ export default {
   "01a85c17": [() => import(/* webpackChunkName: "01a85c17" */ "@theme/BlogTagsListPage"), "@theme/BlogTagsListPage", require.resolveWeak("@theme/BlogTagsListPage")],
   "02ef790d": [() => import(/* webpackChunkName: "02ef790d" */ "@generated/docusaurus-plugin-content-docs/default/p/docs-category-tutorial-extras-782.json"), "@generated/docusaurus-plugin-content-docs/default/p/docs-category-tutorial-extras-782.json", require.resolveWeak("@generated/docusaurus-plugin-content-docs/default/p/docs-category-tutorial-extras-782.json")],
   "0480b142": [() => import(/* webpackChunkName: "0480b142" */ "@site/docs/faq.md"), "@site/docs/faq.md", require.resolveWeak("@site/docs/faq.md")],
-  "077aa130": [() => import(/* webpackChunkName: "077aa130" */ "@site/docs/Tutorial - Extras/manage-docs-versions.md"), "@site/docs/Tutorial - Extras/manage-docs-versions.md", require.resolveWeak("@site/docs/Tutorial - Extras/manage-docs-versions.md")],
   "0e384e19": [() => import(/* webpackChunkName: "0e384e19" */ "@site/docs/intro.md"), "@site/docs/intro.md", require.resolveWeak("@site/docs/intro.md")],
   "14eb3368": [() => import(/* webpackChunkName: "14eb3368" */ "@theme/DocCategoryGeneratedIndexPage"), "@theme/DocCategoryGeneratedIndexPage", require.resolveWeak("@theme/DocCategoryGeneratedIndexPage")],
   "17896441": [() => import(/* webpackChunkName: "17896441" */ "@theme/DocItem"), "@theme/DocItem", require.resolveWeak("@theme/DocItem")],
