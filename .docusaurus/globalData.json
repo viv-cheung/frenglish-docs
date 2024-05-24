@@ -11,18 +11,33 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "FAQ",
+              "path": "/docs/FAQ",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Frenglish's commitment",
+              "path": "/docs/commitment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
-              "path": "/docs/",
+              "path": "/docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/manage-docs-versions",
-              "path": "/docs/tutorial-extras/manage-docs-versions",
+              "id": "Quickstart",
+              "path": "/docs/quickstart",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/translate-your-site",
-              "path": "/docs/tutorial-extras/translate-your-site",
+              "id": "Tutorial - Extras/manage-docs-versions",
+              "path": "/docs/Tutorial - Extras/manage-docs-versions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tutorial - Extras/Translate your docs with Docusaurus",
+              "path": "/docs/Tutorial - Extras/Translate your docs with Docusaurus",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -35,7 +50,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/",
+                "path": "/docs/intro",
                 "label": "intro"
               }
             }
