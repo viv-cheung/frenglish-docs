@@ -21,10 +21,21 @@ This is dependent on how many characters you are translating. Typically, you cou
 
 ## Not everything in my file requires translation, how do you pick and choose what to translate?
 The Frenglish bot will translate only relevant content depending on the file type. For example:
+
 **Markdown Files**
 - Code will not be translated
+
 **PO Files**
 - Comments, msgid, and other po meta data will not be translated or count as translated content
+
 **JSON Files**
 - Keys will not be translated and only the values will be translated
+
+## Do you just support French translations?
+No, the name "Frenglish" was chosen to represent its Quebec company origins. Many Quebecers use the term "Frenglish" to refer to how they converse (by missing in both French and English in natural dialogue). 
+
+We support the following languages:
+
+Afrikaans, Arabic, Armenian, Azerbaijani, Belarusian, Bosnian, Bulgarian, Catalan, Chinese, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, Galician, German, Greek, Hebrew, Hindi, Hungarian, Icelandic, Indonesian, Italian, Japanese, Kannada, Kazakh, Korean, Latvian, Lithuanian, Macedonian, Malay, Marathi, Maori, Nepali, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swahili, Swedish, Tagalog, Tamil, Thai, Turkish, Ukrainian, Urdu, Vietnamese, and Welsh.
+
 

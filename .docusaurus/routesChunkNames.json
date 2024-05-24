@@ -1,5 +1,5 @@
 {
-  "/fr/blog-73e": {
+  "/blog-ccf": {
     "__comp": "a6aa9e1f",
     "__context": {
       "plugin": "36994c47"
@@ -7,69 +7,38 @@
     "sidebar": "814f3328",
     "items": [
       {
-        "content": "7661071f"
-      },
-      {
-        "content": "f4f34a3a"
-      },
-      {
-        "content": "8717b14a"
-      },
-      {
-        "content": "925b3f96"
+        "content": "ee35b96d"
       }
     ],
-    "__props": "423c6a64"
+    "__props": "53a3e6dc"
   },
-  "/fr/blog/archive-1a3": {
+  "/blog/about-us-981": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "0161b430"
+  },
+  "/blog/archive-245": {
     "__comp": "9e4087bc",
     "__context": {
       "plugin": "36994c47"
     },
-    "__props": "c3db38a8"
+    "__props": "25003e4f"
   },
-  "/fr/blog/first-blog-post-d2e": {
-    "__comp": "ccc49370",
-    "__context": {
-      "data": {
-        "blogMetadata": "acecf23e"
-      },
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "content": "e273c56f"
-  },
-  "/fr/blog/long-blog-post-736": {
-    "__comp": "ccc49370",
-    "__context": {
-      "data": {
-        "blogMetadata": "acecf23e"
-      },
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "content": "73664a40"
-  },
-  "/fr/blog/mdx-blog-post-569": {
-    "__comp": "ccc49370",
-    "__context": {
-      "data": {
-        "blogMetadata": "acecf23e"
-      },
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "content": "59362658"
-  },
-  "/fr/blog/tags-679": {
+  "/blog/tags-4c4": {
     "__comp": "01a85c17",
     "__context": {
       "plugin": "36994c47"
     },
     "sidebar": "814f3328",
-    "__props": "e1fde4df"
+    "__props": "41756ce8"
   },
-  "/fr/blog/tags/docusaurus-fe2": {
+  "/blog/tags/frenglish-562": {
     "__comp": "6875c492",
     "__context": {
       "plugin": "36994c47"
@@ -77,21 +46,12 @@
     "sidebar": "814f3328",
     "items": [
       {
-        "content": "7661071f"
-      },
-      {
-        "content": "f4f34a3a"
-      },
-      {
-        "content": "8717b14a"
-      },
-      {
-        "content": "925b3f96"
+        "content": "ee35b96d"
       }
     ],
-    "__props": "b8133f97"
+    "__props": "f8790f9f"
   },
-  "/fr/blog/tags/facebook-ed8": {
+  "/blog/tags/introduction-c65": {
     "__comp": "6875c492",
     "__context": {
       "plugin": "36994c47"
@@ -99,100 +59,56 @@
     "sidebar": "814f3328",
     "items": [
       {
-        "content": "7661071f"
+        "content": "ee35b96d"
       }
     ],
-    "__props": "75fbd407"
+    "__props": "b0023ae2"
   },
-  "/fr/blog/tags/hello-91d": {
-    "__comp": "6875c492",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "items": [
-      {
-        "content": "7661071f"
-      },
-      {
-        "content": "8717b14a"
-      }
-    ],
-    "__props": "0b987e5d"
-  },
-  "/fr/blog/tags/hola-f85": {
-    "__comp": "6875c492",
-    "__context": {
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "items": [
-      {
-        "content": "925b3f96"
-      }
-    ],
-    "__props": "7c5bac37"
-  },
-  "/fr/blog/welcome-9ba": {
-    "__comp": "ccc49370",
-    "__context": {
-      "data": {
-        "blogMetadata": "acecf23e"
-      },
-      "plugin": "36994c47"
-    },
-    "sidebar": "814f3328",
-    "content": "d9f32620"
-  },
-  "/fr/markdown-page-f67": {
+  "/markdown-page-3d7": {
     "__comp": "1f391b9e",
     "__context": {
       "plugin": "a7456010"
     },
     "content": "393be207"
   },
-  "/fr/docs-bd9": {
+  "/docs-ed8": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/fr/docs-67b": {
+  "/docs-9fc": {
     "__comp": "a7bd4aaa",
-    "__props": "55e853fa"
+    "__props": "7c110bd0"
   },
-  "/fr/docs-473": {
+  "/docs-5a0": {
     "__comp": "a94703ab"
   },
-  "/fr/docs/category/tutorial---extras-8a6": {
+  "/docs/category/tutorial---extras-b09": {
     "__comp": "14eb3368",
-    "__props": "b2f148cf"
+    "__props": "02ef790d"
   },
-  "/fr/docs/commitment-a61": {
-    "__comp": "17896441",
-    "content": "7b337eb2"
-  },
-  "/fr/docs/FAQ-e86": {
+  "/docs/FAQ-dc0": {
     "__comp": "17896441",
     "content": "0480b142"
   },
-  "/fr/docs/intro-e1f": {
+  "/docs/intro-61d": {
     "__comp": "17896441",
     "content": "0e384e19"
   },
-  "/fr/docs/quickstart-1e8": {
+  "/docs/quickstart-79e": {
     "__comp": "17896441",
     "content": "8070e160"
   },
-  "/fr/docs/Tutorial - Extras/manage-docs-versions-39a": {
+  "/docs/Tutorial - Extras/manage-docs-versions-80a": {
     "__comp": "17896441",
     "content": "077aa130"
   },
-  "/fr/docs/Tutorial - Extras/Translate your docs with Docusaurus-53c": {
+  "/docs/Tutorial - Extras/Translate your docs with Docusaurus-2f4": {
     "__comp": "17896441",
     "content": "549cb46c"
   },
-  "/fr/-663": {
+  "/-e5f": {
     "__comp": "1df93b7f",
     "__context": {
       "plugin": "a7456010"

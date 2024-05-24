@@ -1,48 +1,43 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/fr/docs",
+      "path": "/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/fr/docs",
+          "path": "/docs",
           "mainDocId": "intro",
           "docs": [
             {
               "id": "FAQ",
-              "path": "/fr/docs/FAQ",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "Frenglish's commitment",
-              "path": "/fr/docs/commitment",
+              "path": "/docs/FAQ",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
-              "path": "/fr/docs/intro",
+              "path": "/docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Quickstart",
-              "path": "/fr/docs/quickstart",
+              "path": "/docs/quickstart",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Tutorial - Extras/manage-docs-versions",
-              "path": "/fr/docs/Tutorial - Extras/manage-docs-versions",
+              "path": "/docs/Tutorial - Extras/manage-docs-versions",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Tutorial - Extras/Translate your docs with Docusaurus",
-              "path": "/fr/docs/Tutorial - Extras/Translate your docs with Docusaurus",
+              "path": "/docs/Tutorial - Extras/Translate your docs with Docusaurus",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "/category/tutorial---extras",
-              "path": "/fr/docs/category/tutorial---extras",
+              "path": "/docs/category/tutorial---extras",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -50,7 +45,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/fr/docs/intro",
+                "path": "/docs/intro",
                 "label": "intro"
               }
             }

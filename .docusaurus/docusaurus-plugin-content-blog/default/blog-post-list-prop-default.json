@@ -2,23 +2,8 @@
   "title": "Recent posts",
   "items": [
     {
-      "title": "Welcome",
-      "permalink": "/fr/blog/welcome",
-      "unlisted": false
-    },
-    {
-      "title": "MDX Blog Post",
-      "permalink": "/fr/blog/mdx-blog-post",
-      "unlisted": false
-    },
-    {
-      "title": "Long Blog Post",
-      "permalink": "/fr/blog/long-blog-post",
-      "unlisted": false
-    },
-    {
-      "title": "First Blog Post",
-      "permalink": "/fr/blog/first-blog-post",
+      "title": "A little about Frenglish",
+      "permalink": "/blog/about-us",
       "unlisted": false
     }
   ]
