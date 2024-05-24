@@ -6,7 +6,7 @@ slug: /FAQ
 ---
 
 ## How do you translate all your files?
-- If you commit the frenglishConfig.json file for the first time, it will translate all your files.  
+- If you commit the ```frenglishConfig.json``` file for the first time, it will translate all your files.  
 
 ## How do I know the quality is good?
 The Frenglish bot goes through the following validation steps:

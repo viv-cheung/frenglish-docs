@@ -71,17 +71,17 @@
     },
     "content": "393be207"
   },
-  "/docs-ed8": {
+  "/docs-9b0": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/docs-9fc": {
+  "/docs-298": {
     "__comp": "a7bd4aaa",
     "__props": "7c110bd0"
   },
-  "/docs-5a0": {
+  "/docs-f77": {
     "__comp": "a94703ab"
   },
   "/docs/category/tutorial---extras-b09": {
@@ -99,10 +99,6 @@
   "/docs/quickstart-79e": {
     "__comp": "17896441",
     "content": "8070e160"
-  },
-  "/docs/Tutorial - Extras/manage-docs-versions-80a": {
-    "__comp": "17896441",
-    "content": "077aa130"
   },
   "/docs/Tutorial - Extras/Translate your docs with Docusaurus-2f4": {
     "__comp": "17896441",

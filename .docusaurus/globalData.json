@@ -26,11 +26,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Tutorial - Extras/manage-docs-versions",
-              "path": "/docs/Tutorial - Extras/manage-docs-versions",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "Tutorial - Extras/Translate your docs with Docusaurus",
               "path": "/docs/Tutorial - Extras/Translate your docs with Docusaurus",
               "sidebar": "tutorialSidebar"
