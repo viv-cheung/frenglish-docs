@@ -2,7 +2,7 @@
     "originLanguage": "en",
     "languages": ["fr"],
     "rules": "Do not translate Frenglish",
-    "translationPaths": ["docs/locales/*"],
+    "translationPaths": ["docs/*"],
     "autoMergeToBaseBranch": false,
     "useThisConfig": true
 }
