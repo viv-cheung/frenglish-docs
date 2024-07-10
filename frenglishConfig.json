@@ -5,5 +5,5 @@
     "translationPaths": ["docs/*"],
     "autoMergeToBaseBranch": false,
     "useThisConfig": true,
-    "rulesPerLanguage": [{}]
+    "rulesPerLanguage": []
 }
