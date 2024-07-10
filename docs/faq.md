@@ -58,4 +58,16 @@ We support the following languages:
 
 Afrikaans, Arabic, Armenian, Azerbaijani, Belarusian, Bosnian, Bulgarian, Catalan, Chinese, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, Galician, German, Greek, Hebrew, Hindi, Hungarian, Icelandic, Indonesian, Italian, Japanese, Kannada, Kazakh, Korean, Latvian, Lithuanian, Macedonian, Malay, Marathi, Maori, Nepali, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swahili, Swedish, Tagalog, Tamil, Thai, Turkish, Ukrainian, Urdu, Vietnamese, and Welsh.
 
+## What happens if I closed a PR from Frenglish?
+The content contained in that PR will NOT be translated in future Frenglish PRs. Only close Frenglish PR if you don't want this content to be translated by frenglish. You can always edit the text in the Frenglish PR and merge it
+
+## Are code snippets translated?
+No, code snippets are not translated and DO NOT count towards your translated words usage
+
+## How does overage work?
+You get charged every $100 in overage you accumulate during a period, or whatever overage user had when new period start (NOTE: currently we don't handle cancellation for this I just realized... will open ticket)
+
+## What happens if I upgrade my plan AFTER I entered overage?
+Whatever amount of overage you spent on your previous plan will be credited for this month. This means that if you spend $50 in overage in PRO, the first $50 in overage on your upgraded plan will not get charged
+
 

@@ -1,0 +1,8 @@
+{
+    "originLanguage": "en",
+    "languages": ["fr"],
+    "rules": "Do not translate Frenglish",
+    "translationPaths": ["docs/locales/*"],
+    "autoMergeToBaseBranch": false,
+    "useThisConfig": true
+}

@@ -6,7 +6,7 @@ slug: /quickstart
 ---
 
 **Integrated Translation Tool**
-1. Download the [Frenglish GitHub App](https://github.com/apps/frenglish-translation-app) and click **Install** on your repository.
+1. Download the [Frenglish GitHub App](https://github.com/apps/frenglish-translation) and click **Install** on your repository.
 2. Create a Frenglish config in the root directory of your repository (`frenglishConfig.json`) and paste the following content into the file:
 
 ```json
@@ -15,7 +15,18 @@ slug: /quickstart
     "languages": ["fr", "ja", "es"],
     "rules": "Do not translate Frenglish",
     "translationPaths": ["docs/locales/*"],
-    "autoMergeToBaseBranch": false
+    "autoMergeToBaseBranch": false,
+    "rulesPerLanguage": [
+      {
+         "language": "fr",
+         "rules": "French rule 1"
+      },
+      {
+         "language": "ja",
+         "rules": "Japanese rule 1"
+      }
+     ],
+    "useThisConfig": true
 }
 ```
 
