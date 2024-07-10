@@ -1,6 +1,6 @@
 {
-  "id": "FAQ",
-  "title": "FAQ",
+  "id": "faq",
+  "title": "faq",
   "description": "Frequently Asked Questions",
   "source": "@site/docs/faq.md",
   "sourceDirName": ".",
@@ -12,14 +12,14 @@
   "version": "current",
   "sidebarPosition": 4,
   "frontMatter": {
-    "id": "FAQ",
+    "id": "faq",
     "sidebar_position": 4,
     "description": "Frequently Asked Questions",
     "slug": "/FAQ"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Translate your docs with Docusaurus",
-    "permalink": "/docs/Tutorial - Extras/Translate your docs with Docusaurus"
+    "title": "translate-docs",
+    "permalink": "/docs/Tutorial - Extras/translate-docs"
   }
 }

@@ -2,7 +2,7 @@
     "originLanguage": "en",
     "languages": ["fr"],
     "rules": "Do not translate Frenglish",
-    "translationPaths": ["docs/*"],
+    "translationPaths": ["i18n/*"],
     "autoMergeToBaseBranch": false,
     "useThisConfig": true,
     "rulesPerLanguage": []

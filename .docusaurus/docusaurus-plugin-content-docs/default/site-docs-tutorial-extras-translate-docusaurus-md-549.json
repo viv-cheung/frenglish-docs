@@ -1,18 +1,18 @@
 {
-  "id": "Tutorial - Extras/Translate your docs with Docusaurus",
-  "title": "Translate your docs with Docusaurus",
+  "id": "Tutorial - Extras/translate-docs",
+  "title": "translate-docs",
   "description": "Let's translate docs/intro.md to French.",
   "source": "@site/docs/Tutorial - Extras/translate-docusaurus.md",
   "sourceDirName": "Tutorial - Extras",
-  "slug": "/Tutorial - Extras/Translate your docs with Docusaurus",
-  "permalink": "/docs/Tutorial - Extras/Translate your docs with Docusaurus",
+  "slug": "/Tutorial - Extras/translate-docs",
+  "permalink": "/docs/Tutorial - Extras/translate-docs",
   "draft": false,
   "unlisted": false,
   "tags": [],
   "version": "current",
   "sidebarPosition": 2,
   "frontMatter": {
-    "id": "Translate your docs with Docusaurus",
+    "id": "translate-docs",
     "sidebar_position": 2
   },
   "sidebar": "tutorialSidebar",
@@ -21,7 +21,7 @@
     "permalink": "/docs/category/tutorial---extras"
   },
   "next": {
-    "title": "FAQ",
+    "title": "faq",
     "permalink": "/docs/FAQ"
   }
 }

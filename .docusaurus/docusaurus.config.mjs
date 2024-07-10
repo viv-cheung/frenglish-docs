@@ -8,7 +8,7 @@ export default {
   "tagline": "Set up once, Continuous Translations Forever",
   "favicon": "/assets/logo.svg",
   "url": "https://frenglish.ai",
-  "baseUrl": "/",
+  "baseUrl": "/fr/",
   "organizationName": "viv-cheung",
   "projectName": "frenglish-docs",
   "onBrokenLinks": "throw",
@@ -27,7 +27,8 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "./sidebars.ts"
+          "sidebarPath": "./sidebars.ts",
+          "routeBasePath": "docs"
         },
         "blog": {
           "showReadingTime": true

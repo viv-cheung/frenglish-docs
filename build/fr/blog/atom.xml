@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://frenglish.ai/fr/blog</id>
+    <title>Frenglish Blog</title>
+    <updated>2024-05-25T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://frenglish.ai/fr/blog"/>
+    <subtitle>Frenglish Blog</subtitle>
+    <icon>https://frenglish.ai/fr/assets/logo.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[A little about Frenglish]]></title>
+        <id>https://frenglish.ai/fr/blog/about-us</id>
+        <link href="https://frenglish.ai/fr/blog/about-us"/>
+        <updated>2024-05-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[So happy that you're here! Frenglish was founded to help start-ups and companies that generate new content regularly. We want to provide a low-cost and simple solution that automatically translates your content. We know you have more important things than to worry about keeping all your locale files up to date and worrying about the quality of the translation.]]></summary>
+        <content type="html"><![CDATA[<p>So happy that you're here! Frenglish was founded to help start-ups and companies that generate new content regularly. We want to provide a low-cost and simple solution that automatically translates your content. We know you have more important things than to worry about keeping all your locale files up to date and worrying about the quality of the translation.</p>
+<p>Frenglish allows you to provide as much company context as you want, so that the translations sound like it was written by your most senior staff that understands your company branding, tone and offerings.</p>
+<p>We're a Quebec founded company that hopes to create the simplest tool for developers and content managers to support various languages.</p>]]></content>
+        <author>
+            <name>Vivian Cheung</name>
+            <uri>https://github.com/viv-cheung</uri>
+        </author>
+        <category label="frenglish" term="frenglish"/>
+        <category label="introduction" term="introduction"/>
+    </entry>
+</feed>

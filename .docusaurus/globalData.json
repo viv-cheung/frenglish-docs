@@ -1,38 +1,38 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/fr/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
+          "path": "/fr/docs",
           "mainDocId": "intro",
           "docs": [
             {
-              "id": "FAQ",
-              "path": "/docs/FAQ",
+              "id": "faq",
+              "path": "/fr/docs/FAQ",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
-              "path": "/docs/intro",
+              "path": "/fr/docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Quickstart",
-              "path": "/docs/quickstart",
+              "id": "quickstart",
+              "path": "/fr/docs/quickstart",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Tutorial - Extras/Translate your docs with Docusaurus",
-              "path": "/docs/Tutorial - Extras/Translate your docs with Docusaurus",
+              "id": "Tutorial - Extras/translate-docs",
+              "path": "/fr/docs/Tutorial - Extras/translate-docs",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "/category/tutorial---extras",
-              "path": "/docs/category/tutorial---extras",
+              "path": "/fr/docs/category/tutorial---extras",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -40,7 +40,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
+                "path": "/fr/docs/intro",
                 "label": "intro"
               }
             }

@@ -1,5 +1,5 @@
 {
-  "permalink": "/blog/about-us",
+  "permalink": "/fr/blog/about-us",
   "source": "@site/blog/2024-05-25-welcome/index.md",
   "title": "A little about Frenglish",
   "description": "So happy that you're here! Frenglish was founded to help start-ups and companies that generate new content regularly. We want to provide a low-cost and simple solution that automatically translates your content. We know you have more important things than to worry about keeping all your locale files up to date and worrying about the quality of the translation.",
@@ -7,11 +7,11 @@
   "tags": [
     {
       "label": "frenglish",
-      "permalink": "/blog/tags/frenglish"
+      "permalink": "/fr/blog/tags/frenglish"
     },
     {
       "label": "introduction",
-      "permalink": "/blog/tags/introduction"
+      "permalink": "/fr/blog/tags/introduction"
     }
   ],
   "readingTime": 0.57,
@@ -21,7 +21,7 @@
       "name": "Vivian Cheung",
       "title": "Founder of Frenglish",
       "url": "https://github.com/viv-cheung",
-      "imageURL": "/assets/viv-cheung.png",
+      "imageURL": "/fr/assets/viv-cheung.png",
       "key": "vivian"
     }
   ],
