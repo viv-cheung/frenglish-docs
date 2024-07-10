@@ -4,5 +4,6 @@
     "rules": "Do not translate Frenglish",
     "translationPaths": ["docs/*"],
     "autoMergeToBaseBranch": false,
-    "useThisConfig": true
+    "useThisConfig": true,
+    "rulesPerLanguage": [{}]
 }
