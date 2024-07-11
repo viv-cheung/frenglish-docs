@@ -5,50 +5,50 @@ description: Frenglish is designed to help your business enter new markets quick
 slug: /intro
 ---
 
-fr + fr-translated # Introduction {#introduction}
+# Introduction {#introduction}
 
-fr + fr-translated ⏱️ Frenglish helps you generate new translation content or keep existing translations up to date **in no time**.
+⏱️ Frenglish vous aide à générer de nouveaux contenus de traduction ou à maintenir les traductions existantes à jour **en un rien de temps**.
 
-fr + fr-translated 💸 Keeping all your locale files up to date is expensive and time-consuming. Using Frenglish's integrated automation tool, you can forget about maintaining any of your supported languages.
+💸 Maintenir tous vos fichiers de locale à jour est coûteux et chronophage. En utilisant l'outil d'automatisation intégré de Frenglish, vous pouvez oublier la maintenance de toutes vos langues prises en charge.
 
-fr + fr-translated 🌐 If your website uses i18n, our tool will directly generate and maintain your locale files.
+🌐 Si votre site web utilise i18n, notre outil générera et maintiendra directement vos fichiers de locale.
 
-fr + fr-translated 📊 No need to learn how to use a new dashboard or new GUI. All localization is automated and managed in your repository.
+📊 Pas besoin d'apprendre à utiliser un nouveau tableau de bord ou une nouvelle interface graphique. Toute la localisation est automatisée et gérée dans votre dépôt.
 
-fr + fr-translated ## Features {#features}
+## Fonctionnalités {#features}
 
-fr + fr-translated Frenglish is built with a strong focus on the developer and content manager experience.
+Frenglish est conçu avec un fort accent sur l'expérience des développeurs et des gestionnaires de contenu.
 
-fr + fr-translated - **Locale File Support**:
-  - The Frenglish bot supports any of the following file formats (all translated locale files will be keeping the same file type format):
-    - PO files (.po)
+- **Prise en charge des fichiers de locale** :
+  - Le bot Frenglish prend en charge l'un des formats de fichiers suivants (tous les fichiers de locale traduits conserveront le même format de type de fichier) :
+    - Fichiers PO (.po)
     - Markdown (.md, .mdx)
     - JSON (.json)
     - HTML (.html)
-    - Doc files (.docx)
-- **Docusaurus Example**:
-  - Frenglish utilizes Docusaurus to display all the documentation (view the code to see how it works!)
-- **Developer experience**:
-  - Integrate the Frenglish bot onto your repository in seconds and have the set up complete in minutes
-  - Never worry about translations again
-  - All users that have access to your repository will have the translation support
-- **Natural Learning**:
-  - The longer you use Frenglish, the more attuned our bot will be to your needs. The Frenglish bot learns anytime you make a change in a non-origin locale file and applies those learnings to all future translations.
-  - The bot runs through multiple reflections and reviews to reassess translations and see how it can improve them before you see the final translation files.
-- **Quick lead times**:
-  - Compared to other translation services on the market, no matter how many translation files you need, they will be ready in minutes. No need to wait days or weeks to receive your translation files!
-- **Cost efficient**:
-  - We only translate the strings you modified. Therefore, if you have an existing translated locale file, we will parse through that file and only translate the differences between the origin and translated locale file. This is all done automatically for you, so there is nothing you need to specify.
-  - We designed this product for start-ups and companies that don't want to spend a big budget on translations. We want your company to succeed and to unlock new audiences ASAP with low cost.
+    - Fichiers Doc (.docx)
+- **Exemple Docusaurus** :
+  - Frenglish utilise Docusaurus pour afficher toute la documentation (consultez le code pour voir comment cela fonctionne !)
+- **Expérience développeur** :
+  - Intégrez le bot Frenglish à votre dépôt en quelques secondes et complétez la configuration en quelques minutes
+  - Ne vous inquiétez plus jamais des traductions
+  - Tous les utilisateurs ayant accès à votre dépôt auront le support de traduction
+- **Apprentissage naturel** :
+  - Plus vous utilisez Frenglish, plus notre bot sera en phase avec vos besoins. Le bot Frenglish apprend chaque fois que vous apportez une modification à un fichier de locale non d'origine et applique ces apprentissages à toutes les traductions futures.
+  - Le bot passe par plusieurs réflexions et révisions pour réévaluer les traductions et voir comment il peut les améliorer avant que vous ne voyiez les fichiers de traduction finaux.
+- **Délais rapides** :
+  - Comparé à d'autres services de traduction sur le marché, peu importe le nombre de fichiers de traduction dont vous avez besoin, ils seront prêts en quelques minutes. Pas besoin d'attendre des jours ou des semaines pour recevoir vos fichiers de traduction !
+- **Rentabilité** :
+  - Nous ne traduisons que les chaînes que vous avez modifiées. Par conséquent, si vous avez un fichier de locale traduit existant, nous le parcourrons et ne traduirons que les différences entre le fichier de locale d'origine et le fichier de locale traduit. Tout cela est fait automatiquement pour vous, donc il n'y a rien que vous ayez besoin de spécifier.
+  - Nous avons conçu ce produit pour les start-ups et les entreprises qui ne veulent pas dépenser un gros budget pour les traductions. Nous voulons que votre entreprise réussisse et débloque de nouveaux publics dès que possible à faible coût.
 
-fr + fr-translated ## User feedback {#feedback}
+## Retour d'utilisateur {#feedback}
 
-fr + fr-translated For new feature requests, you can create an issue on our [Frenglish repository](https://github.com/viv-cheung/frenglish-website-vite) or feel free to reach out to us directly at support@frenglish.ai. We look forward to hear from you!
+Pour les demandes de nouvelles fonctionnalités, vous pouvez créer un problème sur notre [dépôt Frenglish](https://github.com/viv-cheung/frenglish-website-vite) ou n'hésitez pas à nous contacter directement à support@frenglish.ai. Nous avons hâte de vous entendre !
 
-fr + fr-translated ## Frenglish's commitment
+## Engagement de Frenglish
 
-fr + fr-translated We ensure this tool is easy to use by dogfooding (using the Frenglish bot internally) our product regularly. This website is open-source for you to see how we implemented i18n for our webpages and serves as an example of the quality of our translations. Additionally, you can see how the bot creates the PRs for locale files.
+Nous nous assurons que cet outil est facile à utiliser en utilisant régulièrement notre produit en interne (dogfooding). Ce site web est open-source pour que vous puissiez voir comment nous avons implémenté i18n pour nos pages web et sert d'exemple de la qualité de nos traductions. De plus, vous pouvez voir comment le bot crée les PR pour les fichiers de locale.
 
-fr + fr-translated We ensure great translation quality by going through many iterations of AI reflection, reviews, and learnings. If you make any modifications to a locale file that is not in the origin language, our AI will implicitly learn from these changes and apply them in future translations.
+Nous assurons une grande qualité de traduction en passant par de nombreuses itérations de réflexion, de révisions et d'apprentissages de l'IA. Si vous apportez des modifications à un fichier de locale qui n'est pas dans la langue d'origine, notre IA apprendra implicitement de ces changements et les appliquera dans les traductions futures.
 
-fr + fr-translated We regularly perform quality assurance tests on our translation files by running standardized translation tests like the METEOR score, sending them to human translators, and continuously gathering user feedback.
+Nous effectuons régulièrement des tests d'assurance qualité sur nos fichiers de traduction en exécutant des tests de traduction standardisés comme le score METEOR, en les envoyant à des traducteurs humains et en recueillant continuellement les retours des utilisateurs.

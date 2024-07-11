@@ -3,11 +3,11 @@ id: translate-docs
 sidebar_position: 2
 ---
 
-fr + fr-translated Let's translate `docs/intro.md` to French.
+Traduisons `docs/intro.md` en français.
 
-fr + fr-translated ## Configure i18n
+## Configurer i18n
 
-fr + fr-translated Modify `docusaurus.config.js` to add support for the `fr` locale:
+Modifiez `docusaurus.config.js` pour ajouter la prise en charge de la locale `fr` :
 
 ```js title="docusaurus.config.js"
 export default {
@@ -18,9 +18,9 @@ export default {
 };
 ```
 
-fr + fr-translated ## Translate a doc
+## Traduire un document
 
-fr + fr-translated Copy the `docs/intro.md` file to the `i18n/fr` folder:
+Copiez le fichier `docs/intro.md` dans le dossier `i18n/fr` :
 
 ```bash
 mkdir -p i18n/fr/docusaurus-plugin-content-docs/current/
@@ -28,29 +28,29 @@ mkdir -p i18n/fr/docusaurus-plugin-content-docs/current/
 cp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/intro.md
 ```
 
-fr + fr-translated Translate `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` in French.
+Traduisez `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` en français.
 
-fr + fr-translated ## Start your localized site
+## Démarrez votre site localisé
 
-fr + fr-translated Start your site on the French locale:
+Démarrez votre site en locale française :
 
 ```bash
 npm run start -- --locale fr
 ```
 
-fr + fr-translated Your localized site is accessible at [http://localhost:3000/fr/](http://localhost:3000/fr/) and the `Getting Started` page is translated.
+Votre site localisé est accessible à [http://localhost:3000/fr/](http://localhost:3000/fr/) et la page `Getting Started` est traduite.
 
-fr + fr-translated :::caution
+:::attention
 
-fr + fr-translated In development, you can only use one locale at a time.
+En développement, vous ne pouvez utiliser qu'une seule locale à la fois.
 
-fr + fr-translated :::
+:::
 
-fr + fr-translated ## Add a Locale Dropdown
+## Ajouter un menu déroulant de locale
 
-fr + fr-translated To navigate seamlessly across languages, add a locale dropdown.
+Pour naviguer facilement entre les langues, ajoutez un menu déroulant de locale.
 
-fr + fr-translated Modify the `docusaurus.config.js` file:
+Modifiez le fichier `docusaurus.config.js` :
 
 ```js title="docusaurus.config.js"
 export default {
@@ -68,19 +68,19 @@ export default {
 };
 ```
 
-fr + fr-translated The locale dropdown now appears in your navbar:
+Le menu déroulant de locale apparaît maintenant dans votre barre de navigation :
 
-fr + fr-translated ![Locale Dropdown](./img/localeDropdown.png)
+![Menu déroulant de locale](./img/localeDropdown.png)
 
-fr + fr-translated ## Build your localized site
+## Construisez votre site localisé
 
-fr + fr-translated Build your site for a specific locale:
+Construisez votre site pour une locale spécifique :
 
 ```bash
 npm run build -- --locale fr
 ```
 
-fr + fr-translated Or build your site to include all the locales at once:
+Ou construisez votre site pour inclure toutes les locales à la fois :
 
 ```bash
 npm run build
