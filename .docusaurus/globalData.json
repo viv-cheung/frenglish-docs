@@ -11,7 +11,7 @@
           "mainDocId": "intro",
           "docs": [
             {
-              "id": "faq",
+              "id": "FAQ",
               "path": "/fr/docs/FAQ",
               "sidebar": "tutorialSidebar"
             },
@@ -21,7 +21,7 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "quickstart",
+              "id": "Quickstart",
               "path": "/fr/docs/quickstart",
               "sidebar": "tutorialSidebar"
             },

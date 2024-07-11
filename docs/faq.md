@@ -1,9 +1,11 @@
 ---
-id: faq
+id: FAQ
 sidebar_position: 4
 description: Frequently Asked Questions
 slug: /FAQ
 ---
+
+# FAQ
 
 ## How do you translate all your files?
 - If you commit the ```frenglishConfig.json``` file for the first time, and the target language locale files do not exist (or they do not belong under the target language folder) it will translate all your files. The origin language file name must match the target language file identically.

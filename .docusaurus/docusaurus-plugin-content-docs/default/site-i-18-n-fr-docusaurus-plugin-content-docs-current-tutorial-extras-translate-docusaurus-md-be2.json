@@ -1,7 +1,7 @@
 {
   "id": "Tutorial - Extras/translate-docs",
-  "title": "translate-docs",
-  "description": "Let's translate docs/intro.md to French.",
+  "title": "Traduire Docusaurus",
+  "description": "Traduisons docs/intro.md en français.",
   "source": "@site/i18n/fr/docusaurus-plugin-content-docs/current/Tutorial - Extras/translate-docusaurus.md",
   "sourceDirName": "Tutorial - Extras",
   "slug": "/Tutorial - Extras/translate-docs",
@@ -21,7 +21,7 @@
     "permalink": "/fr/docs/category/tutorial---extras"
   },
   "next": {
-    "title": "faq",
+    "title": "FAQ",
     "permalink": "/fr/docs/FAQ"
   }
 }

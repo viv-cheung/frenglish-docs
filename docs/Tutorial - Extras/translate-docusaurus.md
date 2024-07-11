@@ -1,7 +1,9 @@
 ---
-id: translate-docs
+id: Translate docusaurus
 sidebar_position: 2
 ---
+
+# Translate docusaurus
 
 Let's translate `docs/intro.md` to French.
 

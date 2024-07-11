@@ -1,9 +1,11 @@
 ---
-id: quickstart
+id: Quickstart
 sidebar_position: 2
 description: Quickstart guide
 slug: /quickstart
 ---
+
+# Quickstart
 
 **Integrated Translation Tool**
 1. Download the [Frenglish GitHub App](https://github.com/apps/frenglish-translation) and click **Install** on your repository.

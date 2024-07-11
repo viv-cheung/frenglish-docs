@@ -1,6 +1,6 @@
 {
-  "id": "faq",
-  "title": "faq",
+  "id": "FAQ",
+  "title": "FAQ",
   "description": "Frequently Asked Questions",
   "source": "@site/i18n/fr/docusaurus-plugin-content-docs/current/faq.md",
   "sourceDirName": ".",
@@ -12,14 +12,14 @@
   "version": "current",
   "sidebarPosition": 4,
   "frontMatter": {
-    "id": "faq",
+    "id": "FAQ",
     "sidebar_position": 4,
     "description": "Frequently Asked Questions",
     "slug": "/FAQ"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "translate-docs",
+    "title": "Traduire Docusaurus",
     "permalink": "/fr/docs/Tutorial - Extras/translate-docs"
   }
 }

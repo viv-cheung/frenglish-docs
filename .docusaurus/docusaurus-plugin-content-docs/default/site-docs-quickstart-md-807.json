@@ -1,6 +1,6 @@
 {
-  "id": "quickstart",
-  "title": "quickstart",
+  "id": "Quickstart",
+  "title": "Quickstart",
   "description": "Quickstart guide",
   "source": "@site/docs/quickstart.md",
   "sourceDirName": ".",
@@ -12,7 +12,7 @@
   "version": "current",
   "sidebarPosition": 2,
   "frontMatter": {
-    "id": "quickstart",
+    "id": "Quickstart",
     "sidebar_position": 2,
     "description": "Quickstart guide",
     "slug": "/quickstart"
