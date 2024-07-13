@@ -27,11 +27,14 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.ts'),
-          routeBasePath: 'docs',
+          sidebarPath: require.resolve('./i18n/en/docusaurus-plugin-content-docs/current/sidebars.ts'),
+          path: 'i18n/en/docusaurus-plugin-content-docs/current',
+          editLocalizedFiles: true,
         },
         blog: {
           showReadingTime: true,
+          path: 'blog',  // Adjusted to point directly to the blog directory
+          editLocalizedFiles: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -55,7 +58,7 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/blog', label: 'Blog', position: 'left' },  // Ensure /blog exists
         {
           type: 'localeDropdown',
           position: 'right',

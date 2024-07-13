@@ -25,7 +25,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'How to Translate',
-      items: ['HowToTranslate/configuration', 'HowToTranslate/translationFilesManagementt', 'HowToTranslate/oneTimeTranslation'],
+      items: ['HowToTranslate/configuration', 'HowToTranslate/translationFilesManagement', 'HowToTranslate/oneTimeTranslation'],
     },
     {
       type: 'category',
@@ -34,7 +34,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'doc',
-      id: 'faq',
+      id: 'FAQ',
       label: 'FAQ',
     },
   ],

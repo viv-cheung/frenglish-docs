@@ -5,58 +5,43 @@ description: One Time Translation
 slug: /one-time-translation
 ---
 
-# One Time Translation
+# Traduction Unique
+Les Traductions Uniques vous permettent de retraduire entièrement tous les fichiers ou des fichiers spécifiques. Cela peut être utile pour améliorer les règles fournies ou pour que Frenglish.ai révise des fichiers obsolètes traduits manuellement.
 
-## Using Frenglish.ai
+## Utilisation de Frenglish.ai
 
-In the "General Configuration" tab,
+Une fois que vous avez configuré vos paramètres de traduction (voir [configuration](1-Configuration.md)), cliquez sur le bouton vert "Traduction Unique".
 
-    a. Turn on the "Repository Active Status" and click "Save"
-    b. Enter the translation path (ex "src/locales/*" ) you would like the files to manage translations for (all files under that path will be translated), click "Add path" then click "Save".
+![Configuration Générale](../../../../../assets/general-configuration.png)
 
-In the "Language Configuration" tab,
+1. Sélectionnez les fichiers pour une traduction unique
+    - Option 1: Cliquez sur l'option **Tout** pour traduire tous vos fichiers à partir du chemin de traduction.
+    - Option 2: Cliquez sur **spécifier les chemins** pour ne traduire que certains fichiers
 
-    a. Select your origin language (files you regularly manage, ex. English), then click "Save"
-    b. Select languages you want to support, then click "Save"
+2. Entrez le nom de la branche à partir de laquelle vous souhaitez traduire. Le bot Frenglish créera une nouvelle Pull Request à partir de cette branche que vous avez spécifié
+3.  Sélectionnez les langues vers lesquelles vous souhaitez traduire
+4.  Cliquez sur "Traduire Maintenant" dès que vous êtes prêt !
 
-Optionally, in the "Rules Configuration" tab,
+## Traduire tous les fichiers localement
+Vous pouvez également traduire ou retraduire tous les fichiers localement si vous avez une [configuration locale (`frenglishConfig.json`)](1-Configuration.md#manage-translation-settings-in-your-repository)
 
-    a. Enter all the general rules all your translation files should follow, then click "Save"
-    b. Enter language specific rules for yoru translation files, then click "Save"
+### Première traduction
+Si vous committez le fichier `frenglishConfig.json` pour la première fois, et que les fichiers de traduction de la langue cible n'existent pas, tous vos fichiers seront traduits dans les nouvelles langues
 
-You're ready to translate! Your next translation will be created on your next commit (for changes detected in your language files) or click the green "One-time Translation" to get started.
+### Lors de la mise à jour de votre `frenglishConfig.json`
+Si vous committez une modification dans le `frenglishConfig.json` et qu'il n'y a pas de fichiers ou de dossiers de traduction existants pour les langues cibles, nous traduirons tous vos fichiers dans la langue d'origine.
 
-Option 1:
-Click "All" option to translate all your files from the translation path.
+Par exemple, pousser un commit où vous avez ajouté `ja` à votre tableau `languages` initierait une traduction de tous vos fichiers en japonais par Frenglish.
 
-Option 2:
-Click "specify paths" to translate only certain files
+Exemple : `common.json` sera traduit dans un nouveau dossier `ja` puisque dans le `frenglishConfig.json` il a maintenant `ja` spécifié dans le tableau `languages` :
 
-    b. Enter your branch name you want to translate from. The Frenglish bot will create a new Pull Request from that branch you specificed
-    c. Select the languages you want to translate to
-    d. Click "Translate Now" whenever you're ready!
+b. Entrez le nom de la branche à partir de laquelle vous souhaitez traduire. Le bot Frenglish créera une nouvelle Pull Request à partir de cette branche que vous avez spécifiée
+    c. Sélectionnez les langues vers lesquelles vous souhaitez traduire
+    d. Cliquez sur "Traduire Maintenant" dès que vous êtes prêt !
 
-## Translating all files locally
+### Retraduire des fichiers de traduction existants
+S'il y a des fichiers de traduction existants que vous souhaitez retraduire entièrement, il vous suffira de les supprimer. Le prochain commit retraduira tous les fichiers de langue d'origine qui manquent maintenant dans les langues cibles.
 
-1. If you commit the `frenglishConfig.json` file for the first time, and the target language translation files do not exist (or they do not belong under the target language folder) it will translate all your files. The origin language file name must match the target language file identically.
-2. If you commit a change in the `frenglishConfig.json` and there are no translation files or folder that exist, we will translate all your origin language files into your target language.
+Par exemple, `common.json` sera traduit dans le dossier `fr` puisque `common.json` a été supprimé du dossier `fr` :
 
-Example, `common.json` will be translated in the `fr` folder since `common.json` does not exist in the `fr` folder: 
-
-```plaintext
-    docs/
-    ├─ locales/
-        ├─ en/
-        │  ├─ common.json
-        │  fr/
-        │  ├─ common1.json
-```
-
-Example 2, `common.json` will be translated in a newly created `fr` folder since in the `frenglishConfig.json`, it has `fr` specified in the `languages` value: 
-
-```plaintext
-    docs/
-    ├─ locales/
-        ├─ en/
-        │  ├─ common.json
-```
+Par exemple, `common.json` sera traduit dans le dossier `fr` puisque `common.json` n'existe pas dans le dossier `fr` :

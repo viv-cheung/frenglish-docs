@@ -27,11 +27,14 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/Users/vivian/main/software/frenglish-docs/sidebars.ts",
-          "routeBasePath": "docs"
+          "sidebarPath": "/Users/vivian/main/software/frenglish-docs/i18n/en/docusaurus-plugin-content-docs/current/sidebars.ts",
+          "path": "i18n/en/docusaurus-plugin-content-docs/current",
+          "editLocalizedFiles": true
         },
         "blog": {
-          "showReadingTime": true
+          "showReadingTime": true,
+          "path": "blog",
+          "editLocalizedFiles": true
         },
         "theme": {
           "customCss": "/Users/vivian/main/software/frenglish-docs/src/css/custom.css"
@@ -80,13 +83,13 @@ export default {
           "title": "Docs",
           "items": [
             {
-              "label": "Tutorial",
+              "label": "Tutoriel",
               "to": "/docs/intro"
             }
           ]
         },
         {
-          "title": "More",
+          "title": "Plus",
           "items": [
             {
               "label": "Blog",
@@ -99,7 +102,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2024 Frenglish. Built with Docusaurus."
+      "copyright": "Copyright © 2024 Frenglish. Construit avec Docusaurus."
     },
     "prism": {
       "theme": {

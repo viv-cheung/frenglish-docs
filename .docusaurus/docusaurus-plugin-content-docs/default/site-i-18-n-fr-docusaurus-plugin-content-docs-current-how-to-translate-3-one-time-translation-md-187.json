@@ -1,6 +1,6 @@
 {
   "id": "HowToTranslate/oneTimeTranslation",
-  "title": "One Time Translation",
+  "title": "Traduction Unique",
   "description": "One Time Translation",
   "source": "@site/i18n/fr/docusaurus-plugin-content-docs/current/HowToTranslate/3-OneTimeTranslation.md",
   "sourceDirName": "HowToTranslate",
@@ -19,11 +19,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Translation Files Management",
+    "title": "Gestion des fichiers de traduction",
     "permalink": "/fr/docs/translation-files-management"
   },
   "next": {
-    "title": "Translate docusaurus",
+    "title": "Traduire docusaurus",
     "permalink": "/fr/docs/Tutorial - Extras/Translate docusaurus"
   }
 }

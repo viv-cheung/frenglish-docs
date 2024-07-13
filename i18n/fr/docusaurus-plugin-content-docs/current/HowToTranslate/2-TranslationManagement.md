@@ -2,21 +2,21 @@
 id: translationFilesManagement
 sidebar_position: 2
 description: How to structure translation files
-slug: /translation-management
+slug: /translation-files-management
 ---
 
-# Translation Management
+# Gestion des fichiers de traduction
 
-## How to structure your translation files for automatic translations
+## Comment structurer vos fichiers de traduction pour des traductions automatiques
 
-### Option 1:
+### Option 1 :
 
-- Origin language folder should be named the language code (ex. "en")
-- Files inside the origin language folder should only contain files required for translation
-- These files do not need to contain the origin language folder name (ex. intro.md, about.json, contactUs.po)
+- Le dossier de la langue d'origine doit être nommé avec le code de la langue (ex. "en")
+- Les fichiers à l'intérieur du dossier de la langue d'origine ne doivent contenir que les fichiers nécessaires à la traduction
+- Ces fichiers n'ont pas besoin de contenir le nom du dossier de la langue d'origine (ex. intro.md, about.json, contactUs.po)
 
-**Example Directory Structure**
-   - Translation files will be organized as follows. The translation path for this example would be `docs/locales/*`:
+**Exemple de structure de répertoire**
+   - Les fichiers de traduction seront organisés comme suit. Le chemin de traduction pour cet exemple serait `docs/locales/*` :
 
 ```plaintext
     docs/
@@ -29,29 +29,29 @@ slug: /translation-management
         │  └─ about.json
 ```
 
-### Option 2:
-- Have a parent folder called `locales` or `languages` or a name that symbolizes all the children files are translation/language files
-- Name each file with the language code in the filename
-- Using this method, none of the declared origin languages will be translated. All files containing target language codes will be translated
+### Option 2 :
+- Avoir un dossier parent appelé `locales` ou `languages` ou un nom qui symbolise que tous les fichiers enfants sont des fichiers de traduction/langue
+- Nommer chaque fichier avec le code de la langue dans le nom du fichier
+- En utilisant cette méthode, aucune des langues d'origine déclarées ne sera traduite. Tous les fichiers contenant des codes de langue cible seront traduits
 
-**Example Directory Structure**
-   - Translation files will be organized as follows. The translation path for this example would be `docs/locales/*`:
+**Exemple de structure de répertoire**
+   - Les fichiers de traduction seront organisés comme suit. Le chemin de traduction pour cet exemple serait `docs/locales/*` :
 
 ```plaintext
     docs/
     ├─ locales/
-        ├─ en/common.json
-        │  en/about.json
-        ├─ fr/common.json
-        │  fr/about.json
+        ├─ en_common.json
+        │  en_about.json
+        ├─ fr_common.json
+        │  fr_about.json
 ```
 
-## How automated translations are managed
+## Comment les traductions automatiques sont gérées
 
-If you make any changes in any of your origin language files, the Frenglish bot will pick up those changes and translate them in their respective target language files. The Frenglish bot will create new files or folders if they do not see that the target language files exist or not.
+Si vous apportez des modifications à l'un de vos fichiers de langue d'origine (par exemple `en/common.json`), le bot Frenglish détectera ces modifications et les traduira dans leurs fichiers de langue cible respectifs. Le bot Frenglish créera de nouveaux fichiers ou dossiers s'il ne voit pas que les fichiers de langue cible existent.
 
-**Example where to make changes**
-   - Make a change in the following file by changing some text:
+**Exemple où apporter des modifications**
+   - Apportez une modification au fichier suivant en changeant du texte :
 
 ```plaintext
     docs/
@@ -60,9 +60,9 @@ If you make any changes in any of your origin language files, the Frenglish bot 
         │  ├─ common.json
 ```
 
-   - Save the file, make a commit, and push the changes using git.
-   - Go to your **Pull Requests**  tab to see your new translation PR created from your base branch or see the local commit directly in your branch.
+- Enregistrez le fichier, faites un commit et poussez les modifications en utilisant git.
+   - Allez dans l'onglet **Pull Requests** sur Github pour voir votre nouvelle PR de traduction créée par Frenglish à partir de votre branche de base.
 
-**Automated Pull Requests**
-   - Any commit in the origin language folder of "translationPaths" will trigger Frenglish to create a pull request with updated translation files in the designated languages.
-   - Changes made to non-origin language files will not trigger new translations.
+**Pull Requests automatiques**
+   - Tout commit dans le dossier de langue d'origine de "translationPaths" déclenchera Frenglish pour créer une pull request avec des fichiers de traduction mis à jour dans les langues désignées.
+   - Les modifications apportées aux fichiers de langue non d'origine ne déclencheront pas de nouvelles traductions.

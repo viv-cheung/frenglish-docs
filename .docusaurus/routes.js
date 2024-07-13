@@ -39,15 +39,15 @@ export default [
   },
   {
     path: '/fr/docs',
-    component: ComponentCreator('/fr/docs', 'dd4'),
+    component: ComponentCreator('/fr/docs', '81f'),
     routes: [
       {
         path: '/fr/docs',
-        component: ComponentCreator('/fr/docs', '2a4'),
+        component: ComponentCreator('/fr/docs', '7b6'),
         routes: [
           {
             path: '/fr/docs',
-            component: ComponentCreator('/fr/docs', '1f4'),
+            component: ComponentCreator('/fr/docs', '54f'),
             routes: [
               {
                 path: '/fr/docs/configuration',
@@ -81,7 +81,7 @@ export default [
               },
               {
                 path: '/fr/docs/translation-files-management',
-                component: ComponentCreator('/fr/docs/translation-files-management', 'dfa'),
+                component: ComponentCreator('/fr/docs/translation-files-management', '3fc'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

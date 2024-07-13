@@ -5,7 +5,7 @@
       "versions": [
         {
           "name": "current",
-          "label": "Next",
+          "label": "Suivant",
           "isLast": true,
           "path": "/fr/docs",
           "mainDocId": "intro",

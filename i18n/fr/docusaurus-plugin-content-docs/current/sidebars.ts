@@ -1,14 +1,14 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 /**
- * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
+ * Créer une barre latérale vous permet de:
+ - créer un groupe ordonné de documents
+ - rendre une barre latérale pour chaque document de ce groupe
+ - fournir une navigation suivante/précédente
 
- The sidebars can be generated from the filesystem, or explicitly defined here.
+ Les barres latérales peuvent être générées à partir du système de fichiers, ou définies explicitement ici.
 
- Create as many sidebars as you want.
+ Créez autant de barres latérales que vous le souhaitez.
  */
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
@@ -19,17 +19,17 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Quickstart',
+      label: 'Démarrage rapide',
       items: ['Quickstart'],
     },
     {
       type: 'category',
-      label: 'How to Translate',
+      label: 'Comment traduire',
       items: ['HowToTranslate/configuration', 'HowToTranslate/translationManagement', 'HowToTranslate/oneTimeTranslation'],
     },
     {
       type: 'category',
-      label: 'Tutorial',
+      label: 'Tutoriel',
       items: ['Tutorial - Extras/Translate docusaurus'],
     },
     {

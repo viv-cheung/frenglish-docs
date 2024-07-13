@@ -1,7 +1,7 @@
 {
   "id": "Tutorial - Extras/Translate docusaurus",
-  "title": "Translate docusaurus",
-  "description": "For an example how to structure i18n with Docusaurus, take a look at Frenglish's docs.",
+  "title": "Traduire docusaurus",
+  "description": "Pour un exemple de structuration de l'i18n avec Docusaurus, consultez les docs de Frenglish.",
   "source": "@site/i18n/fr/docusaurus-plugin-content-docs/current/Tutorial - Extras/translate-docusaurus.md",
   "sourceDirName": "Tutorial - Extras",
   "slug": "/Tutorial - Extras/Translate docusaurus",
@@ -17,7 +17,7 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "One Time Translation",
+    "title": "Traduction Unique",
     "permalink": "/fr/docs/one-time-translation"
   },
   "next": {
