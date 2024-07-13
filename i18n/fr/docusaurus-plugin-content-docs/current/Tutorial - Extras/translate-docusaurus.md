@@ -1,13 +1,17 @@
 ---
-id: translate-docs
-sidebar_position: 2
+id: Translate docusaurus
+sidebar_position: 4
 ---
 
-Traduisons `docs/intro.md` en français.
+# Traduire docusaurus
+
+Pour un exemple de structuration de l'i18n avec Docusaurus, consultez [les docs de Frenglish](https://github.com/viv-cheung/frenglish-docs).
+
+Sinon, traduisons `docs/intro.md` en français.
 
 ## Configurer i18n
 
-Modifiez `docusaurus.config.js` pour ajouter la prise en charge de la locale `fr` :
+Modifiez `docusaurus.config.js` pour ajouter la prise en charge du fichier de traduction `fr` :
 
 ```js title="docusaurus.config.js"
 export default {
@@ -32,7 +36,7 @@ Traduisez `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` en français
 
 ## Démarrez votre site localisé
 
-Démarrez votre site en locale française :
+Démarrez votre site sur le fichier de traduction français :
 
 ```bash
 npm run start -- --locale fr
@@ -42,13 +46,13 @@ Votre site localisé est accessible à [http://localhost:3000/fr/](http://localh
 
 :::attention
 
-En développement, vous ne pouvez utiliser qu'une seule locale à la fois.
+En développement, vous ne pouvez utiliser qu'une seule langue à la fois.
 
 :::
 
-## Ajouter un menu déroulant de locale
+## Ajouter un menu déroulant de langue
 
-Pour naviguer facilement entre les langues, ajoutez un menu déroulant de locale.
+Pour naviguer sans interruption entre les langues, ajoutez un menu déroulant de langue.
 
 Modifiez le fichier `docusaurus.config.js` :
 
@@ -68,19 +72,19 @@ export default {
 };
 ```
 
-Le menu déroulant de locale apparaît maintenant dans votre barre de navigation :
+Le menu déroulant de langue apparaît maintenant dans votre barre de navigation :
 
-![Menu déroulant de locale](./img/localeDropdown.png)
+![Menu déroulant de langue](./img/localeDropdown.png)
 
 ## Construisez votre site localisé
 
-Construisez votre site pour une locale spécifique :
+Construisez votre site pour une langue spécifique :
 
 ```bash
 npm run build -- --locale fr
 ```
 
-Ou construisez votre site pour inclure toutes les locales à la fois :
+Ou construisez votre site pour inclure toutes les langues à la fois :
 
 ```bash
 npm run build

@@ -1,68 +1,29 @@
 ---
-id: quickstart
+id: Quickstart
 sidebar_position: 2
 description: Quickstart guide
 slug: /quickstart
 ---
 
+# Démarrage rapide
+
 **Outil de traduction intégré**
-1. Téléchargez l'[application GitHub Frenglish](https://github.com/apps/frenglish-translation) et cliquez sur **Installer** sur votre dépôt.
-2. Créez une configuration Frenglish dans le répertoire racine de votre dépôt (`frenglishConfig.json`) et collez le contenu suivant dans le fichier :
+1. Cliquez sur votre icône de profil et cliquez sur "Traduire" (ou allez sur http://frenglish.ai/translate)
+2. Téléchargez l'[application Frenglish GitHub](https://github.com/apps/frenglish-translation) et cliquez sur **Installer** sur votre dépôt Github.
+3. Cliquez sur l'icône d'engrenage du dépôt Github pour lequel vous souhaitez modifier les paramètres
 
-```json
-{
-    "originLanguage": "en",
-    "languages": ["fr", "ja", "es"],
-    "rules": "Do not translate Frenglish",
-    "translationPaths": ["docs/locales/*"],
-    "autoMergeToBaseBranch": false,
-    "rulesPerLanguage": [
-      {
-         "language": "fr",
-         "rules": "French rule 1"
-      },
-      {
-         "language": "ja",
-         "rules": "Japanese rule 1"
-      }
-     ],
-    "useThisConfig": true
-}
-```
+![Gestion de la traduction](../../../../assets/translation-management-page.png)
 
-**originLanguage** : Spécifiez la langue d'origine de votre document/page web. C'est la langue que vous mettrez régulièrement à jour pour ajouter du nouveau contenu.
-**languages** : Spécifiez toutes les langues que vous souhaitez prendre en charge dans un tableau de chaînes de caractères.
-**rules** : Dans une chaîne de caractères, spécifiez toutes les règles de traduction que vous souhaitez. Ces règles seront appliquées à tous les fichiers de traduction.
-**translationPaths** : Spécifiez tous les chemins que vous souhaitez que le bot Frenglish parcoure pour traduire tous les fichiers dans ce répertoire.
-**autoMergeToBaseBranch** : Option booléenne - **False** créera une Pull Request sur une nouvelle branche basée sur la branche où vous avez modifié un fichier de locale de langue d'origine. **True** fusionnera automatiquement les nouveaux fichiers de locale dans votre branche.
+4. Dans l'onglet "Configuration générale", 
+    a. Activez le "statut actif du dépôt" et cliquez sur "Enregistrer"
+    b. Entrez le chemin de traduction (ex "src/locales/*" ) pour lequel vous souhaitez gérer les traductions (tous les fichiers sous ce chemin seront traduits), cliquez sur "Ajouter un chemin" puis cliquez sur "Enregistrer".
 
-**Structure de répertoire d'exemple**
-   - Les fichiers de traduction seront organisés comme suit :
+![Configuration générale](../../../../assets/general-configuration.png)
 
-```plaintext
-    docs/
-    ├─ locales/
-        ├─ en/
-        │  ├─ common.json
-        │  └─ about.json
-        ├─ fr/
-        │  ├─ common.json
-        │  └─ about.json
-```
+Dans l'onglet "Configuration des langues",
+    a. Sélectionnez votre langue d'origine (les fichiers que vous gérez régulièrement, ex. Anglais), puis cliquez sur "Enregistrer"
+    b. Sélectionnez les langues que vous souhaitez prendre en charge, puis cliquez sur "Enregistrer"
 
-**Exemple où apporter des modifications**
-   - Apportez une modification dans le fichier suivant en changeant du texte :
+![Configuration des langues](../../../../assets/language-configuration.png)
 
-```plaintext
-    docs/
-    ├─ locales/
-        ├─ en/
-        │  ├─ common.json
-```
-
-- Enregistrez le fichier, faites un commit et poussez les modifications.
-   - Allez dans l'onglet **Pull Requests** pour voir votre nouvelle PR de traduction créée à partir de votre branche de base ou voyez le commit de locale directement dans votre branche.
-
-3. **Pull Requests automatisées**
-   - Tout commit affectant les "translationPaths" spécifiés déclenchera Frenglish pour créer une pull request avec les fichiers de traduction mis à jour dans les langues désignées.
-   - Les modifications apportées aux fichiers de langue non d'origine ne déclencheront pas de nouvelles traductions.
+5. Vous êtes prêt à traduire ! Votre prochaine traduction sera créée lors de votre prochain commit (pour les modifications détectées dans vos fichiers de langue) ou cliquez sur le bouton vert "Traduction unique" pour commencer.
