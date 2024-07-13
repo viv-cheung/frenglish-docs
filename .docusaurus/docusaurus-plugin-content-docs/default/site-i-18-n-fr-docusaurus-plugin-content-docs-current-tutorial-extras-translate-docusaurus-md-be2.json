@@ -1,24 +1,24 @@
 {
-  "id": "Tutorial - Extras/translate-docs",
-  "title": "Traduire Docusaurus",
-  "description": "Traduisons docs/intro.md en français.",
+  "id": "Tutorial - Extras/Translate docusaurus",
+  "title": "Translate docusaurus",
+  "description": "For an example how to structure i18n with Docusaurus, take a look at Frenglish's docs.",
   "source": "@site/i18n/fr/docusaurus-plugin-content-docs/current/Tutorial - Extras/translate-docusaurus.md",
   "sourceDirName": "Tutorial - Extras",
-  "slug": "/Tutorial - Extras/translate-docs",
-  "permalink": "/fr/docs/Tutorial - Extras/translate-docs",
+  "slug": "/Tutorial - Extras/Translate docusaurus",
+  "permalink": "/fr/docs/Tutorial - Extras/Translate docusaurus",
   "draft": false,
   "unlisted": false,
   "tags": [],
   "version": "current",
-  "sidebarPosition": 2,
+  "sidebarPosition": 4,
   "frontMatter": {
-    "id": "translate-docs",
-    "sidebar_position": 2
+    "id": "Translate docusaurus",
+    "sidebar_position": 4
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Tutorial - Extras",
-    "permalink": "/fr/docs/category/tutorial---extras"
+    "title": "One Time Translation",
+    "permalink": "/fr/docs/one-time-translation"
   },
   "next": {
     "title": "FAQ",

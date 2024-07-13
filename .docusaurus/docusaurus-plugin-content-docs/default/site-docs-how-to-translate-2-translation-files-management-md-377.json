@@ -1,0 +1,29 @@
+{
+  "id": "HowToTranslate/translationFilesManagement",
+  "title": "Translation Files Management",
+  "description": "How to structure translation files",
+  "source": "@site/docs/HowToTranslate/2-TranslationFilesManagement.md",
+  "sourceDirName": "HowToTranslate",
+  "slug": "/translation-files-management",
+  "permalink": "/fr/docs/translation-files-management",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "translationFilesManagement",
+    "sidebar_position": 2,
+    "description": "How to structure translation files",
+    "slug": "/translation-files-management"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Configuration",
+    "permalink": "/fr/docs/configuration"
+  },
+  "next": {
+    "title": "One Time Translation",
+    "permalink": "/fr/docs/one-time-translation"
+  }
+}

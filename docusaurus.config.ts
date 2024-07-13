@@ -1,29 +1,22 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import path from 'path';
 
 const config: Config = {
   title: 'Frenglish',
   tagline: 'Set up once, Continuous Translations Forever',
   favicon: '/assets/logo.svg',
 
-  // Set the production url of your site here
   url: 'https://frenglish.ai',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'viv-cheung', // Usually your GitHub org/user name.
-  projectName: 'frenglish-docs', // Usually your repo name.
+  organizationName: 'viv-cheung',
+  projectName: 'frenglish-docs',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'fr'],
@@ -34,21 +27,20 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: require.resolve('./sidebars.ts'),
           routeBasePath: 'docs',
         },
         blog: {
           showReadingTime: true,
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: '/assets/logo.svg',
     navbar: {
       title: 'Frenglish',
@@ -63,10 +55,10 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
           type: 'localeDropdown',
-          position: 'right'
+          position: 'right',
         },
         {
           href: 'https://github.com/viv-cheung/frenglish-docs',
@@ -108,6 +100,14 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  plugins: [
+    path.resolve(__dirname, 'custom-webpack-plugin'),
+  ],
+
+  clientModules: [
+    require.resolve('./src/clientModules/i18nLoader.js'),
+  ],
 };
 
 export default config;

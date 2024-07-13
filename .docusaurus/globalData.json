@@ -16,6 +16,21 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "HowToTranslate/configuration",
+              "path": "/fr/docs/configuration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/oneTimeTranslation",
+              "path": "/fr/docs/one-time-translation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/translationFilesManagement",
+              "path": "/fr/docs/translation-files-management",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
               "path": "/fr/docs/intro",
               "sidebar": "tutorialSidebar"
@@ -26,13 +41,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Tutorial - Extras/translate-docs",
-              "path": "/fr/docs/Tutorial - Extras/translate-docs",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/tutorial---extras",
-              "path": "/fr/docs/category/tutorial---extras",
+              "id": "Tutorial - Extras/Translate docusaurus",
+              "path": "/fr/docs/Tutorial - Extras/Translate docusaurus",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -41,7 +51,7 @@
             "tutorialSidebar": {
               "link": {
                 "path": "/fr/docs/intro",
-                "label": "intro"
+                "label": "Introduction"
               }
             }
           }

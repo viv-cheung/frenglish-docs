@@ -71,22 +71,22 @@
     },
     "content": "393be207"
   },
-  "/fr/docs-203": {
+  "/fr/docs-dd4": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/fr/docs-770": {
+  "/fr/docs-2a4": {
     "__comp": "a7bd4aaa",
     "__props": "55e853fa"
   },
-  "/fr/docs-303": {
+  "/fr/docs-1f4": {
     "__comp": "a94703ab"
   },
-  "/fr/docs/category/tutorial---extras-8a6": {
-    "__comp": "14eb3368",
-    "__props": "b2f148cf"
+  "/fr/docs/configuration-b3e": {
+    "__comp": "17896441",
+    "content": "e6614857"
   },
   "/fr/docs/FAQ-069": {
     "__comp": "17896441",
@@ -96,11 +96,19 @@
     "__comp": "17896441",
     "content": "57a1d77e"
   },
+  "/fr/docs/one-time-translation-ab0": {
+    "__comp": "17896441",
+    "content": "187ab940"
+  },
   "/fr/docs/quickstart-368": {
     "__comp": "17896441",
     "content": "f330d09f"
   },
-  "/fr/docs/Tutorial - Extras/translate-docs-703": {
+  "/fr/docs/translation-files-management-dfa": {
+    "__comp": "17896441",
+    "content": "377897a7"
+  },
+  "/fr/docs/Tutorial - Extras/Translate docusaurus-f14": {
     "__comp": "17896441",
     "content": "be2fe1ae"
   },

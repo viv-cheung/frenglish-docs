@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.How to Translate": {
+    "message": "How to Translate",
+    "description": "The label for category How to Translate in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial": {
+    "message": "Tutorial",
+    "description": "The label for category Tutorial in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.doc.Introduction": {
+    "message": "Introduction",
+    "description": "The label for the doc item Introduction in sidebar tutorialSidebar, linking to the doc intro"
+  },
+  "sidebar.tutorialSidebar.doc.Quickstart": {
+    "message": "Quickstart",
+    "description": "The label for the doc item Quickstart in sidebar tutorialSidebar, linking to the doc Quickstart"
+  },
+  "sidebar.tutorialSidebar.doc.FAQ": {
+    "message": "FAQ",
+    "description": "The label for the doc item FAQ in sidebar tutorialSidebar, linking to the doc FAQ"
+  }
+}

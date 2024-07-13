@@ -1,6 +1,6 @@
 {
   "id": "Quickstart",
-  "title": "Démarrage rapide",
+  "title": "Quickstart",
   "description": "Quickstart guide",
   "source": "@site/i18n/fr/docusaurus-plugin-content-docs/current/quickstart.md",
   "sourceDirName": ".",
@@ -23,7 +23,7 @@
     "permalink": "/fr/docs/intro"
   },
   "next": {
-    "title": "Tutorial - Extras",
-    "permalink": "/fr/docs/category/tutorial---extras"
+    "title": "Configuration",
+    "permalink": "/fr/docs/configuration"
   }
 }

@@ -27,14 +27,14 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "./sidebars.ts",
+          "sidebarPath": "/Users/vivian/main/software/frenglish-docs/sidebars.ts",
           "routeBasePath": "docs"
         },
         "blog": {
           "showReadingTime": true
         },
         "theme": {
-          "customCss": "./src/css/custom.css"
+          "customCss": "/Users/vivian/main/software/frenglish-docs/src/css/custom.css"
         }
       }
     ]
@@ -323,6 +323,12 @@ export default {
       "maxHeadingLevel": 3
     }
   },
+  "plugins": [
+    "/Users/vivian/main/software/frenglish-docs/custom-webpack-plugin"
+  ],
+  "clientModules": [
+    "/Users/vivian/main/software/frenglish-docs/src/clientModules/i18nLoader.js"
+  ],
   "baseUrlIssueBanner": true,
   "onBrokenAnchors": "warn",
   "onDuplicateRoutes": "warn",
@@ -330,12 +336,10 @@ export default {
     "static"
   ],
   "customFields": {},
-  "plugins": [],
   "themes": [],
   "scripts": [],
   "headTags": [],
   "stylesheets": [],
-  "clientModules": [],
   "titleDelimiter": "|",
   "noIndex": false,
   "markdown": {

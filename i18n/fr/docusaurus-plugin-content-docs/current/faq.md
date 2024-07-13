@@ -7,87 +7,48 @@ slug: /FAQ
 
 # FAQ
 
-## Comment traduisez-vous tous vos fichiers ?
-- Si vous soumettez le
+## How do you translate all your files?
+Follow the steps [here](./HowToTranslate/3-OneTimeTranslation.md#manage-translation-settings-on-the-frenglishai-website)!
 
-```frenglishConfig.json```
+## How do I know the quality is good?
+The Frenglish bot goes through the following validation steps:
+- Multiple reflection and review loops to ensure the translation follows your specified rules and sounds natural
+- Has an implicit learning feature to teach itself rules based on manually changed translation files
+- Translations are sent to human translators for quality validation every quarter
+- METEOR score (standardized translation quality test) are performed regularly; this test will translate content to the target language and back to its origin language. A score will be given by comparing the original values against the back-translation values
+- Our docs and website have been entirely translated by the Frenglish bot! Therefore, the quality of the translation is transparent and a benchmark for what you should expect
 
-fichier pour la première fois, et que les fichiers de langue cible n'existent pas (ou n'appartiennent pas au dossier de la langue cible), il traduira tous vos fichiers. Le nom du fichier d'origine doit correspondre exactement à celui de la langue cible.
+## How long should I expect for my translation files to be completed?
+This is dependent on how many characters you are translating. Typically, you could expect 1 minute per file to be translated. This is because the Frenglish bot goes through multiple validation steps to ensure the quality of the translation is high before outputting a result.
 
-Exemple,
+## Not everything in my file requires translation, how do you pick and choose what to translate?
+The Frenglish bot will translate only relevant content depending on the file type. For example:
 
-```common.json```
+**Markdown Files**
+- Code will not be translated
 
-sera traduit dans le dossier `fr` puisque
+**PO Files**
+- Comments, msgid, and other po meta data will not be translated or count as translated content
 
-```common.json```
+**JSON Files**
+- Keys will not be translated and only the values will be translated
 
-n'existe pas dans le dossier fr :
+## Do you just support French translations?
+No, the name "Frenglish" was chosen to represent its Quebec company origins. Many Quebecers use the term "Frenglish" to refer to how they converse (by mixing in both French and English in natural dialogue). 
 
-```plaintext
-    docs/
-    ├─ locales/
-        ├─ en/
-        │  ├─ common.json
-        │  fr/
-        │  ├─ common1.json
-```
+We support the following languages:
 
-Exemple 2,
+Afrikaans, Arabic, Armenian, Azerbaijani, Belarusian, Bosnian, Bulgarian, Catalan, Chinese, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, Galician, German, Greek, Hebrew, Hindi, Hungarian, Icelandic, Indonesian, Italian, Japanese, Kannada, Kazakh, Korean, Latvian, Lithuanian, Macedonian, Malay, Marathi, Maori, Nepali, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swahili, Swedish, Tagalog, Tamil, Thai, Turkish, Ukrainian, Urdu, Vietnamese, and Welsh.
 
-```common.json```
+## What happens if I closed a PR from Frenglish?
+The content contained in that PR will NOT be translated in future Frenglish PRs. Only close Frenglish PR if you don't want this content to be translated by frenglish. You can always edit the text in the Frenglish PR and merge it
 
-sera traduit dans un nouveau dossier `fr` créé puisqu'il y a
+## Are code snippets translated?
+No, code snippets are not translated and DO NOT count towards your translated words usage
 
-```frenglishConfig.json```
+## How does overage work?
+You get charged every $100 in overage you accumulate during a period, or whatever overage user had when new period start
 
-, il a `fr` spécifié dans la valeur `languages` :
+## What happens if I upgrade my plan AFTER I entered overage?
+Whatever amount of overage you spent on your previous plan will be credited for this month. This means that if you spend $50 in overage in PRO, the first $50 in overage on your upgraded plan will not get charged
 
-```plaintext
-    docs/
-    ├─ locales/
-        ├─ en/
-        │  ├─ common.json
-```
-
-## Comment savoir si la qualité est bonne ?
-Le bot Frenglish passe par les étapes de validation suivantes :
-- Plusieurs boucles de réflexion et de validation pour s'assurer que la traduction suit vos règles spécifiées et semble naturelle
-- Dispose d'une fonctionnalité d'apprentissage implicite pour s'auto-apprendre des règles basées sur les fichiers de locale modifiés manuellement
-- Les traductions sont envoyées à des traducteurs humains pour validation de la qualité chaque trimestre
-- Des scores METEOR (test de qualité de traduction standardisé) sont effectués régulièrement ; ce test traduira le contenu dans la langue cible et retournera à sa langue d'origine. Un score sera attribué en comparant les valeurs originales aux valeurs de re-traduction
-- Tous les documents que vous voyez ont été traduits par le bot Frenglish ! Par conséquent, la qualité de la traduction est transparente et une référence pour ce que vous devriez attendre
-
-## Combien de temps dois-je attendre pour que mes fichiers de traduction soient terminés ?
-Cela dépend du nombre de caractères que vous traduisez. En général, vous pouvez vous attendre à 1 minute par fichier à traduire. Cela est dû au fait que le bot Frenglish passe par plusieurs étapes de validation pour s'assurer que la qualité de la traduction est élevée avant de produire un résultat.
-
-## Tout dans mon fichier ne nécessite pas de traduction, comment choisissez-vous ce qui doit être traduit ?
-Le bot Frenglish ne traduira que le contenu pertinent en fonction du type de fichier. Par exemple :
-
-**Fichiers Markdown**
-- Le code ne sera pas traduit
-
-**Fichiers PO**
-- Les commentaires, msgid et autres métadonnées po ne seront pas traduits ou comptés comme contenu traduit
-
-**Fichiers JSON**
-- Les clés ne seront pas traduites et seules les valeurs seront traduites
-
-## Soutenez-vous uniquement les traductions en français ?
-Non, le nom "Frenglish" a été choisi pour représenter ses origines québécoises. De nombreux Québécois utilisent le terme "Frenglish" pour désigner la façon dont ils conversent (en mélangeant à la fois le français et l'anglais dans un dialogue naturel).
-
-Nous prenons en charge les langues suivantes :
-
-Afrikaans, Arabe, Arménien, Azerbaïdjanais, Biélorusse, Bosnien, Bulgare, Catalan, Chinois, Croate, Tchèque, Danois, Néerlandais, Anglais, Estonien, Finnois, Français, Galicien, Allemand, Grec, Hébreu, Hindi, Hongrois, Islandais, Indonésien, Italien, Japonais, Kannada, Kazakh, Coréen, Letton, Lituanien, Macédonien, Malais, Marathi, Maori, Népali, Norvégien, Persan, Polonais, Portugais, Roumain, Russe, Serbe, Slovaque, Slovène, Espagnol, Swahili, Suédois, Tagalog, Tamoul, Thaï, Turc, Ukrainien, Ourdou, Vietnamien et Gallois.
-
-## Que se passe-t-il si je ferme une PR de Frenglish ?
-Le contenu de cette PR ne sera PAS traduit dans les futures PR de Frenglish. Ne fermez une PR de Frenglish que si vous ne souhaitez pas que ce contenu soit traduit par Frenglish. Vous pouvez toujours modifier le texte dans la PR de Frenglish et la fusionner
-
-## Les extraits de code sont-ils traduits ?
-Non, les extraits de code ne sont pas traduits et ne comptent PAS dans votre utilisation des mots traduits
-
-## Comment fonctionne le dépassement ?
-Vous êtes facturé tous les 100 $ de dépassement que vous accumulez pendant une période, ou quel que soit le dépassement de l'utilisateur au début de la nouvelle période (REMARQUE : actuellement, nous ne gérons pas l'annulation pour cela, je viens de m'en rendre compte... je vais ouvrir un ticket)
-
-## Que se passe-t-il si je mets à niveau mon plan APRÈS être entré en dépassement ?
-Quel que soit le montant du dépassement que vous avez dépensé sur votre plan précédent, il sera crédité pour ce mois. Cela signifie que si vous dépensez 50 $ en dépassement dans PRO, les premiers 50 $ en dépassement sur votre plan mis à niveau ne seront pas facturés

@@ -39,19 +39,19 @@ export default [
   },
   {
     path: '/fr/docs',
-    component: ComponentCreator('/fr/docs', '203'),
+    component: ComponentCreator('/fr/docs', 'dd4'),
     routes: [
       {
         path: '/fr/docs',
-        component: ComponentCreator('/fr/docs', '770'),
+        component: ComponentCreator('/fr/docs', '2a4'),
         routes: [
           {
             path: '/fr/docs',
-            component: ComponentCreator('/fr/docs', '303'),
+            component: ComponentCreator('/fr/docs', '1f4'),
             routes: [
               {
-                path: '/fr/docs/category/tutorial---extras',
-                component: ComponentCreator('/fr/docs/category/tutorial---extras', '8a6'),
+                path: '/fr/docs/configuration',
+                component: ComponentCreator('/fr/docs/configuration', 'b3e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -68,14 +68,26 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/fr/docs/one-time-translation',
+                component: ComponentCreator('/fr/docs/one-time-translation', 'ab0'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/fr/docs/quickstart',
                 component: ComponentCreator('/fr/docs/quickstart', '368'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/fr/docs/Tutorial - Extras/translate-docs',
-                component: ComponentCreator('/fr/docs/Tutorial - Extras/translate-docs', '703'),
+                path: '/fr/docs/translation-files-management',
+                component: ComponentCreator('/fr/docs/translation-files-management', 'dfa'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/fr/docs/Tutorial - Extras/Translate docusaurus',
+                component: ComponentCreator('/fr/docs/Tutorial - Extras/Translate docusaurus', 'f14'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

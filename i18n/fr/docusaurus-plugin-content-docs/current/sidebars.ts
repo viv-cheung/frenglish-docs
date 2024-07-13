@@ -19,13 +19,18 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Démarrage rapide',
+      label: 'Quickstart',
       items: ['Quickstart'],
     },
     {
       type: 'category',
+      label: 'How to Translate',
+      items: ['HowToTranslate/configuration', 'HowToTranslate/translationManagement', 'HowToTranslate/oneTimeTranslation'],
+    },
+    {
+      type: 'category',
       label: 'Tutorial',
-      items: ['Traduire Docusaurus'],
+      items: ['Tutorial - Extras/Translate docusaurus'],
     },
     {
       type: 'category',
