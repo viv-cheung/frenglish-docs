@@ -8,7 +8,7 @@ export default {
   "tagline": "Set up once, Continuous Translations Forever",
   "favicon": "/assets/logo.svg",
   "url": "https://frenglish.ai",
-  "baseUrl": "/",
+  "baseUrl": "/fr/",
   "organizationName": "viv-cheung",
   "projectName": "frenglish-docs",
   "onBrokenLinks": "throw",
@@ -16,7 +16,8 @@ export default {
   "i18n": {
     "defaultLocale": "en",
     "locales": [
-      "en"
+      "en",
+      "fr"
     ],
     "path": "i18n",
     "localeConfigs": {}
@@ -26,13 +27,17 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "./sidebars.ts"
+          "sidebarPath": "/Users/vivian/main/software/frenglish-docs/i18n/en/docusaurus-plugin-content-docs/current/sidebars.ts",
+          "path": "i18n/en/docusaurus-plugin-content-docs/current",
+          "editLocalizedFiles": true
         },
         "blog": {
-          "showReadingTime": true
+          "showReadingTime": true,
+          "path": "blog",
+          "editLocalizedFiles": true
         },
         "theme": {
-          "customCss": "./src/css/custom.css"
+          "customCss": "/Users/vivian/main/software/frenglish-docs/src/css/custom.css"
         }
       }
     ]
@@ -78,30 +83,13 @@ export default {
           "title": "Docs",
           "items": [
             {
-              "label": "Tutorial",
+              "label": "Tutoriel",
               "to": "/docs/intro"
             }
           ]
         },
         {
-          "title": "Community",
-          "items": [
-            {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
-            },
-            {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              "label": "Twitter",
-              "href": "https://twitter.com/docusaurus"
-            }
-          ]
-        },
-        {
-          "title": "More",
+          "title": "Plus",
           "items": [
             {
               "label": "Blog",
@@ -114,7 +102,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2024 Frenglish. Built with Docusaurus."
+      "copyright": "Copyright © 2024 Frenglish. Construit avec Docusaurus."
     },
     "prism": {
       "theme": {
@@ -338,6 +326,12 @@ export default {
       "maxHeadingLevel": 3
     }
   },
+  "plugins": [
+    "/Users/vivian/main/software/frenglish-docs/custom-webpack-plugin"
+  ],
+  "clientModules": [
+    "/Users/vivian/main/software/frenglish-docs/src/clientModules/i18nLoader.js"
+  ],
   "baseUrlIssueBanner": true,
   "onBrokenAnchors": "warn",
   "onDuplicateRoutes": "warn",
@@ -345,12 +339,10 @@ export default {
     "static"
   ],
   "customFields": {},
-  "plugins": [],
   "themes": [],
   "scripts": [],
   "headTags": [],
   "stylesheets": [],
-  "clientModules": [],
   "titleDelimiter": "|",
   "noIndex": false,
   "markdown": {

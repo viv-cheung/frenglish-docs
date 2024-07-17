@@ -1,38 +1,48 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/fr/docs",
       "versions": [
         {
           "name": "current",
-          "label": "Next",
+          "label": "Suivant",
           "isLast": true,
-          "path": "/docs",
+          "path": "/fr/docs",
           "mainDocId": "intro",
           "docs": [
             {
               "id": "FAQ",
-              "path": "/docs/FAQ",
+              "path": "/fr/docs/FAQ",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/configuration",
+              "path": "/fr/docs/configuration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/oneTimeTranslation",
+              "path": "/fr/docs/one-time-translation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/translationFilesManagement",
+              "path": "/fr/docs/translation-files-management",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
-              "path": "/docs/intro",
+              "path": "/fr/docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Quickstart",
-              "path": "/docs/quickstart",
+              "path": "/fr/docs/quickstart",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "Tutorial - Extras/Translate your docs with Docusaurus",
-              "path": "/docs/Tutorial - Extras/Translate your docs with Docusaurus",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/tutorial---extras",
-              "path": "/docs/category/tutorial---extras",
+              "id": "Tutorial - Extras/Translate docusaurus",
+              "path": "/fr/docs/Tutorial - Extras/Translate docusaurus",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -40,8 +50,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
-                "label": "intro"
+                "path": "/fr/docs/intro",
+                "label": "Introduction"
               }
             }
           }

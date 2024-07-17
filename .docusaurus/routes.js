@@ -3,79 +3,91 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/blog',
-    component: ComponentCreator('/blog', 'ccf'),
+    path: '/fr/blog',
+    component: ComponentCreator('/fr/blog', 'e61'),
     exact: true
   },
   {
-    path: '/blog/about-us',
-    component: ComponentCreator('/blog/about-us', '981'),
+    path: '/fr/blog/about-us',
+    component: ComponentCreator('/fr/blog/about-us', 'b6e'),
     exact: true
   },
   {
-    path: '/blog/archive',
-    component: ComponentCreator('/blog/archive', '245'),
+    path: '/fr/blog/archive',
+    component: ComponentCreator('/fr/blog/archive', '1a3'),
     exact: true
   },
   {
-    path: '/blog/tags',
-    component: ComponentCreator('/blog/tags', '4c4'),
+    path: '/fr/blog/tags',
+    component: ComponentCreator('/fr/blog/tags', '679'),
     exact: true
   },
   {
-    path: '/blog/tags/frenglish',
-    component: ComponentCreator('/blog/tags/frenglish', '562'),
+    path: '/fr/blog/tags/frenglish',
+    component: ComponentCreator('/fr/blog/tags/frenglish', '7dd'),
     exact: true
   },
   {
-    path: '/blog/tags/introduction',
-    component: ComponentCreator('/blog/tags/introduction', 'c65'),
+    path: '/fr/blog/tags/introduction',
+    component: ComponentCreator('/fr/blog/tags/introduction', '5c4'),
     exact: true
   },
   {
-    path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', '3d7'),
+    path: '/fr/markdown-page',
+    component: ComponentCreator('/fr/markdown-page', 'f67'),
     exact: true
   },
   {
-    path: '/docs',
-    component: ComponentCreator('/docs', '9b0'),
+    path: '/fr/docs',
+    component: ComponentCreator('/fr/docs', '81f'),
     routes: [
       {
-        path: '/docs',
-        component: ComponentCreator('/docs', '298'),
+        path: '/fr/docs',
+        component: ComponentCreator('/fr/docs', '7b6'),
         routes: [
           {
-            path: '/docs',
-            component: ComponentCreator('/docs', 'f77'),
+            path: '/fr/docs',
+            component: ComponentCreator('/fr/docs', '54f'),
             routes: [
               {
-                path: '/docs/category/tutorial---extras',
-                component: ComponentCreator('/docs/category/tutorial---extras', 'b09'),
+                path: '/fr/docs/configuration',
+                component: ComponentCreator('/fr/docs/configuration', 'b3e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/FAQ',
-                component: ComponentCreator('/docs/FAQ', 'dc0'),
+                path: '/fr/docs/FAQ',
+                component: ComponentCreator('/fr/docs/FAQ', '069'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/intro',
-                component: ComponentCreator('/docs/intro', '61d'),
+                path: '/fr/docs/intro',
+                component: ComponentCreator('/fr/docs/intro', '8b6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/quickstart',
-                component: ComponentCreator('/docs/quickstart', '79e'),
+                path: '/fr/docs/one-time-translation',
+                component: ComponentCreator('/fr/docs/one-time-translation', 'ab0'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Tutorial - Extras/Translate your docs with Docusaurus',
-                component: ComponentCreator('/docs/Tutorial - Extras/Translate your docs with Docusaurus', '2f4'),
+                path: '/fr/docs/quickstart',
+                component: ComponentCreator('/fr/docs/quickstart', '368'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/fr/docs/translation-files-management',
+                component: ComponentCreator('/fr/docs/translation-files-management', '3fc'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/fr/docs/Tutorial - Extras/Translate docusaurus',
+                component: ComponentCreator('/fr/docs/Tutorial - Extras/Translate docusaurus', 'f14'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -86,8 +98,8 @@ export default [
     ]
   },
   {
-    path: '/',
-    component: ComponentCreator('/', 'e5f'),
+    path: '/fr/',
+    component: ComponentCreator('/fr/', '663'),
     exact: true
   },
   {

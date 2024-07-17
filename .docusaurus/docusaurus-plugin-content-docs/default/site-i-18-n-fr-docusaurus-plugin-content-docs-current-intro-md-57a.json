@@ -4,20 +4,22 @@
   "description": "Frenglish is designed to help your business enter new markets quickly with automated translations.",
   "source": "@site/i18n/fr/docusaurus-plugin-content-docs/current/intro.md",
   "sourceDirName": ".",
-  "slug": "/",
-  "permalink": "/docs/",
+  "slug": "/intro",
+  "permalink": "/fr/docs/intro",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
   "tags": [],
   "version": "current",
+  "sidebarPosition": 1,
   "frontMatter": {
+    "id": "intro",
+    "sidebar_position": 1,
     "description": "Frenglish is designed to help your business enter new markets quickly with automated translations.",
-    "slug": "/"
+    "slug": "/intro"
   },
   "sidebar": "tutorialSidebar",
-  "previous": {
-    "title": "Translate your site",
-    "permalink": "/docs/tutorial-extras/translate-your-site"
+  "next": {
+    "title": "Quickstart",
+    "permalink": "/fr/docs/quickstart"
   }
 }

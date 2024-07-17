@@ -1,5 +1,5 @@
 {
-  "/blog-ccf": {
+  "/fr/blog-e61": {
     "__comp": "a6aa9e1f",
     "__context": {
       "plugin": "36994c47"
@@ -10,9 +10,9 @@
         "content": "ee35b96d"
       }
     ],
-    "__props": "53a3e6dc"
+    "__props": "423c6a64"
   },
-  "/blog/about-us-981": {
+  "/fr/blog/about-us-b6e": {
     "__comp": "ccc49370",
     "__context": {
       "data": {
@@ -23,22 +23,22 @@
     "sidebar": "814f3328",
     "content": "0161b430"
   },
-  "/blog/archive-245": {
+  "/fr/blog/archive-1a3": {
     "__comp": "9e4087bc",
     "__context": {
       "plugin": "36994c47"
     },
-    "__props": "25003e4f"
+    "__props": "c3db38a8"
   },
-  "/blog/tags-4c4": {
+  "/fr/blog/tags-679": {
     "__comp": "01a85c17",
     "__context": {
       "plugin": "36994c47"
     },
     "sidebar": "814f3328",
-    "__props": "41756ce8"
+    "__props": "e1fde4df"
   },
-  "/blog/tags/frenglish-562": {
+  "/fr/blog/tags/frenglish-7dd": {
     "__comp": "6875c492",
     "__context": {
       "plugin": "36994c47"
@@ -49,9 +49,9 @@
         "content": "ee35b96d"
       }
     ],
-    "__props": "f8790f9f"
+    "__props": "3173012a"
   },
-  "/blog/tags/introduction-c65": {
+  "/fr/blog/tags/introduction-5c4": {
     "__comp": "6875c492",
     "__context": {
       "plugin": "36994c47"
@@ -62,49 +62,57 @@
         "content": "ee35b96d"
       }
     ],
-    "__props": "b0023ae2"
+    "__props": "fcb8a81a"
   },
-  "/markdown-page-3d7": {
+  "/fr/markdown-page-f67": {
     "__comp": "1f391b9e",
     "__context": {
       "plugin": "a7456010"
     },
     "content": "393be207"
   },
-  "/docs-9b0": {
+  "/fr/docs-81f": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/docs-298": {
+  "/fr/docs-7b6": {
     "__comp": "a7bd4aaa",
-    "__props": "7c110bd0"
+    "__props": "55e853fa"
   },
-  "/docs-f77": {
+  "/fr/docs-54f": {
     "__comp": "a94703ab"
   },
-  "/docs/category/tutorial---extras-b09": {
-    "__comp": "14eb3368",
-    "__props": "02ef790d"
-  },
-  "/docs/FAQ-dc0": {
+  "/fr/docs/configuration-b3e": {
     "__comp": "17896441",
-    "content": "0480b142"
+    "content": "e6614857"
   },
-  "/docs/intro-61d": {
+  "/fr/docs/FAQ-069": {
     "__comp": "17896441",
-    "content": "0e384e19"
+    "content": "ab45f6cb"
   },
-  "/docs/quickstart-79e": {
+  "/fr/docs/intro-8b6": {
     "__comp": "17896441",
-    "content": "8070e160"
+    "content": "57a1d77e"
   },
-  "/docs/Tutorial - Extras/Translate your docs with Docusaurus-2f4": {
+  "/fr/docs/one-time-translation-ab0": {
     "__comp": "17896441",
-    "content": "549cb46c"
+    "content": "187ab940"
   },
-  "/-e5f": {
+  "/fr/docs/quickstart-368": {
+    "__comp": "17896441",
+    "content": "f330d09f"
+  },
+  "/fr/docs/translation-files-management-3fc": {
+    "__comp": "17896441",
+    "content": "9751155a"
+  },
+  "/fr/docs/Tutorial - Extras/Translate docusaurus-f14": {
+    "__comp": "17896441",
+    "content": "be2fe1ae"
+  },
+  "/fr/-663": {
     "__comp": "1df93b7f",
     "__context": {
       "plugin": "a7456010"
