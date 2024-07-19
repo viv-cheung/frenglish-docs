@@ -1,298 +1,298 @@
 {
   "Main Logo": {
-    "message": "Logo principal"
+    "message": "fr + fr-translated Main Logo"
   },
   "Frenglish Tutorial - 4min ⏱️": {
-    "message": "Tutoriel Frenglish - 4min ⏱️"
+    "message": "fr + fr-translated Frenglish Tutorial - 4min ⏱️"
   },
   "Description will go into a meta tag in <head />": {
-    "message": "La description sera insérée dans une balise meta dans <head />"
+    "message": "fr + fr-translated Description will go into a meta tag in <head />"
   },
   "theme.ErrorPageContent.title": {
-    "message": "Cette page a planté.",
-    "description": "Le titre de la page de secours lorsque la page a planté"
+    "message": "fr + fr-translated This page crashed.",
+    "description": "fr + fr-translated The title of the fallback page when the page crashed"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Revenir en haut",
-    "description": "Le label ARIA pour le bouton de retour en haut"
+    "message": "fr + fr-translated Scroll back to top",
+    "description": "fr + fr-translated The ARIA label for the back to top button"
   },
   "theme.blog.archive.title": {
-    "message": "Archive",
-    "description": "Le titre de la page et du héros de la page d'archive du blog"
+    "message": "fr + fr-translated Archive",
+    "description": "fr + fr-translated The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
-    "message": "Archive",
-    "description": "La description de la page et du héros de la page d'archive du blog"
+    "message": "fr + fr-translated Archive",
+    "description": "fr + fr-translated The page & hero description of the blog archive page"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Navigation de la page de liste de blog",
-    "description": "Le label ARIA pour la pagination du blog"
+    "message": "fr + fr-translated Blog list page navigation",
+    "description": "fr + fr-translated The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Entrées plus récentes",
-    "description": "Le label utilisé pour naviguer vers la page des articles de blog plus récents (page précédente)"
+    "message": "fr + fr-translated Newer Entries",
+    "description": "fr + fr-translated The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Entrées plus anciennes",
-    "description": "Le label utilisé pour naviguer vers la page des articles de blog plus anciens (page suivante)"
+    "message": "fr + fr-translated Older Entries",
+    "description": "fr + fr-translated The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.plurals": {
-    "message": "Un article|{count} articles",
-    "description": "Label pluriel pour \\\"{count} articles\\\". Utilisez autant de formes plurielles (séparées par \\\"|\\\") que votre langue le permet (voir https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "fr + fr-translated One post|{count} posts",
+    "description": "fr + fr-translated Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} tagués avec \\\"{tagName}\\\"",
-    "description": "Le titre de la page pour un tag de blog"
+    "message": "fr + fr-translated {nPosts} tagged with \"{tagName}\"",
+    "description": "fr + fr-translated The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "Voir tous les tags",
-    "description": "Le label du lien ciblant la page de liste des tags"
+    "message": "fr + fr-translated View All Tags",
+    "description": "fr + fr-translated The label of the link targeting the tag list page"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Navigation de la page de l'article de blog",
-    "description": "Le label ARIA pour la pagination des articles de blog"
+    "message": "fr + fr-translated Blog post page navigation",
+    "description": "fr + fr-translated The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Article plus récent",
-    "description": "Le label du bouton de l'article de blog pour naviguer vers l'article plus récent/précédent"
+    "message": "fr + fr-translated Newer Post",
+    "description": "fr + fr-translated The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Article plus ancien",
-    "description": "Le label du bouton de l'article de blog pour naviguer vers l'article plus ancien/suivant"
+    "message": "fr + fr-translated Older Post",
+    "description": "fr + fr-translated The blog post button label to navigate to the older/next post"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Fil d'Ariane",
-    "description": "Le label ARIA pour les fils d'Ariane"
+    "message": "fr + fr-translated Breadcrumbs",
+    "description": "fr + fr-translated The ARIA label for the breadcrumbs"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} éléments",
-    "description": "La description par défaut pour une carte de catégorie dans l'index généré sur le nombre d'éléments que cette catégorie inclut"
+    "message": "fr + fr-translated {count} items",
+    "description": "fr + fr-translated The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Basculer entre le mode sombre et le mode clair (actuellement {mode})",
-    "description": "Le label ARIA pour le bouton de bascule du mode couleur de la barre de navigation"
+    "message": "fr + fr-translated Switch between dark and light mode (currently {mode})",
+    "description": "fr + fr-translated The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "mode sombre",
-    "description": "Le nom pour le mode couleur sombre"
+    "message": "fr + fr-translated dark mode",
+    "description": "fr + fr-translated The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "mode clair",
-    "description": "Le nom pour le mode couleur clair"
+    "message": "fr + fr-translated light mode",
+    "description": "fr + fr-translated The name for the light color mode"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Pages de documentation",
-    "description": "Le label ARIA pour la pagination des documents"
+    "message": "fr + fr-translated Docs pages",
+    "description": "fr + fr-translated The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
-    "message": "Précédent",
-    "description": "Le label utilisé pour naviguer vers le document précédent"
+    "message": "fr + fr-translated Previous",
+    "description": "fr + fr-translated The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Suivant",
-    "description": "Le label utilisé pour naviguer vers le document suivant"
+    "message": "fr + fr-translated Next",
+    "description": "fr + fr-translated The label used to navigate to the next doc"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "Un document tagué|{count} documents tagués",
-    "description": "Label pluriel pour \\\"{count} documents tagués\\\". Utilisez autant de formes plurielles (séparées par \\\"|\\\") que votre langue le permet (voir https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "fr + fr-translated One doc tagged|{count} docs tagged",
+    "description": "fr + fr-translated Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} avec \\\"{tagName}\\\"",
-    "description": "Le titre de la page pour un tag de documents"
+    "message": "fr + fr-translated {nDocsTagged} with \"{tagName}\"",
+    "description": "fr + fr-translated The title of the page for a docs tag"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "Ceci est une documentation non publiée pour la version {versionLabel} de {siteTitle}.",
-    "description": "Le label utilisé pour indiquer à l'utilisateur qu'il consulte une version de documentation non publiée"
+    "message": "fr + fr-translated This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "description": "fr + fr-translated The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "Ceci est une documentation pour la version {versionLabel} de {siteTitle}, qui n'est plus activement maintenue.",
-    "description": "Le label utilisé pour indiquer à l'utilisateur qu'il consulte une version de documentation non maintenue"
+    "message": "fr + fr-translated This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "description": "fr + fr-translated The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "Pour une documentation à jour, voir {latestVersionLink} ({versionLabel}).",
-    "description": "Le label utilisé pour indiquer à l'utilisateur de consulter la dernière version"
+    "message": "fr + fr-translated For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "description": "fr + fr-translated The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "dernière version",
-    "description": "Le label utilisé pour le lien de suggestion de la dernière version"
+    "message": "fr + fr-translated latest version",
+    "description": "fr + fr-translated The label used for the latest version suggestion link label"
   },
   "theme.docs.versionBadge.label": {
-    "message": "Version : {versionLabel}"
+    "message": "fr + fr-translated Version: {versionLabel}"
   },
   "theme.common.editThisPage": {
-    "message": "Modifier cette page",
-    "description": "Le label du lien pour modifier la page actuelle"
+    "message": "fr + fr-translated Edit this page",
+    "description": "fr + fr-translated The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Lien direct vers {heading}",
-    "description": "Titre pour le lien vers l'en-tête"
+    "message": "fr + fr-translated Direct link to {heading}",
+    "description": "fr + fr-translated Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " le {date}",
-    "description": "Les mots utilisés pour décrire à quelle date une page a été mise à jour pour la dernière fois"
+    "message": "fr + fr-translated  on {date}",
+    "description": "fr + fr-translated The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " par {user}",
-    "description": "Les mots utilisés pour décrire par qui la page a été mise à jour pour la dernière fois"
+    "message": "fr + fr-translated  by {user}",
+    "description": "fr + fr-translated The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Dernière mise à jour{atDate}{byUser}",
-    "description": "La phrase utilisée pour afficher quand une page a été mise à jour pour la dernière fois, et par qui"
+    "message": "fr + fr-translated Last updated{atDate}{byUser}",
+    "description": "fr + fr-translated The sentence used to display when a page has been last updated, and by who"
   },
   "theme.NotFound.title": {
-    "message": "Page non trouvée",
-    "description": "Le titre de la page 404"
+    "message": "fr + fr-translated Page Not Found",
+    "description": "fr + fr-translated The title of the 404 page"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
-    "description": "Le label pour le menu déroulant des versions de la barre de navigation sur mobile"
+    "message": "fr + fr-translated Versions",
+    "description": "fr + fr-translated The label for the navbar versions dropdown on mobile view"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Tags :",
-    "description": "Le label à côté d'une liste de tags"
+    "message": "fr + fr-translated Tags:",
+    "description": "fr + fr-translated The label alongside a tag list"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Fermer",
-    "description": "Le label ARIA pour le bouton de fermeture de la barre d'annonce"
+    "message": "fr + fr-translated Close",
+    "description": "fr + fr-translated The ARIA label for close button of announcement bar"
   },
   "theme.admonition.caution": {
-    "message": "prudence",
-    "description": "Le label par défaut utilisé pour l'avertissement de prudence (:::caution)"
+    "message": "fr + fr-translated caution",
+    "description": "fr + fr-translated The default label used for the Caution admonition (:::caution)"
   },
   "theme.admonition.danger": {
-    "message": "danger",
-    "description": "Le label par défaut utilisé pour l'avertissement de danger (:::danger)"
+    "message": "fr + fr-translated danger",
+    "description": "fr + fr-translated The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "info",
-    "description": "Le label par défaut utilisé pour l'avertissement d'information (:::info)"
+    "message": "fr + fr-translated info",
+    "description": "fr + fr-translated The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.note": {
-    "message": "note",
-    "description": "Le label par défaut utilisé pour l'avertissement de note (:::note)"
+    "message": "fr + fr-translated note",
+    "description": "fr + fr-translated The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "astuce",
-    "description": "Le label par défaut utilisé pour l'avertissement d'astuce (:::tip)"
+    "message": "fr + fr-translated tip",
+    "description": "fr + fr-translated The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.warning": {
-    "message": "avertissement",
-    "description": "Le label par défaut utilisé pour l'avertissement (:::warning)"
+    "message": "fr + fr-translated warning",
+    "description": "fr + fr-translated The default label used for the Warning admonition (:::warning)"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Navigation des articles récents du blog",
-    "description": "Le label ARIA pour les articles récents dans la barre latérale du blog"
+    "message": "fr + fr-translated Blog recent posts navigation",
+    "description": "fr + fr-translated The ARIA label for recent posts in the blog sidebar"
   },
   "theme.CodeBlock.copied": {
-    "message": "Copié",
-    "description": "Le label du bouton copié sur les blocs de code"
+    "message": "fr + fr-translated Copied",
+    "description": "fr + fr-translated The copied button label on code blocks"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copier le code dans le presse-papiers",
-    "description": "Le label ARIA pour le bouton de copie des blocs de code"
+    "message": "fr + fr-translated Copy code to clipboard",
+    "description": "fr + fr-translated The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.copy": {
-    "message": "Copier",
-    "description": "Le label du bouton de copie sur les blocs de code"
+    "message": "fr + fr-translated Copy",
+    "description": "fr + fr-translated The copy button label on code blocks"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Basculer le retour à la ligne",
-    "description": "L'attribut title pour le bouton de bascule du retour à la ligne des lignes de bloc de code"
+    "message": "fr + fr-translated Toggle word wrap",
+    "description": "fr + fr-translated The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Développer la catégorie de la barre latérale '{label}'",
-    "description": "Le label ARIA pour développer la catégorie de la barre latérale"
+    "message": "fr + fr-translated Expand sidebar category '{label}'",
+    "description": "fr + fr-translated The ARIA label to expand the sidebar category"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Réduire la catégorie de la barre latérale '{label}'",
-    "description": "Le label ARIA pour réduire la catégorie de la barre latérale"
+    "message": "fr + fr-translated Collapse sidebar category '{label}'",
+    "description": "fr + fr-translated The ARIA label to collapse the sidebar category"
   },
   "theme.NotFound.p1": {
-    "message": "Nous n'avons pas trouvé ce que vous cherchiez.",
-    "description": "Le premier paragraphe de la page 404"
+    "message": "fr + fr-translated We could not find what you were looking for.",
+    "description": "fr + fr-translated The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Veuillez contacter le propriétaire du site qui vous a lié à l'URL d'origine et lui faire savoir que son lien est cassé.",
-    "description": "Le deuxième paragraphe de la page 404"
+    "message": "fr + fr-translated Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "description": "fr + fr-translated The 2nd paragraph of the 404 page"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Langues",
-    "description": "Le label pour le menu déroulant de changement de langue sur mobile"
+    "message": "fr + fr-translated Languages",
+    "description": "fr + fr-translated The label for the mobile language switcher dropdown"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "Principal",
-    "description": "Le label ARIA pour la navigation principale"
+    "message": "fr + fr-translated Main",
+    "description": "fr + fr-translated The ARIA label for the main navigation"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "Sur cette page",
-    "description": "Le label utilisé par le bouton sur le composant TOC rétractable"
+    "message": "fr + fr-translated On this page",
+    "description": "fr + fr-translated The label used by the button on the collapsible TOC component"
   },
   "theme.blog.post.readMore": {
-    "message": "Lire la suite",
-    "description": "Le label utilisé dans les extraits d'articles de blog pour lier aux articles complets"
+    "message": "fr + fr-translated Read More",
+    "description": "fr + fr-translated The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "En savoir plus sur {title}",
-    "description": "Le label ARIA pour le lien vers les articles complets à partir des extraits"
+    "message": "fr + fr-translated Read more about {title}",
+    "description": "fr + fr-translated The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "Une minute de lecture|{readingTime} minutes de lecture",
-    "description": "Label pluriel pour \"{readingTime} minutes de lecture\". Utilisez autant de formes plurielles (séparées par \"|\") que votre langue le permet (voir https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "fr + fr-translated One min read|{readingTime} min read",
+    "description": "fr + fr-translated Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Page d'accueil",
-    "description": "Le label ARIA pour la page d'accueil dans les fils d'Ariane"
+    "message": "fr + fr-translated Home page",
+    "description": "fr + fr-translated The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Réduire la barre latérale",
-    "description": "L'attribut title pour le bouton de réduction de la barre latérale de documentation"
+    "message": "fr + fr-translated Collapse sidebar",
+    "description": "fr + fr-translated The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Réduire la barre latérale",
-    "description": "L'attribut title pour le bouton de réduction de la barre latérale de documentation"
+    "message": "fr + fr-translated Collapse sidebar",
+    "description": "fr + fr-translated The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Barre latérale de documentation",
-    "description": "Le label ARIA pour la navigation de la barre latérale"
+    "message": "fr + fr-translated Docs sidebar",
+    "description": "fr + fr-translated The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Fermer la barre de navigation",
-    "description": "Le label ARIA pour le bouton de fermeture de la barre latérale mobile"
+    "message": "fr + fr-translated Close navigation bar",
+    "description": "fr + fr-translated The ARIA label for close button of mobile sidebar"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Retour au menu principal",
-    "description": "Le label du bouton de retour pour revenir au menu principal, à l'intérieur du menu secondaire de la barre de navigation mobile (notamment utilisé pour afficher la barre latérale de documentation)"
+    "message": "fr + fr-translated ← Back to main menu",
+    "description": "fr + fr-translated The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Basculer la barre de navigation",
-    "description": "Le label ARIA pour le bouton du menu hamburger de la navigation mobile"
+    "message": "fr + fr-translated Toggle navigation bar",
+    "description": "fr + fr-translated The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Développer la barre latérale",
-    "description": "Le label ARIA et l'attribut title pour le bouton de développement de la barre latérale de documentation"
+    "message": "fr + fr-translated Expand sidebar",
+    "description": "fr + fr-translated The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Développer la barre latérale",
-    "description": "Le label ARIA et l'attribut title pour le bouton de développement de la barre latérale de documentation"
+    "message": "fr + fr-translated Expand sidebar",
+    "description": "fr + fr-translated The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Réessayer",
-    "description": "Le label du bouton pour réessayer de rendre lorsque la limite d'erreur de React capture une erreur"
+    "message": "fr + fr-translated Try again",
+    "description": "fr + fr-translated The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.common.skipToMainContent": {
-    "message": "Passer au contenu principal",
-    "description": "Le label de saut au contenu utilisé pour l'accessibilité, permettant de naviguer rapidement vers le contenu principal avec la navigation par tabulation/entrée au clavier"
+    "message": "fr + fr-translated Skip to main content",
+    "description": "fr + fr-translated The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "Tags",
-    "description": "Le titre de la page de liste des tags"
+    "message": "fr + fr-translated Tags",
+    "description": "fr + fr-translated The title of the tag list page"
   },
   "theme.unlistedContent.title": {
-    "message": "Page non répertoriée",
-    "description": "Le titre de la bannière de contenu non répertorié"
+    "message": "fr + fr-translated Unlisted page",
+    "description": "fr + fr-translated The unlisted content banner title"
   },
   "theme.unlistedContent.message": {
-    "message": "Cette page n'est pas répertoriée. Les moteurs de recherche ne l'indexeront pas, et seuls les utilisateurs ayant un lien direct peuvent y accéder.",
-    "description": "Le message de la bannière de contenu non répertorié"
+    "message": "fr + fr-translated This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "fr + fr-translated The unlisted content banner message"
   }
 }
