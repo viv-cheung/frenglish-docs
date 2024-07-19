@@ -1,22 +1,22 @@
 {
   "title": {
-    "message": "Frenglish",
-    "description": "Le titre dans la barre de navigation"
+    "message": "fr + fr-translated Frenglish",
+    "description": "fr + fr-translated The title in the navbar"
   },
   "logo.alt": {
-    "message": "Frenglish",
-    "description": "Le texte alternatif du logo de la barre de navigation"
+    "message": "fr + fr-translated Frenglish",
+    "description": "fr + fr-translated The alt text of navbar logo"
   },
   "item.label.Docs": {
-    "message": "Docs",
-    "description": "Élément de la barre de navigation avec l'étiquette Docs"
+    "message": "fr + fr-translated Docs",
+    "description": "fr + fr-translated Navbar item with label Docs"
   },
   "item.label.Blog": {
-    "message": "Blog",
-    "description": "Élément de la barre de navigation avec l'étiquette Blog"
+    "message": "fr + fr-translated Blog",
+    "description": "fr + fr-translated Navbar item with label Blog"
   },
   "item.label.GitHub": {
-    "message": "GitHub",
-    "description": "Élément de la barre de navigation avec l'étiquette GitHub"
+    "message": "fr + fr-translated GitHub",
+    "description": "fr + fr-translated Navbar item with label GitHub"
   }
 }

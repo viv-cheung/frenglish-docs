@@ -1,26 +1,26 @@
 {
   "link.title.Docs": {
-    "message": "Docs",
-    "description": "Le titre de la colonne des liens de pied de page avec le titre=Docs dans le pied de page"
+    "message": "fr + fr-translated Docs",
+    "description": "fr + fr-translated The title of the footer links column with title=Docs in the footer"
   },
   "link.title.More": {
-    "message": "Plus",
-    "description": "Le titre de la colonne des liens de pied de page avec le titre=Plus dans le pied de page"
+    "message": "fr + fr-translated More",
+    "description": "fr + fr-translated The title of the footer links column with title=More in the footer"
   },
   "link.item.label.Tutorial": {
-    "message": "Tutoriel",
-    "description": "L'étiquette du lien de pied de page avec l'étiquette=Tutoriel menant à /docs/intro"
+    "message": "fr + fr-translated Tutorial",
+    "description": "fr + fr-translated The label of footer link with label=Tutorial linking to /docs/intro"
   },
   "link.item.label.Blog": {
-    "message": "Blog",
-    "description": "L'étiquette du lien de pied de page avec l'étiquette=Blog menant à /blog"
+    "message": "fr + fr-translated Blog",
+    "description": "fr + fr-translated The label of footer link with label=Blog linking to /blog"
   },
   "link.item.label.GitHub": {
-    "message": "GitHub",
-    "description": "L'étiquette du lien de pied de page avec l'étiquette=GitHub menant à https://github.com/facebook/docusaurus"
+    "message": "fr + fr-translated GitHub",
+    "description": "fr + fr-translated The label of footer link with label=GitHub linking to https://github.com/facebook/docusaurus"
   },
   "copyright": {
-    "message": "Copyright © 2024 Frenglish. Construit avec Docusaurus.",
-    "description": "Le copyright du pied de page"
+    "message": "fr + fr-translated Copyright © 2024 Frenglish. Built with Docusaurus.",
+    "description": "fr + fr-translated The footer copyright"
   }
 }

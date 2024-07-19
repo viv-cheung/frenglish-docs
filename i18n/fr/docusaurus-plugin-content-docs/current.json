@@ -1,26 +1,26 @@
 {
   "version.label": {
-    "message": "Suivant",
-    "description": "L'étiquette pour la version actuelle"
+    "message": "fr + fr-translated Suivant",
+    "description": "fr + fr-translated L'étiquette pour la version actuelle"
   },
   "sidebar.tutorialSidebar.category.How to Translate": {
-    "message": "Comment traduire",
-    "description": "L'étiquette pour la catégorie Comment traduire dans la barre latérale tutorialSidebar"
+    "message": "fr + fr-translated Comment traduire",
+    "description": "fr + fr-translated L'étiquette pour la catégorie Comment traduire dans la barre latérale tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial": {
-    "message": "Tutoriel",
-    "description": "L'étiquette pour la catégorie Tutoriel dans la barre latérale tutorialSidebar"
+    "message": "fr + fr-translated Tutoriel",
+    "description": "fr + fr-translated L'étiquette pour la catégorie Tutoriel dans la barre latérale tutorialSidebar"
   },
   "sidebar.tutorialSidebar.doc.Introduction": {
-    "message": "Introduction",
-    "description": "L'étiquette pour l'élément doc Introduction dans la barre latérale tutorialSidebar, menant au doc intro"
+    "message": "fr + fr-translated Introduction",
+    "description": "fr + fr-translated L'étiquette pour l'élément doc Introduction dans la barre latérale tutorialSidebar, menant au doc intro"
   },
   "sidebar.tutorialSidebar.doc.Quickstart": {
-    "message": "Démarrage rapide",
-    "description": "L'étiquette pour l'élément doc Démarrage rapide dans la barre latérale tutorialSidebar, menant au doc Quickstart"
+    "message": "fr + fr-translated Démarrage rapide",
+    "description": "fr + fr-translated L'étiquette pour l'élément doc Démarrage rapide dans la barre latérale tutorialSidebar, menant au doc Quickstart"
   },
   "sidebar.tutorialSidebar.doc.FAQ": {
-    "message": "FAQ",
-    "description": "L'étiquette pour l'élément doc FAQ dans la barre latérale tutorialSidebar, menant au doc FAQ"
+    "message": "fr + fr-translated FAQ",
+    "description": "fr + fr-translated L'étiquette pour l'élément doc FAQ dans la barre latérale tutorialSidebar, menant au doc FAQ"
   }
 }
