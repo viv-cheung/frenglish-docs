@@ -5,18 +5,18 @@ description: How to structure translation files
 slug: /translation-files-management
 ---
 
-# Gestion des fichiers de traduction
+Управление файлами перевода
 
-## Comment structurer vos fichiers de traduction pour des traductions automatiques
+Как структурировать ваши файлы перевода для автоматических переводов
 
-### Option 1 :
+Вариант 1:
 
-- Le dossier de la langue d'origine doit être nommé avec le code de la langue (ex. "en")
-- Les fichiers à l'intérieur du dossier de la langue d'origine ne doivent contenir que les fichiers nécessaires à la traduction
-- Ces fichiers n'ont pas besoin de contenir le nom du dossier de la langue d'origine (ex. intro.md, about.json, contactUs.po)
+- Папка исходного языка должна быть названа с кодом языка (например, "en")
+- Файлы внутри папки исходного языка должны содержать только необходимые для перевода файлы
+- Эти файлы не должны содержать имя папки исходного языка (например, intro.md, about.json, contactUs.po)
 
-**Exemple de structure de répertoire**
-   - Les fichiers de traduction seront organisés comme suit. Le chemin de traduction pour cet exemple serait `docs/locales/*` :
+**Пример структуры каталога**
+   - Файлы перевода будут организованы следующим образом. Путь перевода для этого примера будет `docs/locales/*` :
 
 ```plaintext
     docs/
@@ -29,13 +29,13 @@ slug: /translation-files-management
         │  └─ about.json
 ```
 
-### Option 2 :
-- Avoir un dossier parent appelé `locales` ou `languages` ou un nom qui symbolise que tous les fichiers enfants sont des fichiers de traduction/langue
-- Nommer chaque fichier avec le code de la langue dans le nom du fichier
-- En utilisant cette méthode, aucune des langues d'origine déclarées ne sera traduite. Tous les fichiers contenant des codes de langue cible seront traduits
+Вариант 2:
+- Иметь родительскую папку, названную `locales` или `languages` или имя, символизирующее, что все дочерние файлы являются файлами перевода/языка
+- Назвать каждый файл с кодом языка в имени файла
+- Используя этот метод, ни один из заявленных исходных языков не будет переведен. Все файлы, содержащие коды целевых языков, будут переведены
 
-**Exemple de structure de répertoire**
-   - Les fichiers de traduction seront organisés comme suit. Le chemin de traduction pour cet exemple serait `docs/locales/*` :
+**Пример структуры каталога**
+   - Файлы перевода будут организованы следующим образом. Путь перевода для этого примера будет `docs/locales/*` :
 
 ```plaintext
     docs/
@@ -46,12 +46,12 @@ slug: /translation-files-management
         │  fr_about.json
 ```
 
-## Comment les traductions automatiques sont gérées
+Как управляются автоматические переводы
 
-Si vous apportez des modifications à l'un de vos fichiers de langue d'origine (par exemple `en/common.json`), le bot Frenglish détectera ces modifications et les traduira dans leurs fichiers de langue cible respectifs. Le bot Frenglish créera de nouveaux fichiers ou dossiers s'il ne voit pas que les fichiers de langue cible existent.
+Если вы вносите изменения в один из ваших файлов исходного языка (например, `en/common.json`), бот Frenglish обнаружит эти изменения и переведет их в соответствующие файлы целевого языка. Бот Frenglish создаст новые файлы или папки, если не увидит, что файлы целевого языка существуют.
 
-**Exemple où apporter des modifications**
-   - Apportez une modification au fichier suivant en changeant du texte :
+**Пример, где вносить изменения**
+   - Внесите изменение в следующий файл, изменив текст:
 
 ```plaintext
     docs/
@@ -60,9 +60,9 @@ Si vous apportez des modifications à l'un de vos fichiers de langue d'origine (
         │  ├─ common.json
 ```
 
-- Enregistrez le fichier, faites un commit et poussez les modifications en utilisant git.
-   - Allez dans l'onglet **Pull Requests** sur Github pour voir votre nouvelle PR de traduction créée par Frenglish à partir de votre branche de base.
+- Сохраните файл, сделайте коммит и отправьте изменения с помощью git.
+   - Перейдите на вкладку **Pull Requests** на Github, чтобы увидеть ваш новый PR перевода, созданный Frenglish из вашей базовой ветки.
 
-**Pull Requests automatiques**
-   - Tout commit dans le dossier de langue d'origine de "translationPaths" déclenchera Frenglish pour créer une pull request avec des fichiers de traduction mis à jour dans les langues désignées.
-   - Les modifications apportées aux fichiers de langue non d'origine ne déclencheront pas de nouvelles traductions.
+**Автоматические Pull Requests**
+   - Любой коммит в папке исходного языка из "translationPaths" вызовет Frenglish для создания pull request с обновленными файлами перевода на указанных языках.
+   - Изменения в файлах не исходного языка не вызовут новых переводов.

@@ -5,39 +5,47 @@ description: How to configure translation settings
 slug: /configuration
 ---
 
-# Configuration
+# Конфигурация
 
-## Gérer les paramètres de traduction sur le site Frenglish.ai
+## Управление параметрами перевода на сайте Frenglish.ai
 
-Dans l'onglet \"Configuration Générale\", \n    a. Activez le \"Statut Actif du Répertoire\" et cliquez sur \"Enregistrer\"\n    b. Entrez le chemin de traduction (ex \"src/locales/*\" ) pour lequel vous souhaitez que les fichiers gèrent les traductions (tous les fichiers sous ce chemin seront traduits), cliquez sur \"Ajouter un chemin\" puis cliquez sur \"Enregistrer\".
+На вкладке "Общая конфигурация", 
+    a. Включите "Активный статус директории" и нажмите "Сохранить"
+    b. Введите путь перевода (например, "src/locales/*"), для которого вы хотите, чтобы файлы управляли переводами (все файлы под этим путем будут переведены), нажмите "Добавить путь", затем нажмите "Сохранить".
 
-![Configuration Générale](../../../../../assets/general-configuration.png)
+![Общая конфигурация](../../../../../assets/general-configuration.png)
 
-Dans l'onglet \"Configuration de la Langue\",\n    a. Sélectionnez votre langue d'origine (fichiers que vous gérez régulièrement, ex. Anglais), puis cliquez sur \"Enregistrer\"\n    b. Sélectionnez les langues que vous souhaitez prendre en charge, puis cliquez sur \"Enregistrer\"
+На вкладке "Конфигурация языка",
+    a. Выберите ваш исходный язык (файлы, которые вы регулярно управляете, например, английский), затем нажмите "Сохранить"
+    b. Выберите языки, которые вы хотите поддерживать, затем нажмите "Сохранить"
 
-![Configuration de la Langue](../../../../../assets/language-configuration.png)
+![Конфигурация языка](../../../../../assets/language-configuration.png)
 
-Optionnellement, dans l'onglet \"Configuration des Règles\",\n    a. Entrez toutes les règles générales que tous vos fichiers de traduction doivent suivre, puis cliquez sur \"Enregistrer\"\n    b. Entrez des règles spécifiques à la langue pour vos fichiers de traduction, puis cliquez sur \"Enregistrer\"
+Опционально, на вкладке "Конфигурация правил",
+    a. Введите все общие правила, которым должны следовать все ваши файлы перевода, затем нажмите "Сохранить"
+    b. Введите правила, специфичные для языка, для ваших файлов перевода, затем нажмите "Сохранить"
 
-![Configuration des Règles](../../../../../assets/rule-configuration.png)
+![Конфигурация правил](../../../../../assets/rule-configuration.png)
 
-### Terminologie
+### Терминология
 
-**Langue d'Origine** : La langue d'origine de votre document/page web. C'est la langue que vous mettrez régulièrement à jour pour ajouter du nouveau contenu.
+**Исходный язык**: Исходный язык вашего документа/веб-страницы. Это язык, который вы будете регулярно обновлять, чтобы добавлять новый контент.
 
-**Langues Cibles** : Toutes les langues que vous souhaitez prendre en charge
+**Целевые языки**: Все языки, которые вы хотите поддерживать
 
-**Règles** : Toutes les règles de traduction que vous souhaitez appliquer pendant la traduction.
+**Правила**: Все правила перевода, которые вы хотите применить во время перевода.
 
-**Chemins de Traduction** : Tous les chemins que vous souhaitez que le bot Frenglish parcoure pour traduire les fichiers dans ce répertoire. Peut également avoir un chemin vers des fichiers spécifiques.
+**Пути перевода**: Все пути, которые вы хотите, чтобы бот Frenglish просматривал для перевода файлов в этом каталоге. Также может быть путь к конкретным файлам.
 
-**Fusion Automatique** : Option pour créer une Pull Request sur une nouvelle branche basée sur la branche où vous avez modifié un fichier de traduction de la langue d'origine ou fusionnera automatiquement les nouveaux fichiers de traduction dans votre branche.
+**Автоматическое слияние**: Опция для создания Pull Request на новой ветке, основанной на ветке, где вы изменили файл перевода исходного языка, или автоматически объединит новые файлы перевода в вашу ветку.
 
-**Règles par langue** : Vous permet de spécifier des règles spécifiques à la langue pour toutes les langues que vous souhaitez prendre en charge
+**Правила по языкам**: Позволяет вам указывать правила, специфичные для языка, для всех языков, которые вы хотите поддерживать
 
-## Gérer les paramètres de traduction dans votre dépôt
+## Управление параметрами перевода в вашем репозитории
 
-1. Installez le bot Frenglish pour vos dépôts sélectionnés auxquels vous souhaitez appliquer des traductions\n2. Créez un `frenglishConfig.json` dans votre répertoire racine\n3. Configurez tous les paramètres de traduction dans le json :
+1. Установите бот Frenglish для выбранных вами репозиториев, к которым вы хотите применить переводы
+2. Создайте `frenglishConfig.json` в вашем корневом каталоге
+3. Настройте все параметры перевода в json:
 
 ```json
 {
@@ -60,16 +68,16 @@ Optionnellement, dans l'onglet \"Configuration des Règles\",\n    a. Entrez tou
 }
 ```
 
-**originLanguage** : Spécifiez la langue d'origine de votre document/page web. C'est la langue que vous mettrez régulièrement à jour pour ajouter du nouveau contenu.
+**originLanguage**: Укажите исходный язык вашего документа/веб-страницы. Это язык, который вы будете регулярно обновлять, чтобы добавлять новый контент.
 
-**languages** : Spécifiez toutes les langues que vous souhaitez prendre en charge dans un tableau de chaînes.
+**languages**: Укажите все языки, которые вы хотите поддерживать, в виде массива строк.
 
-**rules** : Dans une chaîne, spécifiez toutes les règles de traduction que vous souhaitez. Ces règles seront appliquées à tous les fichiers de traduction.
+**rules**: В виде строки укажите все правила перевода, которые вы хотите. Эти правила будут применяться ко всем файлам перевода.
 
-**translationPaths** : Spécifiez tous les chemins que vous souhaitez que le bot Frenglish parcoure pour traduire tous les fichiers dans ce répertoire.
+**translationPaths**: Укажите все пути, которые вы хотите, чтобы бот Frenglish просматривал для перевода всех файлов в этом каталоге.
 
-**autoMergeToBaseBranch** : Option booléenne - **False** créera une Pull Request sur une nouvelle branche basée sur la branche où vous avez modifié un fichier de traduction de la langue d'origine. **True** fusionnera automatiquement les nouveaux fichiers de traduction dans votre branche.
+**autoMergeToBaseBranch**: Булева опция - **False** создаст Pull Request на новой ветке, основанной на ветке, где вы изменили файл перевода исходного языка. **True** автоматически объединит новые файлы перевода в вашу ветку.
 
-**rulesPerLanguage** : Vous permet de spécifier des règles spécifiques à la langue pour toutes les langues que vous souhaitez prendre en charge
+**rulesPerLanguage**: Позволяет вам указывать правила, специфичные для языка, для всех языков, которые вы хотите поддерживать
 
-**useThisConfig** : Puisque nous offrons l'option de configurer votre traduction sur www.frenglish.ai, définir ce booléen garantira que vous utilisez la configuration json au lieu de celle que vous avez créée sur le site. Cependant, si nous ne trouvons pas de `frenglishConfig.json` dans votre répertoire racine, nous utiliserons les paramètres de traduction que vous avez configurés sur le site. Vous pouvez également définir cela sur \"false\", afin que nous utilisions la configuration sur le site.
+**useThisConfig**: Поскольку мы предлагаем опцию настройки вашего перевода на www.frenglish.ai, установка этого булева значения гарантирует, что вы используете конфигурацию json вместо той, которую вы создали на сайте. Однако, если мы не найдем `frenglishConfig.json` в вашем корневом каталоге, мы будем использовать параметры перевода, которые вы настроили на сайте. Вы также можете установить это значение на "false", чтобы мы использовали конфигурацию на сайте.
