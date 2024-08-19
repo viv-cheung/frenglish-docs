@@ -14,8 +14,8 @@ msgstr ""
 "Plural-Forms: \n"
 
 #: src/pages/index.tsx:49
-msgid "{0} - Automate your translations"
-msgstr "{0} - Automatisez vos traductions"
+#~ msgid "{0} - Automate your translations"
+#~ msgstr "{0} - Automatisez vos traductions"
 
 #: src/components/HomepageFeatures/index.tsx:10
 msgid "Easy to Use"
@@ -29,7 +29,7 @@ msgstr "Concentrez-vous sur l'essentiel"
 msgid "Frenglish lets you focus on all your other important priorities instead of worrying to keep all your locale files up to date."
 msgstr "Frenglish vous permet de vous concentrer sur toutes vos autres priorités importantes au lieu de vous soucier de garder tous vos fichiers de localisation à jour."
 
-#: src/pages/index.tsx:36
+#: src/pages/index.tsx:37
 msgid "Frenglish Tutorial - 4min ⏱️"
 msgstr "Tutoriel Frenglish - 4min ⏱️"
 

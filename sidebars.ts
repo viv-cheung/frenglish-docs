@@ -7,6 +7,8 @@ const loadSidebar = (locale: string): SidebarsConfig => {
   switch (locale) {
     case 'fr':
       return require('./i18n/fr/docusaurus-plugin-content-docs/current/sidebars.ts').default;
+    case 'ru':
+      return require('./i18n/ru/docusaurus-plugin-content-docs/current/sidebars.ts').default;
     case 'en':
     default:
       return require('./i18n/en/docusaurus-plugin-content-docs/current/sidebars.ts').default;

@@ -1,0 +1,298 @@
+{
+  "Main Logo": {
+    "message": "Основной логотип"
+  },
+  "Frenglish Tutorial - 4min ⏱️": {
+    "message": "Frenglish Tutorial - 4min ⏱️"
+  },
+  "Description will go into a meta tag in <head />": {
+    "message": "Описание будет добавлено в мета-тег в <head />"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Эта страница сломалась.",
+    "description": "Заголовок страницы-заполнителя, когда страница сломалась"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Прокрутить вверх",
+    "description": "ARIA-метка для кнопки возврата наверх"
+  },
+  "theme.blog.archive.title": {
+    "message": "Архив",
+    "description": "Заголовок страницы и героя страницы архива блога"
+  },
+  "theme.blog.archive.description": {
+    "message": "Архив",
+    "description": "Описание страницы и героя страницы архива блога"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Навигация по списку блога",
+    "description": "ARIA-метка для пагинации блога"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Новые записи",
+    "description": "Метка для перехода на страницу с новыми записями блога (предыдущая страница)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Старые записи",
+    "description": "Метка для перехода на страницу со старыми записями блога (следующая страница)"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Один пост|{count} постов",
+    "description": "Множественная метка для \"{count} постов\". Используйте столько форм множественного числа (разделенных \"|\") сколько поддерживает ваш язык (см. https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} с тегом \"{tagName}\"",
+    "description": "Заголовок страницы для тега блога"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Просмотреть все теги",
+    "description": "Метка ссылки, ведущей на страницу списка тегов"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Навигация по страницам постов блога",
+    "description": "ARIA-метка для пагинации постов блога"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Новый пост",
+    "description": "Метка кнопки поста блога для перехода к новому/предыдущему посту"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Старый пост",
+    "description": "Метка кнопки поста блога для перехода к старому/следующему посту"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Хлебные крошки",
+    "description": "ARIA-метка для хлебных крошек"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} элементов",
+    "description": "Описание по умолчанию для карточки категории в сгенерированном индексе о том, сколько элементов включает эта категория"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Переключение между темным и светлым режимом (в настоящее время {mode})",
+    "description": "ARIA-метка для переключателя цветового режима в навигационной панели"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "темный режим",
+    "description": "Название для темного цветового режима"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "светлый режим",
+    "description": "Название для светлого цветового режима"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Страницы документации",
+    "description": "ARIA-метка для пагинации документации"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Предыдущий",
+    "description": "Метка для перехода к предыдущему документу"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Следующий",
+    "description": "Метка для перехода к следующему документу"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Один документ с тегом|{count} документов с тегом",
+    "description": "Множественная метка для \"{count} документов с тегом\". Используйте столько форм множественного числа (разделенных \"|\") сколько поддерживает ваш язык (см. https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} с тегом \"{tagName}\"",
+    "description": "Заголовок страницы для тега документации"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Это не выпущенная документация для {siteTitle} версии {versionLabel}.",
+    "description": "Метка, используемая для уведомления пользователя о том, что он просматривает не выпущенную версию документации"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Это документация для {siteTitle} версии {versionLabel}, которая больше не поддерживается.",
+    "description": "Метка, используемая для уведомления пользователя о том, что он просматривает неподдерживаемую версию документации"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Для актуальной документации см. {latestVersionLink} ({versionLabel}).",
+    "description": "Метка, используемая для уведомления пользователя о необходимости проверить последнюю версию"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "последняя версия",
+    "description": "Метка для ссылки на последнюю версию"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Версия: {versionLabel}"
+  },
+  "theme.common.editThisPage": {
+    "message": "Редактировать эту страницу",
+    "description": "Метка ссылки для редактирования текущей страницы"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Прямая ссылка на {heading}",
+    "description": "Заголовок для ссылки на заголовок"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " на {date}",
+    "description": "Слова, используемые для описания даты последнего обновления страницы"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " от {user}",
+    "description": "Слова, используемые для описания того, кем была последняя обновлена страница"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Последнее обновление{atDate}{byUser}",
+    "description": "Предложение, используемое для отображения даты последнего обновления страницы и кем она была обновлена"
+  },
+  "theme.NotFound.title": {
+    "message": "Страница не найдена",
+    "description": "Заголовок страницы 404"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Версии",
+    "description": "Метка для выпадающего списка версий в навигационной панели на мобильных устройствах"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Теги:",
+    "description": "Метка рядом со списком тегов"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Закрыть",
+    "description": "ARIA-метка для кнопки закрытия панели объявлений"
+  },
+  "theme.admonition.caution": {
+    "message": "осторожно",
+    "description": "Метка по умолчанию для предупреждения (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "опасность",
+    "description": "Метка по умолчанию для предупреждения об опасности (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "информация",
+    "description": "Метка по умолчанию для информационного сообщения (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "заметка",
+    "description": "Метка по умолчанию для заметки (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "совет",
+    "description": "Метка по умолчанию для совета (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "предупреждение",
+    "description": "Метка по умолчанию для предупреждения (:::warning)"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Навигация по последним постам блога",
+    "description": "ARIA-метка для последних постов в боковой панели блога"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Скопировано",
+    "description": "Метка кнопки копирования в блоках кода"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Скопировать код в буфер обмена",
+    "description": "ARIA-метка для кнопки копирования блоков кода"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Копировать",
+    "description": "Метка кнопки копирования в блоках кода"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Переключить перенос слов",
+    "description": "Атрибут заголовка для кнопки переключения переноса строк в блоках кода"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Развернуть категорию боковой панели '{label}'",
+    "description": "ARIA-метка для развертывания категории боковой панели"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Свернуть категорию боковой панели '{label}'",
+    "description": "ARIA-метка для сворачивания категории боковой панели"
+  },
+  "theme.NotFound.p1": {
+    "message": "Мы не смогли найти то, что вы искали.",
+    "description": "Первый абзац страницы 404"
+  },
+  "theme.NotFound.p2": {
+    "message": "Пожалуйста, свяжитесь с владельцем сайта, который дал вам ссылку на оригинальный URL, и сообщите ему, что его ссылка не работает.",
+    "description": "Второй абзац страницы 404"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Языки",
+    "description": "Метка для выпадающего списка переключения языков на мобильных устройствах"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Главная",
+    "description": "ARIA-метка для основной навигации"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "На этой странице",
+    "description": "Метка, используемая кнопкой на сворачиваемом компоненте оглавления"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Читать далее",
+    "description": "Метка, используемая в отрывках постов блога для ссылки на полные посты"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Читать далее о {title}",
+    "description": "ARIA-метка для ссылки на полные посты из отрывков"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Одна минута чтения|{readingTime} минут чтения",
+    "description": "Множественная метка для \"{readingTime} минут чтения\". Используйте столько форм множественного числа (разделенных \"|\") сколько поддерживает ваш язык (см. https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Главная страница",
+    "description": "ARIA-метка для главной страницы в хлебных крошках"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Свернуть боковую панель",
+    "description": "Атрибут заголовка для кнопки сворачивания боковой панели документации"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Свернуть боковую панель",
+    "description": "Атрибут заголовка для кнопки сворачивания боковой панели документации"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Боковая панель документации",
+    "description": "ARIA-метка для навигации по боковой панели"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Закрыть навигационную панель",
+    "description": "ARIA-метка для кнопки закрытия боковой панели на мобильных устройствах"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Назад в главное меню",
+    "description": "Метка кнопки возврата в главное меню внутри вторичного меню боковой панели навигации на мобильных устройствах (в частности, используется для отображения боковой панели документации)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Переключить навигационную панель",
+    "description": "ARIA-метка для кнопки гамбургера в навигационной панели на мобильных устройствах"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Развернуть боковую панель",
+    "description": "ARIA-метка и атрибут заголовка для кнопки развертывания боковой панели документации"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Развернуть боковую панель",
+    "description": "ARIA-метка и атрибут заголовка для кнопки развертывания боковой панели документации"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Попробовать снова",
+    "description": "Метка кнопки для повторной попытки рендеринга, когда React error boundary захватывает ошибку"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Перейти к основному содержимому",
+    "description": "Метка для перехода к содержимому, используемая для доступности, позволяющая быстро перейти к основному содержимому с помощью клавиатуры (tab/enter)"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Теги",
+    "description": "Заголовок страницы списка тегов"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Непубличная страница",
+    "description": "Заголовок баннера непубличного контента"
+  },
+  "theme.unlistedContent.message": {
+    "message": "Эта страница непубличная. Поисковые системы не будут её индексировать, и только пользователи, имеющие прямую ссылку, могут получить к ней доступ.",
+    "description": "Сообщение баннера непубличного контента"
+  }
+}
