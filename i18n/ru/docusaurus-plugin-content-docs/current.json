@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Далее",
+    "description": "Метка для текущей версии"
+  },
+  "sidebar.tutorialSidebar.category.How to Translate": {
+    "message": "Как переводить",
+    "description": "Метка для категории Как переводить в боковой панели tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial": {
+    "message": "Учебник",
+    "description": "Метка для категории Учебник в боковой панели tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.doc.Introduction": {
+    "message": "Введение",
+    "description": "Метка для элемента документа Введение в боковой панели tutorialSidebar, ссылающаяся на документ intro"
+  },
+  "sidebar.tutorialSidebar.doc.Quickstart": {
+    "message": "Быстрый старт",
+    "description": "Метка для элемента документа Быстрый старт в боковой панели tutorialSidebar, ссылающаяся на документ Quickstart"
+  },
+  "sidebar.tutorialSidebar.doc.FAQ": {
+    "message": "Часто задаваемые вопросы",
+    "description": "Метка для элемента документа Часто задаваемые вопросы в боковой панели tutorialSidebar, ссылающаяся на документ FAQ"
+  }
+}
