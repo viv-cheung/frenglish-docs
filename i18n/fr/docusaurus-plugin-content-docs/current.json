@@ -1,26 +1,26 @@
 {
   "version.label": {
-    "message": "Следующий",
-    "description": "Метка для текущей версии"
+    "message": "Suivant",
+    "description": "L'étiquette pour la version actuelle"
   },
   "sidebar.tutorialSidebar.category.How to Translate": {
-    "message": "Как переводить",
-    "description": "Метка для категории Как переводить в боковой панели tutorialSidebar"
+    "message": "Comment traduire",
+    "description": "L'étiquette pour la catégorie Comment traduire dans la barre latérale tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorial": {
-    "message": "Учебник",
-    "description": "Метка для категории Учебник в боковой панели tutorialSidebar"
+    "message": "Tutoriel",
+    "description": "L'étiquette pour la catégorie Tutoriel dans la barre latérale tutorialSidebar"
   },
   "sidebar.tutorialSidebar.doc.Introduction": {
-    "message": "Введение",
-    "description": "Метка для элемента документа Введение в боковой панели tutorialSidebar, ссылающаяся на документ intro"
+    "message": "Introduction",
+    "description": "L'étiquette pour l'élément doc Introduction dans la barre latérale tutorialSidebar, menant au doc intro"
   },
   "sidebar.tutorialSidebar.doc.Quickstart": {
-    "message": "Быстрый старт",
-    "description": "Метка для элемента документа Быстрый старт в боковой панели tutorialSidebar, ссылающаяся на документ Quickstart"
+    "message": "Démarrage rapide",
+    "description": "L'étiquette pour l'élément doc Démarrage rapide dans la barre latérale tutorialSidebar, menant au doc Quickstart"
   },
   "sidebar.tutorialSidebar.doc.FAQ": {
-    "message": "Часто задаваемые вопросы",
-    "description": "Метка для элемента документа Часто задаваемые вопросы в боковой панели tutorialSidebar, ссылающаяся на документ FAQ"
+    "message": "FAQ",
+    "description": "L'étiquette pour l'élément doc FAQ dans la barre latérale tutorialSidebar, menant au doc FAQ"
   }
 }

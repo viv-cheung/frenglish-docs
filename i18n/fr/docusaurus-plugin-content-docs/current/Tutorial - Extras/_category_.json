@@ -1,7 +1,7 @@
 {
-  "label": "Учебник - Дополнения",
+  "label": "Tutorial - Extras",
   "position": 3,
   "link": {
-    "type": "сгенерированный-индекс"
+    "type": "generated-index"
   }
 }
