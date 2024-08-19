@@ -19,8 +19,8 @@ msgstr ""
 #~ msgstr "Set Up Once, Up to Date Translations Forever"
 
 #: src/pages/index.tsx:49
-msgid "{0} - Automate your translations"
-msgstr "{0} - Automate your translations"
+#~ msgid "{0} - Automate your translations"
+#~ msgstr "{0} - Automate your translations"
 
 #: src/components/HomepageFeatures/index.tsx:10
 msgid "Easy to Use"
@@ -34,7 +34,7 @@ msgstr "Focus on What Matters"
 msgid "Frenglish lets you focus on all your other important priorities instead of worrying to keep all your locale files up to date."
 msgstr "Frenglish lets you focus on all your other important priorities instead of worrying to keep all your locale files up to date."
 
-#: src/pages/index.tsx:36
+#: src/pages/index.tsx:37
 msgid "Frenglish Tutorial - 4min ⏱️"
 msgstr "Frenglish Tutorial - 4min ⏱️"
 

@@ -13,47 +13,47 @@ slug: /FAQ
 - Регулярно проводятся тесты METEOR (стандартизированный тест качества перевода); этот тест переводит контент на целевой язык и обратно на исходный язык. Оценка будет дана путем сравнения оригинальных значений с обратными переводами
 - Наши документы и веб-сайт полностью переведены ботом Frenglish! Поэтому качество перевода прозрачно и является образцом того, чего вы должны ожидать
 
-## How do you translate all your files?
-Follow the steps [here](./HowToTranslate/3-OneTimeTranslation.md#manage-translation-settings-on-the-frenglishai-website)!
+## Как перевести все файлы?
+Следуйте инструкциям [здесь](./HowToTranslate/3-OneTimeTranslation.md#manage-translation-settings-on-the-frenglishai-website)!
 
-## How do I know the quality is good?
-The Frenglish bot goes through the following validation steps:
-- Multiple reflection and review loops to ensure the translation follows your specified rules and sounds natural
-- Has an implicit learning feature to teach itself rules based on manually changed translation files
-- Translations are sent to human translators for quality validation every quarter
-- METEOR score (standardized translation quality test) are performed regularly; this test will translate content to the target language and back to its origin language. A score will be given by comparing the original values against the back-translation values
-- Our docs and website have been entirely translated by the Frenglish bot! Therefore, the quality of the translation is transparent and a benchmark for what you should expect
+## Как я могу убедиться в качестве перевода?
+Бот Frenglish проходит следующие этапы проверки:
+- Многократные циклы рефлексии и рецензирования, чтобы убедиться, что перевод соответствует вашим правилам и звучит естественно.
+- Имеет функцию имплицитного обучения, которая позволяет ему обучаться правилам на основе вручную измененных файлов перевода.
+- Переводы отправляются на проверку человеческим переводчикам каждый квартал.
+- Регулярно проводятся тесты качества перевода METEOR (стандартизированный тест качества перевода). Этот тест включает перевод контента на целевой язык и обратно на исходный язык с последующим сравнением оригинального текста и перевода.
+- Наши документы и веб-сайт полностью переведены ботом Frenglish! Таким образом, качество перевода очевидно и служит эталоном для того, что вы можете ожидать.
 
-## How long should I expect for my translation files to be completed?
-This is dependent on how many characters you are translating. Typically, you could expect 1 minute per file to be translated. This is because the Frenglish bot goes through multiple validation steps to ensure the quality of the translation is high before outputting a result.
+## Сколько времени потребуется для завершения перевода файлов?
+Это зависит от количества символов, которые вы переводите. Обычно можно ожидать, что перевод одного файла займет 1 минуту. Это связано с тем, что бот Frenglish проходит несколько этапов проверки, чтобы обеспечить высокое качество перевода перед его выводом.
 
-## Not everything in my file requires translation, how do you pick and choose what to translate?
-The Frenglish bot will translate only relevant content depending on the file type. For example:
+## Не все в моем файле требует перевода. Как бот выбирает, что переводить?
+Бот Frenglish переводит только релевантный контент в зависимости от типа файла. Например:
 
-**Markdown Files**
-- Code will not be translated
+**Markdown файлы**
+- Код не будет переведен
 
-**PO Files**
-- Comments, msgid, and other po meta data will not be translated or count as translated content
+**PO файлы**
+- Комментарии, msgid и другие метаданные po не будут переведены и не учитываются как переведенный контент
 
-**JSON Files**
-- Keys will not be translated and only the values will be translated
+**JSON файлы**
+- Ключи не будут переведены, переводятся только значения
 
-## Do you just support French translations?
-No, the name "Frenglish" was chosen to represent its Quebec company origins. Many Quebecers use the term "Frenglish" to refer to how they converse (by mixing in both French and English in natural dialogue).
+## Вы поддерживаете только французский язык?
+Нет, название "Frenglish" было выбрано, чтобы подчеркнуть происхождение компании из Квебека. Многие квебекцы используют термин "Frenglish", чтобы описать смешение французского и английского в естественном диалоге.
 
-We support the following languages:
+Мы поддерживаем следующие языки:
 
-Afrikaans, Arabic, Armenian, Azerbaijani, Belarusian, Bosnian, Bulgarian, Catalan, Chinese, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, Galician, German, Greek, Hebrew, Hindi, Hungarian, Icelandic, Indonesian, Italian, Japanese, Kannada, Kazakh, Korean, Latvian, Lithuanian, Macedonian, Malay, Marathi, Maori, Nepali, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swahili, Swedish, Tagalog, Tamil, Thai, Turkish, Ukrainian, Urdu, Vietnamese, and Welsh.
+Африкаанс, Арабский, Армянский, Азербайджанский, Белорусский, Боснийский, Болгарский, Каталанский, Китайский, Хорватский, Чешский, Датский, Голландский, Английский, Эстонский, Финский, Французский, Галицийский, Немецкий, Греческий, Иврит, Хинди, Венгерский, Исландский, Индонезийский, Итальянский, Японский, Каннада, Казахский, Корейский, Латышский, Литовский, Македонский, Малайский, Маратхи, Маори, Непальский, Норвежский, Персидский, Польский, Португальский, Румынский, Русский, Сербский, Словацкий, Словенский, Испанский, Суахили, Шведский, Тагалог, Тамильский, Тайский, Турецкий, Украинский, Урду, Вьетнамский, Уэльский.
 
-## What happens if I closed a PR from Frenglish?
-The content contained in that PR will NOT be translated in future Frenglish PRs. Only close Frenglish PR if you don't want this content to be translated by frenglish. You can always edit the text in the Frenglish PR and merge it
+## Что произойдет, если я закрою PR от Frenglish?
+Контент, содержащийся в этом PR, НЕ будет переведен в будущих PR от Frenglish. Закрывайте PR от Frenglish только если вы не хотите, чтобы этот контент был переведен. Вы всегда можете отредактировать текст в PR от Frenglish и объединить его.
 
-## Are code snippets translated?
-No, code snippets are not translated and DO NOT count towards your translated words usage
+## Переводятся ли фрагменты кода?
+Нет, фрагменты кода не переводятся и НЕ учитываются в использовании переведенных слов.
 
-## How does overage work?
-You get charged every $100 in overage you accumulate during a period, or whatever overage user had when new period start
+## Как работает перерасход?
+С вас будет взиматься плата за каждые $100 перерасхода, накопленного за период, или за любой перерасход, который имелся на момент начала нового периода.
 
-## What happens if I upgrade my plan AFTER I entered overage?
-Whatever amount of overage you spent on your previous plan will be credited for this month. This means that if you spend $50 in overage in PRO, the first $50 in overage on your upgraded plan will not get charged
+## Что произойдет, если я повышу свой тарифный план ПОСЛЕ перерасхода?
+Любая сумма перерасхода, потраченная на вашем предыдущем плане, будет зачтена в этом месяце. Это означает, что если вы потратили $50 на перерасходе в PRO, первые $50 перерасхода на вашем обновленном плане не будут взиматься.

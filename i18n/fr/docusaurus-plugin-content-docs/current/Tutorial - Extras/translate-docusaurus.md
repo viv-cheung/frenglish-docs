@@ -44,7 +44,7 @@ npm run start -- --locale fr
 
 Votre site localisé est accessible à [http://localhost:3000/fr/](http://localhost:3000/fr/) et la page `Getting Started` est traduite.
 
-:::attention
+:::caution
 
 En développement, vous ne pouvez utiliser qu'une seule langue à la fois.
 
