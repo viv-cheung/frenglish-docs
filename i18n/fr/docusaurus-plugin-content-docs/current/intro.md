@@ -48,5 +48,7 @@ Pour les demandes de nouvelles fonctionnalités, vous pouvez créer une issue su
 ## Engagement de Frenglish
 
 Nous nous assurons que cet outil est facile à utiliser en utilisant régulièrement notre produit (en utilisant le bot Frenglish en interne) et en écoutant nos retours. Notre site web est open-source pour que vous puissiez voir comment nous avons implémenté i18n pour nos pages web et sert d'exemple de la qualité de nos traductions. De plus, vous pouvez voir comment le bot crée les PR pour les fichiers de traduction.
+
 Nous assurons une grande qualité de traduction en passant par de nombreuses itérations de réflexion, de révisions et d'apprentissages de l'IA. Si vous apportez des modifications à un fichier de traduction qui n'est pas dans la langue d'origine, notre IA apprendra implicitement de ces changements et les appliquera dans les traductions futures.
+
 Nous effectuons régulièrement des tests d'assurance qualité sur nos fichiers de traduction en exécutant des tests de traduction standardisés comme le score METEOR, en les envoyant à des traducteurs humains et en recueillant continuellement les retours des utilisateurs.
