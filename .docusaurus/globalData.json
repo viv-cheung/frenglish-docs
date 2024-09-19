@@ -1,48 +1,73 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/ru/docs",
+      "path": "/fr/docs",
       "versions": [
         {
           "name": "current",
-          "label": "Далее",
+          "label": "Suivant",
           "isLast": true,
-          "path": "/ru/docs",
+          "path": "/fr/docs",
           "mainDocId": "intro",
           "docs": [
             {
               "id": "FAQ",
-              "path": "/ru/docs/FAQ",
+              "path": "/fr/docs/FAQ",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/cli/cli-quickstart",
+              "path": "/fr/docs/CLI",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "HowToTranslate/configuration",
-              "path": "/ru/docs/configuration",
+              "path": "/fr/docs/configuration",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "HowToTranslate/oneTimeTranslation",
-              "path": "/ru/docs/one-time-translation",
+              "id": "HowToTranslate/github/githubApp",
+              "path": "/fr/docs/githubApp",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/github/oneTimeTranslation",
+              "path": "/fr/docs/one-time-translation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/sdk/example",
+              "path": "/fr/docs/SDK",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/sdk/github-action",
+              "path": "/fr/docs/HowToTranslate/sdk/github-action",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/sdk/quickstart",
+              "path": "/fr/docs/HowToTranslate/sdk/quickstart",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "HowToTranslate/translationFilesManagement",
-              "path": "/ru/docs/translation-files-management",
+              "path": "/fr/docs/translation-files-management",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
-              "path": "/ru/docs/intro",
+              "path": "/fr/docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Quickstart",
-              "path": "/ru/docs/quickstart",
+              "path": "/fr/docs/quickstart",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Tutorial - Extras/Translate docusaurus",
-              "path": "/ru/docs/Tutorial - Extras/Translate docusaurus",
+              "path": "/fr/docs/Tutorial - Extras/Translate docusaurus",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -50,8 +75,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/ru/docs/intro",
-                "label": "Введение"
+                "path": "/fr/docs/intro",
+                "label": "Introduction"
               }
             }
           }

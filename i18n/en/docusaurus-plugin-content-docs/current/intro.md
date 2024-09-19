@@ -27,7 +27,7 @@ Frenglish is built with a strong focus on the developer and content manager expe
     - HTML (.html)
     - Doc files (.docx)
 - **Docusaurus Example**:
-  - Frenglish utilizes Docusaurus to display all the documentation (view the code to see how it works!) TODO: Add link to git repo
+  - Frenglish utilizes Docusaurus to display all the documentation. [View the code](https://github.com/Frenglish/frenglish-docs) to see how it works!
 - **Developer experience**:
   - Integrate the Frenglish bot onto your Github repository in seconds and have the set up complete in minutes
   - Never worry about translations again

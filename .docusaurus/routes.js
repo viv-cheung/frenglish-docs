@@ -3,91 +3,121 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/ru/blog',
-    component: ComponentCreator('/ru/blog', 'f3d'),
+    path: '/fr/blog',
+    component: ComponentCreator('/fr/blog', 'e61'),
     exact: true
   },
   {
-    path: '/ru/blog/about-us',
-    component: ComponentCreator('/ru/blog/about-us', '94e'),
+    path: '/fr/blog/about-us',
+    component: ComponentCreator('/fr/blog/about-us', 'b6e'),
     exact: true
   },
   {
-    path: '/ru/blog/archive',
-    component: ComponentCreator('/ru/blog/archive', '5c8'),
+    path: '/fr/blog/archive',
+    component: ComponentCreator('/fr/blog/archive', '1a3'),
     exact: true
   },
   {
-    path: '/ru/blog/tags',
-    component: ComponentCreator('/ru/blog/tags', '139'),
+    path: '/fr/blog/tags',
+    component: ComponentCreator('/fr/blog/tags', '679'),
     exact: true
   },
   {
-    path: '/ru/blog/tags/frenglish',
-    component: ComponentCreator('/ru/blog/tags/frenglish', '17b'),
+    path: '/fr/blog/tags/frenglish',
+    component: ComponentCreator('/fr/blog/tags/frenglish', '7dd'),
     exact: true
   },
   {
-    path: '/ru/blog/tags/introduction',
-    component: ComponentCreator('/ru/blog/tags/introduction', '525'),
+    path: '/fr/blog/tags/introduction',
+    component: ComponentCreator('/fr/blog/tags/introduction', '5c4'),
     exact: true
   },
   {
-    path: '/ru/markdown-page',
-    component: ComponentCreator('/ru/markdown-page', 'f10'),
+    path: '/fr/markdown-page',
+    component: ComponentCreator('/fr/markdown-page', 'f67'),
     exact: true
   },
   {
-    path: '/ru/docs',
-    component: ComponentCreator('/ru/docs', '6a7'),
+    path: '/fr/docs',
+    component: ComponentCreator('/fr/docs', 'd7d'),
     routes: [
       {
-        path: '/ru/docs',
-        component: ComponentCreator('/ru/docs', '60b'),
+        path: '/fr/docs',
+        component: ComponentCreator('/fr/docs', '574'),
         routes: [
           {
-            path: '/ru/docs',
-            component: ComponentCreator('/ru/docs', 'ac9'),
+            path: '/fr/docs',
+            component: ComponentCreator('/fr/docs', '06e'),
             routes: [
               {
-                path: '/ru/docs/configuration',
-                component: ComponentCreator('/ru/docs/configuration', '201'),
+                path: '/fr/docs/CLI',
+                component: ComponentCreator('/fr/docs/CLI', 'a0b'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/ru/docs/FAQ',
-                component: ComponentCreator('/ru/docs/FAQ', 'aac'),
+                path: '/fr/docs/configuration',
+                component: ComponentCreator('/fr/docs/configuration', 'b3e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/ru/docs/intro',
-                component: ComponentCreator('/ru/docs/intro', 'dd9'),
+                path: '/fr/docs/FAQ',
+                component: ComponentCreator('/fr/docs/FAQ', '069'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/ru/docs/one-time-translation',
-                component: ComponentCreator('/ru/docs/one-time-translation', '8d5'),
+                path: '/fr/docs/githubApp',
+                component: ComponentCreator('/fr/docs/githubApp', '2c2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/ru/docs/quickstart',
-                component: ComponentCreator('/ru/docs/quickstart', 'b07'),
+                path: '/fr/docs/HowToTranslate/sdk/github-action',
+                component: ComponentCreator('/fr/docs/HowToTranslate/sdk/github-action', '378'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/ru/docs/translation-files-management',
-                component: ComponentCreator('/ru/docs/translation-files-management', '759'),
+                path: '/fr/docs/HowToTranslate/sdk/quickstart',
+                component: ComponentCreator('/fr/docs/HowToTranslate/sdk/quickstart', '6b3'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/ru/docs/Tutorial - Extras/Translate docusaurus',
-                component: ComponentCreator('/ru/docs/Tutorial - Extras/Translate docusaurus', '881'),
+                path: '/fr/docs/intro',
+                component: ComponentCreator('/fr/docs/intro', '8b6'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/fr/docs/one-time-translation',
+                component: ComponentCreator('/fr/docs/one-time-translation', 'e2d'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/fr/docs/quickstart',
+                component: ComponentCreator('/fr/docs/quickstart', '368'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/fr/docs/SDK',
+                component: ComponentCreator('/fr/docs/SDK', '6f7'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/fr/docs/translation-files-management',
+                component: ComponentCreator('/fr/docs/translation-files-management', '3fc'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/fr/docs/Tutorial - Extras/Translate docusaurus',
+                component: ComponentCreator('/fr/docs/Tutorial - Extras/Translate docusaurus', 'f14'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -98,8 +128,8 @@ export default [
     ]
   },
   {
-    path: '/ru/',
-    component: ComponentCreator('/ru/', '89c'),
+    path: '/fr/',
+    component: ComponentCreator('/fr/', '663'),
     exact: true
   },
   {

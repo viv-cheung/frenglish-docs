@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "oneTimeTranslation",
-    "permalink": "/ru/docs/one-time-translation"
+    "title": "githubApp",
+    "permalink": "/ru/docs/translation-files-management"
   },
   "next": {
     "title": "FAQ",
