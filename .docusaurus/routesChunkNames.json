@@ -1,5 +1,5 @@
 {
-  "/fr/blog-e61": {
+  "/ru/blog-f3d": {
     "__comp": "a6aa9e1f",
     "__context": {
       "plugin": "36994c47"
@@ -10,9 +10,9 @@
         "content": "ee35b96d"
       }
     ],
-    "__props": "423c6a64"
+    "__props": "4949f67d"
   },
-  "/fr/blog/about-us-b6e": {
+  "/ru/blog/about-us-94e": {
     "__comp": "ccc49370",
     "__context": {
       "data": {
@@ -23,22 +23,22 @@
     "sidebar": "814f3328",
     "content": "0161b430"
   },
-  "/fr/blog/archive-1a3": {
+  "/ru/blog/archive-5c8": {
     "__comp": "9e4087bc",
     "__context": {
       "plugin": "36994c47"
     },
-    "__props": "c3db38a8"
+    "__props": "920913b5"
   },
-  "/fr/blog/tags-679": {
+  "/ru/blog/tags-139": {
     "__comp": "01a85c17",
     "__context": {
       "plugin": "36994c47"
     },
     "sidebar": "814f3328",
-    "__props": "e1fde4df"
+    "__props": "d8a604c3"
   },
-  "/fr/blog/tags/frenglish-7dd": {
+  "/ru/blog/tags/frenglish-17b": {
     "__comp": "6875c492",
     "__context": {
       "plugin": "36994c47"
@@ -49,9 +49,9 @@
         "content": "ee35b96d"
       }
     ],
-    "__props": "3173012a"
+    "__props": "cf2ca2b2"
   },
-  "/fr/blog/tags/introduction-5c4": {
+  "/ru/blog/tags/introduction-525": {
     "__comp": "6875c492",
     "__context": {
       "plugin": "36994c47"
@@ -62,77 +62,77 @@
         "content": "ee35b96d"
       }
     ],
-    "__props": "fcb8a81a"
+    "__props": "7ff3f4ba"
   },
-  "/fr/markdown-page-f67": {
+  "/ru/markdown-page-f10": {
     "__comp": "1f391b9e",
     "__context": {
       "plugin": "a7456010"
     },
     "content": "393be207"
   },
-  "/fr/docs-d7d": {
+  "/ru/docs-2c9": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/fr/docs-574": {
+  "/ru/docs-cb7": {
     "__comp": "a7bd4aaa",
-    "__props": "55e853fa"
+    "__props": "4584eeb7"
   },
-  "/fr/docs-06e": {
+  "/ru/docs-1ae": {
     "__comp": "a94703ab"
   },
-  "/fr/docs/CLI-a0b": {
+  "/ru/docs/CLI-142": {
     "__comp": "17896441",
-    "content": "711944cd"
+    "content": "5665552f"
   },
-  "/fr/docs/configuration-b3e": {
+  "/ru/docs/configuration-201": {
     "__comp": "17896441",
-    "content": "e6614857"
+    "content": "54d29e90"
   },
-  "/fr/docs/FAQ-069": {
+  "/ru/docs/FAQ-aac": {
     "__comp": "17896441",
-    "content": "ab45f6cb"
+    "content": "c0d33c89"
   },
-  "/fr/docs/githubApp-2c2": {
+  "/ru/docs/githubApp-ac6": {
     "__comp": "17896441",
-    "content": "357cc734"
+    "content": "c8776a42"
   },
-  "/fr/docs/HowToTranslate/sdk/github-action-378": {
+  "/ru/docs/HowToTranslate/sdk/github-action-b33": {
     "__comp": "17896441",
-    "content": "9e9ea6eb"
+    "content": "3f35cca6"
   },
-  "/fr/docs/HowToTranslate/sdk/quickstart-6b3": {
+  "/ru/docs/HowToTranslate/sdk/quickstart-d97": {
     "__comp": "17896441",
-    "content": "7c2a027b"
+    "content": "a2d09953"
   },
-  "/fr/docs/intro-8b6": {
+  "/ru/docs/intro-dd9": {
     "__comp": "17896441",
-    "content": "57a1d77e"
+    "content": "d62e8a9b"
   },
-  "/fr/docs/one-time-translation-e2d": {
+  "/ru/docs/one-time-translation-cd2": {
     "__comp": "17896441",
-    "content": "95b99271"
+    "content": "fdc86548"
   },
-  "/fr/docs/quickstart-368": {
+  "/ru/docs/quickstart-b07": {
     "__comp": "17896441",
-    "content": "f330d09f"
+    "content": "c840abf6"
   },
-  "/fr/docs/SDK-6f7": {
+  "/ru/docs/SDK-657": {
     "__comp": "17896441",
-    "content": "eac54eb4"
+    "content": "e391494a"
   },
-  "/fr/docs/translation-files-management-3fc": {
+  "/ru/docs/translation-files-management-759": {
     "__comp": "17896441",
-    "content": "9751155a"
+    "content": "e14c9ea4"
   },
-  "/fr/docs/Tutorial - Extras/Translate docusaurus-f14": {
+  "/ru/docs/Tutorial - Extras/Translate docusaurus-881": {
     "__comp": "17896441",
-    "content": "be2fe1ae"
+    "content": "11edde3f"
   },
-  "/fr/-663": {
+  "/ru/-89c": {
     "__comp": "1df93b7f",
     "__context": {
       "plugin": "a7456010"

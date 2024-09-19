@@ -1,0 +1,29 @@
+{
+  "id": "HowToTranslate/github/oneTimeTranslation",
+  "title": "One Time Translation",
+  "description": "One Time Translation",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/HowToTranslate/github/oneTimeTranslation.md",
+  "sourceDirName": "HowToTranslate/github",
+  "slug": "/one-time-translation",
+  "permalink": "/ru/docs/one-time-translation",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "oneTimeTranslation",
+    "sidebar_position": 3,
+    "description": "One Time Translation",
+    "slug": "/one-time-translation"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How automated translations are managed",
+    "permalink": "/ru/docs/githubApp"
+  },
+  "next": {
+    "title": "Перевод docusaurus",
+    "permalink": "/ru/docs/Tutorial - Extras/Translate docusaurus"
+  }
+}
