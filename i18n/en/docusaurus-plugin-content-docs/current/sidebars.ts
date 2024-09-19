@@ -1,15 +1,5 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
-/**
- * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
-
- The sidebars can be generated from the filesystem, or explicitly defined here.
-
- Create as many sidebars as you want.
- */
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     {
@@ -25,7 +15,32 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'How to Translate',
-      items: ['HowToTranslate/configuration', 'HowToTranslate/translationFilesManagement', 'HowToTranslate/oneTimeTranslation'],
+      items: [
+        'HowToTranslate/configuration',
+        'HowToTranslate/translationFilesManagement',
+        {
+          type: 'category',
+          label: 'SDK',
+          items: [
+            'HowToTranslate/sdk/quickstart',
+            'HowToTranslate/sdk/github-action',
+            'HowToTranslate/sdk/example'  // Changed from 'sdk-example' to 'example'
+          ],
+        },
+        {
+          type: 'category',
+          label: 'CLI',
+          items: ['HowToTranslate/cli/cli-quickstart'],
+        },
+        {
+          type: 'category',
+          label: 'Github App',
+          items: [
+            'HowToTranslate/github/githubApp',
+            'HowToTranslate/github/oneTimeTranslation'
+          ],
+        },
+      ],
     },
     {
       type: 'category',
