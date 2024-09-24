@@ -1,4 +1,4 @@
-# SDK Documentation
+# SDK Overview
 
 ## Introduction
 
@@ -89,25 +89,6 @@ If you need to retrieve the content separately:
 const translatedContent = await frenglish.getTranslationContent(translationId);
 console.log('Translated content:', translatedContent);
 ```
-
-## CLI Usage
-
-Frenglish also provides a command-line interface for easy translation of files. After installation, you can use the `frenglish-translate` command:
-
-```bash
-frenglish translate
-```
-
-#### Constructor
-
-- `constructor(apiKey: string)`
-
-#### Methods
-
-- `registerWebhook(webhookUrl: string): Promise<void>`
-- `translate(filenames: string[], content: string[]): Promise<RequestTranslationResponse | undefined>`
-- `getTranslationStatus(translationId: number): Promise<TranslationStatus>`
-- `getTranslationContent(translationId: number): Promise<TranslationResponse[]>`
 
 ## Types
 

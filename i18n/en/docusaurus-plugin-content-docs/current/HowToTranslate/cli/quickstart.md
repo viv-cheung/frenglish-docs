@@ -5,7 +5,7 @@ description: Learn how to use Frenglish's CLI to streamline your translation wor
 slug: /CLI
 ---
 
-# CLI User Guide
+# CLI Overview
 
 ## Introduction
 
@@ -57,6 +57,7 @@ The basic syntax for the Frenglish CLI is:
 frenglish translate
 ```
 
+The CLI will:
 1. Send all files in your specified translation path
 2. Translate content that was modified compared to previous translations
 3. Wait for the translation to complete
@@ -76,6 +77,7 @@ This will upload all your translated files as a reference for future translation
 
 For example if you specified `TRANSLATION_PATH` as `src/locales`, it will match and upload all the "fr" and "es" files with the "en" files if "en" is the origin language:
 
+```
 src/locales/
 │
 ├── en/
@@ -92,6 +94,7 @@ src/locales/
     ├── demo.json
     ├── howto.json
     └── about.json
+```
 
 This command will:
 1. Scan the specified directories for language-specific subdirectories
@@ -103,24 +106,15 @@ This command will:
 ## Workflow Examples
 
 1. Uploading existing translations and translating changed files:
-   a. Upload your existing translations:
-      ```bash
-      frenglish upload
-      ```
+   a. Upload your existing translations: `frenglish upload`
    b. Make changes to your content files in the specified translation directory.
-   c. Run the Frenglish CLI to translate only the changed files:
-      ```bash
-      frenglish translate
-      ```
+   c. Run the Frenglish CLI to translate only the changed files: `frenglish translate`
    d. Frenglish will identify changed files and initiate the translation process.
    e. Once completed, you'll find the updated translated files in language-specific subdirectories.
 
 2. Translating changed files:
    a. Make changes to your content files in the specified translation directory.
-   b. Run the Frenglish CLI:
-      ```bash
-      frenglish translate
-      ```
+   b. Run the Frenglish CLI: `frenglish translate`
    c. renglish will identify changed files and initiate the translation process.
    d. Once completed, you'll find the translated files in language-specific subdirectories.
 

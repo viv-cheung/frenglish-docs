@@ -9,7 +9,8 @@ slug: /SDK
 
 Here's a complete example combining all the steps:
 
-```const fs = require('fs').promises;
+```typescript
+const fs = require('fs').promises;
 const path = require('path');
 const FrenglishSDK = require('frenglish-sdk').default;
 
