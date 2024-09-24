@@ -7,9 +7,6 @@ slug: /FAQ
 
 # FAQ
 
-## Comment traduisez-vous tous vos fichiers ?
-Suivez les étapes [ici](./HowToTranslate/3-OneTimeTranslation.md#manage-translation-settings-on-the-frenglishai-website) !
-
 ## Comment puis-je savoir si la qualité est bonne ?
 Le bot Frenglish passe par les étapes de validation suivantes :
 - Plusieurs boucles de réflexion et de révision pour s'assurer que la traduction suit vos règles spécifiées et semble naturelle

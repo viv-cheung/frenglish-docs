@@ -341,9 +341,9 @@
     "354": {
       "js": [
         {
-          "file": "assets/js/runtime~main.9cf1e839.js",
-          "hash": "6e3e6296d475e23a",
-          "publicPath": "/ru/assets/js/runtime~main.9cf1e839.js"
+          "file": "assets/js/runtime~main.73439cdc.js",
+          "hash": "09422685e54a70d9",
+          "publicPath": "/ru/assets/js/runtime~main.73439cdc.js"
         }
       ]
     },
@@ -368,9 +368,9 @@
     "414": {
       "js": [
         {
-          "file": "assets/js/c0d33c89.6c381e17.js",
-          "hash": "9afdf2bf10b5f0fa",
-          "publicPath": "/ru/assets/js/c0d33c89.6c381e17.js"
+          "file": "assets/js/c0d33c89.0f5ac409.js",
+          "hash": "aeb6d435c5fa5d61",
+          "publicPath": "/ru/assets/js/c0d33c89.0f5ac409.js"
         }
       ]
     },
@@ -485,9 +485,9 @@
     "792": {
       "js": [
         {
-          "file": "assets/js/main.8ef7cd53.js",
-          "hash": "14d69b7f83ddbedd",
-          "publicPath": "/ru/assets/js/main.8ef7cd53.js"
+          "file": "assets/js/main.2e298b07.js",
+          "hash": "f7f524330b1c3b32",
+          "publicPath": "/ru/assets/js/main.2e298b07.js"
         }
       ]
     },
