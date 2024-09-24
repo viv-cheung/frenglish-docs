@@ -17,7 +17,7 @@ Before you begin, ensure you have the following:
 Install the Frenglish SDK using npm:
 
 ```bash
-npm install frenglish
+npm install -g frenglish
 ```
 
 ## Getting Started
@@ -95,7 +95,7 @@ console.log('Translated content:', translatedContent);
 Frenglish also provides a command-line interface for easy translation of files. After installation, you can use the `frenglish-translate` command:
 
 ```bash
-frenglish-translate [options] <file1> <file2> ...
+frenglish translate
 ```
 
 #### Constructor
