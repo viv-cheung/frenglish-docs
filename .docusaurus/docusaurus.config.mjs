@@ -8,7 +8,7 @@ export default {
   "tagline": "Set up once, Continuous Translations Forever",
   "favicon": "/assets/logo.svg",
   "url": "https://frenglish.ai",
-  "baseUrl": "/ru/",
+  "baseUrl": "/fr/",
   "organizationName": "viv-cheung",
   "projectName": "frenglish-docs",
   "onBrokenLinks": "throw",
@@ -17,8 +17,7 @@ export default {
     "defaultLocale": "en",
     "locales": [
       "en",
-      "fr",
-      "ru"
+      "fr"
     ],
     "path": "i18n",
     "localeConfigs": {}
@@ -56,11 +55,11 @@ export default {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
           "position": "left",
-          "label": "Документация"
+          "label": "Docs"
         },
         {
           "to": "/blog",
-          "label": "Блог",
+          "label": "Blog",
           "position": "left"
         },
         {
@@ -81,19 +80,19 @@ export default {
       "style": "dark",
       "links": [
         {
-          "title": "Документация",
+          "title": "Docs",
           "items": [
             {
-              "label": "Учебник",
+              "label": "Tutoriel",
               "to": "/docs/intro"
             }
           ]
         },
         {
-          "title": "Еще",
+          "title": "Plus",
           "items": [
             {
-              "label": "Блог",
+              "label": "Blog",
               "to": "/blog"
             },
             {
@@ -103,7 +102,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Авторские права © 2024 Frenglish. Создано с помощью Docusaurus."
+      "copyright": "Copyright © 2024 Frenglish. Construit avec Docusaurus."
     },
     "prism": {
       "theme": {

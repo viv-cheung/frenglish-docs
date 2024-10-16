@@ -49,7 +49,7 @@ await frenglish.registerWebhook(webhookUrl);
 Prepare your files for translation:
 
 ```javascript
-const filenames = ['file1.txt', 'file2.txt'];
+const filenames = ['file1.json', 'file2.json'];
 const contents = [
   'Content of file1',
   'Content of file2'

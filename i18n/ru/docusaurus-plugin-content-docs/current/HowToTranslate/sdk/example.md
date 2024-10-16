@@ -19,7 +19,7 @@ const frenglish = new FrenglishSDK(FRENGLISH_API_KEY);
 async function main() {
   try {
     // Step 1: Prepare files
-    const filesToTranslate = ['src/locales/en/file1.txt', 'src/locales/en/file2.txt'];
+    const filesToTranslate = ['src/locales/en/file1.json', 'src/locales/en/file2.json'];
     const fileContents = await Promise.all(filesToTranslate.map(async (file) => {
       const content = await fs.readFile(file, 'utf-8');
       return { fileId: path.basename(file), content };
