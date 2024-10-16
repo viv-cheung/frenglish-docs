@@ -1,0 +1,23 @@
+{
+  "id": "HowToTranslate/sdk/github-action",
+  "title": "How to set up GitHub Action",
+  "description": "This guide will walk you through the process of setting up a GitHub Action to automatically translate your repository's content using the Frenglish SDK.",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/current/HowToTranslate/sdk/github-action.md",
+  "sourceDirName": "HowToTranslate/sdk",
+  "slug": "/HowToTranslate/sdk/github-action",
+  "permalink": "/fr/docs/HowToTranslate/sdk/github-action",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SDK Overview",
+    "permalink": "/fr/docs/HowToTranslate/sdk/quickstart"
+  },
+  "next": {
+    "title": "Full Example",
+    "permalink": "/fr/docs/SDK"
+  }
+}

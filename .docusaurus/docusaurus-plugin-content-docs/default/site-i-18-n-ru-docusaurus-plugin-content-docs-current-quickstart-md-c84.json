@@ -1,0 +1,29 @@
+{
+  "id": "Quickstart",
+  "title": "Быстрый старт",
+  "description": "Quickstart guide",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/quickstart.md",
+  "sourceDirName": ".",
+  "slug": "/quickstart",
+  "permalink": "/ru/docs/quickstart",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "Quickstart",
+    "sidebar_position": 2,
+    "description": "Quickstart guide",
+    "slug": "/quickstart"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/ru/docs/intro"
+  },
+  "next": {
+    "title": "Конфигурация",
+    "permalink": "/ru/docs/configuration"
+  }
+}

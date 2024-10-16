@@ -1,0 +1,146 @@
+{
+  "/fr/blog-e61": {
+    "__comp": "a6aa9e1f",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "ee35b96d"
+      }
+    ],
+    "__props": "423c6a64"
+  },
+  "/fr/blog/about-us-b6e": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "0161b430"
+  },
+  "/fr/blog/archive-1a3": {
+    "__comp": "9e4087bc",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "__props": "c3db38a8"
+  },
+  "/fr/blog/tags-679": {
+    "__comp": "01a85c17",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "__props": "e1fde4df"
+  },
+  "/fr/blog/tags/frenglish-7dd": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "ee35b96d"
+      }
+    ],
+    "__props": "3173012a"
+  },
+  "/fr/blog/tags/introduction-5c4": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "ee35b96d"
+      }
+    ],
+    "__props": "fcb8a81a"
+  },
+  "/fr/markdown-page-f67": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "content": "393be207"
+  },
+  "/fr/docs-607": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/fr/docs-f38": {
+    "__comp": "a7bd4aaa",
+    "__props": "55e853fa"
+  },
+  "/fr/docs-22d": {
+    "__comp": "a94703ab"
+  },
+  "/fr/docs/CLI-a0b": {
+    "__comp": "17896441",
+    "content": "711944cd"
+  },
+  "/fr/docs/configuration-3a7": {
+    "__comp": "17896441",
+    "content": "c8cc8da7"
+  },
+  "/fr/docs/FAQ-069": {
+    "__comp": "17896441",
+    "content": "ab45f6cb"
+  },
+  "/fr/docs/githubApp-2c2": {
+    "__comp": "17896441",
+    "content": "357cc734"
+  },
+  "/fr/docs/HowToTranslate/sdk/github-action-378": {
+    "__comp": "17896441",
+    "content": "9e9ea6eb"
+  },
+  "/fr/docs/HowToTranslate/sdk/quickstart-6b3": {
+    "__comp": "17896441",
+    "content": "7c2a027b"
+  },
+  "/fr/docs/intro-8b6": {
+    "__comp": "17896441",
+    "content": "57a1d77e"
+  },
+  "/fr/docs/one-time-translation-e2d": {
+    "__comp": "17896441",
+    "content": "95b99271"
+  },
+  "/fr/docs/quickstart-368": {
+    "__comp": "17896441",
+    "content": "f330d09f"
+  },
+  "/fr/docs/SDK-6f7": {
+    "__comp": "17896441",
+    "content": "eac54eb4"
+  },
+  "/fr/docs/supported-file-types-e02": {
+    "__comp": "17896441",
+    "content": "3405f476"
+  },
+  "/fr/docs/translation-files-management-64f": {
+    "__comp": "17896441",
+    "content": "5c2d04a7"
+  },
+  "/fr/docs/Tutorial - Extras/Translate docusaurus-f14": {
+    "__comp": "17896441",
+    "content": "be2fe1ae"
+  },
+  "/fr/-663": {
+    "__comp": "1df93b7f",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  }
+}

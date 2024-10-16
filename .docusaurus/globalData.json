@@ -1,0 +1,92 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/fr/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Suivant",
+          "isLast": true,
+          "path": "/fr/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "FAQ",
+              "path": "/fr/docs/FAQ",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/cli/cli-quickstart",
+              "path": "/fr/docs/CLI",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/configuration",
+              "path": "/fr/docs/configuration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/github/githubApp",
+              "path": "/fr/docs/githubApp",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/github/oneTimeTranslation",
+              "path": "/fr/docs/one-time-translation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/sdk/example",
+              "path": "/fr/docs/SDK",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/sdk/github-action",
+              "path": "/fr/docs/HowToTranslate/sdk/github-action",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/sdk/quickstart",
+              "path": "/fr/docs/HowToTranslate/sdk/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/supported-file-types",
+              "path": "/fr/docs/supported-file-types"
+            },
+            {
+              "id": "HowToTranslate/translationFilesManagement",
+              "path": "/fr/docs/translation-files-management",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/fr/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Quickstart",
+              "path": "/fr/docs/quickstart",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "Tutorial - Extras/Translate docusaurus",
+              "path": "/fr/docs/Tutorial - Extras/Translate docusaurus",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/fr/docs/intro",
+                "label": "Introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

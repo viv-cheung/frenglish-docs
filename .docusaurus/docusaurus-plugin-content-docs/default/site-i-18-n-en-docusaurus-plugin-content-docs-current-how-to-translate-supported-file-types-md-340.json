@@ -1,0 +1,20 @@
+{
+  "id": "HowToTranslate/supported-file-types",
+  "title": "Supported File Types",
+  "description": "Supported file types",
+  "source": "@site/i18n/en/docusaurus-plugin-content-docs/current/HowToTranslate/SupportedFileTypes.md",
+  "sourceDirName": "HowToTranslate",
+  "slug": "/supported-file-types",
+  "permalink": "/fr/docs/supported-file-types",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "supported-file-types",
+    "sidebar_position": 3,
+    "description": "Supported file types",
+    "slug": "/supported-file-types"
+  }
+}

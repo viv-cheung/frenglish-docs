@@ -1,0 +1,43 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Custom button styles */
+.customButton {
+  background-color: #3498db; /* Change this to your desired background color */
+  color: white; /* Change this to your desired text color */
+  border: none; /* Remove border or customize it */
+  padding: 0.75rem 1.5rem; /* Adjust padding as needed */
+  font-size: 1rem; /* Adjust font size as needed */
+  border-radius: 0.25rem; /* Adjust border radius as needed */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover state */
+.customButton:hover {
+  background-color: #2980b9; /* Change this to your desired hover background color */
+}
+
+.hero__subtitle {
+  color: var(--ifm-color-primary-darker); /* Use your desired color variable */
+}

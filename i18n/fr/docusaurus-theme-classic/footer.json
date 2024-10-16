@@ -1,0 +1,26 @@
+{
+  "link.title.Docs": {
+    "message": "Docs",
+    "description": "Le titre de la colonne des liens de pied de page avec le titre=Docs dans le pied de page"
+  },
+  "link.title.More": {
+    "message": "Plus",
+    "description": "Le titre de la colonne des liens de pied de page avec le titre=Plus dans le pied de page"
+  },
+  "link.item.label.Tutorial": {
+    "message": "Tutoriel",
+    "description": "L'étiquette du lien de pied de page avec l'étiquette=Tutoriel menant à /docs/intro"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "L'étiquette du lien de pied de page avec l'étiquette=Blog menant à /blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "L'étiquette du lien de pied de page avec l'étiquette=GitHub menant à https://github.com/facebook/docusaurus"
+  },
+  "copyright": {
+    "message": "Copyright © 2024 Frenglish. Construit avec Docusaurus.",
+    "description": "Le copyright du pied de page"
+  }
+}
