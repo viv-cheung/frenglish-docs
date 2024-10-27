@@ -55,7 +55,7 @@ const contents = [
   'Content of file2'
 ];
 
-const translation = await frenglish.translate(filenames, contents);
+const translation = await frenglish.translate(contents, false, filenames);
 console.log(`Translation requested with ID: ${translation.translationId}`);
 ```
 
@@ -120,7 +120,7 @@ The SDK throws errors for various scenarios. Always wrap your API calls in try-c
 
 ```javascript
 try {
-  const translation = await frenglish.translate(filenames, contents);
+  const translation = await frenglish.translate(contents, false, filenames);
   // Handle successful translation
 } catch (error) {
   console.error('Translation error:', error.message);

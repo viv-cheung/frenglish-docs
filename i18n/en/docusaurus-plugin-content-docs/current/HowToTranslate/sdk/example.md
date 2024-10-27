@@ -12,7 +12,7 @@ Here's a complete example combining all the steps:
 ```typescript
 const fs = require('fs').promises;
 const path = require('path');
-const FrenglishSDK = require('frenglish-sdk').default;
+const FrenglishSDK = require('frenglish').default;
 
 const FRENGLISH_API_KEY = process.env.FRENGLISH_API_KEY || 'YOUR_API_KEY_HERE';
 const frenglish = new FrenglishSDK(FRENGLISH_API_KEY);
@@ -30,7 +30,7 @@ async function main() {
     const contents = fileContents.map(file => file.content);
 
     // Step 2: Request translation
-    const translation = await frenglish.translate(filenames, contents);
+    const translation = await frenglish.translate(contents, false, filenames);
     console.log(`Translation requested with ID: ${translation.translationId}`);
 
     // Step 3: Retrieve translated content

@@ -46,7 +46,7 @@ await frenglish.registerWebhook(webhookUrl);
 
 ### 3. Requesting a Translation
 
-Prepare your files for translation:
+Prepare your files for translation. Adding the filenames is optional. This just tracks which translations should be returned if we see the same filenames under your project:
 
 ```javascript
 const filenames = ['file1.json', 'file2.json'];
@@ -55,7 +55,7 @@ const contents = [
   'Content of file2'
 ];
 
-const translation = await frenglish.translate(filenames, contents);
+const translation = await frenglish.translate(contents, false, filenames);
 console.log(`Translation requested with ID: ${translation.translationId}`);
 ```
 
@@ -120,7 +120,7 @@ The SDK throws errors for various scenarios. Always wrap your API calls in try-c
 
 ```javascript
 try {
-  const translation = await frenglish.translate(filenames, contents);
+  const translation = await frenglish.translate(contents, false, filenames);
   // Handle successful translation
 } catch (error) {
   console.error('Translation error:', error.message);

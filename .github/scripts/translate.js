@@ -1,7 +1,7 @@
 const { execSync } = require('child_process');
 const fs = require('fs').promises;
 const path = require('path');
-const FrenglishSDK = require('frenglish-sdk').default;
+const FrenglishSDK = require('frenglish').default;
 
 const ORIGIN_LANGUAGE_DIR = 'i18n/en';  // Adjust this to your origin language directory
 const FRENGLISH_API_KEY = process.env.FRENGLISH_API_KEY;
@@ -55,7 +55,7 @@ async function main() {
     console.log("contents", contents);
     
     // Adjust the translate call based on the SDK's expected parameters
-    const translation = await frenglish.translate(filenames, contents);
+    const translation = await frenglish.translate(contents, false, filenames);
     console.log(`Translation requested with ID: ${translation.translationId}`);
 
     for (const languageData of translation.content) {
@@ -78,7 +78,7 @@ async function main() {
       }
     }
   } catch (error) {
-    console.error('Error during translation process:', error);
+    console.error('Error during translation process:', JSON.stringify(error));
     if (error.response) {
       console.error('Response status:', error.response.status);
       console.error('Response data:', await error.response.text());
