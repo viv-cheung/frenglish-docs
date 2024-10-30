@@ -27,7 +27,7 @@ Frenglish est conçu avec un fort accent sur l'expérience des développeurs et 
     - HTML (.html)
     - Fichiers Doc (.docx)
 - **Exemple Docusaurus**:
-  - Frenglish utilise Docusaurus pour afficher toute la documentation (consultez le code pour voir comment cela fonctionne !) TODO : Ajouter un lien vers le dépôt git
+  - Frenglish utilise Docusaurus pour afficher toute la documentation (consultez le code pour voir comment cela fonctionne !)
 - **Expérience développeur**:
   - Intégrez le bot Frenglish à votre dépôt Github en quelques secondes et complétez la configuration en quelques minutes
   - Ne vous inquiétez plus jamais des traductions
@@ -43,7 +43,7 @@ Frenglish est conçu avec un fort accent sur l'expérience des développeurs et 
 
 ## Retour des utilisateurs {#feedback}
 
-Pour les demandes de nouvelles fonctionnalités, vous pouvez créer une issue sur notre [dépôt Frenglish](https://github.com/viv-cheung/frenglish-website-vite) ou n'hésitez pas à nous contacter directement à support@frenglish.ai. Nous avons hâte de vous lire ! TODO : Peut-être mieux de les envoyer à notre page de contact ? Peut-être lier à la fois la page de contact et le dépôt de documentation. Le dépôt du site web est privé, donc ils ne peuvent pas créer de problèmes.
+Pour les demandes de nouvelles fonctionnalités, vous pouvez créer une issue sur notre [dépôt Frenglish](https://github.com/viv-cheung/frenglish-website-vite) ou n'hésitez pas à nous contacter directement à support@frenglish.ai. Nous avons hâte de vous lire !
 
 ## Engagement de Frenglish
 

@@ -43,7 +43,7 @@ Frenglish is built with a strong focus on the developer and content manager expe
 
 ## User feedback {#feedback}
 
-For new feature requests, you can create an issue on our [Frenglish repository](https://github.com/viv-cheung/frenglish-website-vite) or feel free to reach out to us directly at support@frenglish.ai. We look forward to hear from you!  TODO : Maybe better to send them to our contact page? Maybe link both the contact page and the docs repo. website repo is private, so they can't create issues.
+For new feature requests, you can create an issue on our [Frenglish repository](https://github.com/viv-cheung/frenglish-website-vite) or feel free to reach out to us directly at support@frenglish.ai. We look forward to hear from you!
 
 ## Frenglish's commitment
 
