@@ -71,17 +71,17 @@
     },
     "content": "393be207"
   },
-  "/fr/docs-607": {
+  "/fr/docs-730": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/fr/docs-f38": {
+  "/fr/docs-dab": {
     "__comp": "a7bd4aaa",
     "__props": "55e853fa"
   },
-  "/fr/docs-22d": {
+  "/fr/docs-376": {
     "__comp": "a94703ab"
   },
   "/fr/docs/CLI-a0b": {
@@ -104,7 +104,11 @@
     "__comp": "17896441",
     "content": "9e9ea6eb"
   },
-  "/fr/docs/HowToTranslate/sdk/quickstart-6b3": {
+  "/fr/docs/HowToTranslate/sdk/method-descriptions-c6e": {
+    "__comp": "17896441",
+    "content": "59118ef6"
+  },
+  "/fr/docs/HowToTranslate/sdk/sdk-quickstart-0b6": {
     "__comp": "17896441",
     "content": "7c2a027b"
   },

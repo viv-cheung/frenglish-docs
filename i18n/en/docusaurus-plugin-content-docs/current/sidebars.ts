@@ -22,7 +22,8 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'SDK',
           items: [
-            'HowToTranslate/sdk/quickstart',
+            'HowToTranslate/sdk/sdk-quickstart',
+            'HowToTranslate/sdk/method-descriptions',
             'HowToTranslate/sdk/github-action',
             'HowToTranslate/sdk/example'  // Changed from 'sdk-example' to 'example'
           ],

@@ -46,8 +46,13 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "HowToTranslate/sdk/quickstart",
-              "path": "/fr/docs/HowToTranslate/sdk/quickstart",
+              "id": "HowToTranslate/sdk/method-descriptions",
+              "path": "/fr/docs/HowToTranslate/sdk/method-descriptions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/sdk/sdk-quickstart",
+              "path": "/fr/docs/HowToTranslate/sdk/sdk-quickstart",
               "sidebar": "tutorialSidebar"
             },
             {

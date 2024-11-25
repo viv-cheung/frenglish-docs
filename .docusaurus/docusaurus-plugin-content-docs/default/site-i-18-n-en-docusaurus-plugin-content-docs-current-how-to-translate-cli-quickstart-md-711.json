@@ -1,6 +1,6 @@
 {
   "id": "HowToTranslate/cli/cli-quickstart",
-  "title": "CLI User Guide",
+  "title": "CLI Quickstart",
   "description": "Learn how to use Frenglish's CLI to streamline your translation workflow",
   "source": "@site/i18n/en/docusaurus-plugin-content-docs/current/HowToTranslate/cli/quickstart.md",
   "sourceDirName": "HowToTranslate/cli",

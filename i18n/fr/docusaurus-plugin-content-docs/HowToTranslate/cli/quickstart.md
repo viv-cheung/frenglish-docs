@@ -77,39 +77,39 @@ Here’s how you can use the CLI with different options to manage translations e
 
   Example:
   ```bash
-  frenglish-translate --path "./custom/path/file.json"
+  frenglish translate --path "./custom/path/file.json"
   ```
 
 - **--isFullTranslation [boolean]**: Perform a full translation (translate all files, even if they haven't changed).
   - Default: `false` (only changed files are translated).
   Example:
   ```bash
-  frenglish-translate --isFullTranslation=true
+  frenglish translate --isFullTranslation=true
   ```
 - **--help**: Display all available options and their descriptions.
   Example:
   ```bash
-  frenglish-translate --help
+  frenglish translate --help
   ```
 ### CLI Commands
 1. **Translate Files**:
    The primary command for translating files. This will detect changed files, submit them for translation, and save the translated files.
    ```bash
-   frenglish-translate
+   frenglish translate
    ```
    Options:
    - `--path`: Specify a file or directory to translate.
    - `--isFullTranslation`: Translate all files, regardless of changes.
    Examples:
    ```bash
-   frenglish-translate --path "./custom/path/file.json"
-   frenglish-translate --isFullTranslation=true
+   frenglish translate --path "./custom/path/file.json"
+   frenglish translate --isFullTranslation=true
    ```
 2. **Upload New Files**:
    Use this command if you want to initialize translation for existing files. For an example, if you already have some translated files and you don't want to translate them again, you can use this command to upload existing translations. Frenglish will use these initialized files as the base and if the origin-language file changes, it will only translate the changed parts for the translated files.
 
    ```bash
-   frenglish-upload
+   frenglish upload
    ```
 
    Options:
@@ -117,7 +117,7 @@ Here’s how you can use the CLI with different options to manage translations e
 
    Example:
    ```bash
-   frenglish-upload --path ./custom/locales
+   frenglish upload --path ./custom/locales
    ```
 
 ## Workflow Examples
@@ -127,7 +127,7 @@ Here’s how you can use the CLI with different options to manage translations e
    - Run the Frenglish CLI to translate those changed files:
 
    ```bash
-   frenglish-translate
+   frenglish translate
    ```
 
    - The CLI will detect the changed files, initiate the translation process, and save the translated files in language-specific subdirectories under `TRANSLATION_PATH`.
@@ -135,17 +135,17 @@ Here’s how you can use the CLI with different options to manage translations e
 2. **Translating All Files (Full Translation)**:
    - To translate all files, even if they haven't changed recently, use the `--isFullTranslation` flag:
    ```bash
-   frenglish-translate --isFullTranslation=true
+   frenglish translate --isFullTranslation=true
    ```
 3. **Translating Specific Files**:
    - To translate specific files or directories, use the `--path` option:
    ```bash
-   frenglish-translate --path "./src/locales/en/specific-file.json"
+   frenglish translate --path "./src/locales/en/specific-file.json"
    ```
 4. **Uploading New Files**:
    - To upload newly added files for translation, run:
    ```bash
-   frenglish-upload --path "./src/locales/new_files"
+   frenglish upload --path "./src/locales/new_files"
    ```
 ## Troubleshooting
 If you encounter any issues:

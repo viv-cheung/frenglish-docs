@@ -13,8 +13,8 @@
   "frontMatter": {},
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "SDK Overview",
-    "permalink": "/fr/docs/HowToTranslate/sdk/quickstart"
+    "title": "Function Descriptions",
+    "permalink": "/fr/docs/HowToTranslate/sdk/method-descriptions"
   },
   "next": {
     "title": "Full Example",

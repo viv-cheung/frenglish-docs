@@ -39,15 +39,15 @@ export default [
   },
   {
     path: '/fr/docs',
-    component: ComponentCreator('/fr/docs', '607'),
+    component: ComponentCreator('/fr/docs', '730'),
     routes: [
       {
         path: '/fr/docs',
-        component: ComponentCreator('/fr/docs', 'f38'),
+        component: ComponentCreator('/fr/docs', 'dab'),
         routes: [
           {
             path: '/fr/docs',
-            component: ComponentCreator('/fr/docs', '22d'),
+            component: ComponentCreator('/fr/docs', '376'),
             routes: [
               {
                 path: '/fr/docs/CLI',
@@ -80,8 +80,14 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/fr/docs/HowToTranslate/sdk/quickstart',
-                component: ComponentCreator('/fr/docs/HowToTranslate/sdk/quickstart', '6b3'),
+                path: '/fr/docs/HowToTranslate/sdk/method-descriptions',
+                component: ComponentCreator('/fr/docs/HowToTranslate/sdk/method-descriptions', 'c6e'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/fr/docs/HowToTranslate/sdk/sdk-quickstart',
+                component: ComponentCreator('/fr/docs/HowToTranslate/sdk/sdk-quickstart', '0b6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
