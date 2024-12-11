@@ -35,10 +35,9 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
-          label: 'Github App',
+          label: 'Translate your Website',
           items: [
-            'HowToTranslate/github/githubApp',
-            'HowToTranslate/github/oneTimeTranslation'
+            'HowToTranslate/website-support/website-configuration',
           ],
         },
       ],

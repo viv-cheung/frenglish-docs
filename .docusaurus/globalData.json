@@ -1,82 +1,77 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/fr/docs",
+      "path": "/docs",
       "versions": [
         {
           "name": "current",
-          "label": "Suivant",
+          "label": "Next",
           "isLast": true,
-          "path": "/fr/docs",
+          "path": "/docs",
           "mainDocId": "intro",
           "docs": [
             {
               "id": "FAQ",
-              "path": "/fr/docs/FAQ",
+              "path": "/docs/FAQ",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "HowToTranslate/cli/cli-quickstart",
-              "path": "/fr/docs/CLI",
+              "path": "/docs/CLI",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "HowToTranslate/configuration",
-              "path": "/fr/docs/configuration",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "HowToTranslate/github/githubApp",
-              "path": "/fr/docs/githubApp",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "HowToTranslate/github/oneTimeTranslation",
-              "path": "/fr/docs/one-time-translation",
+              "path": "/docs/configuration",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "HowToTranslate/sdk/example",
-              "path": "/fr/docs/SDK",
+              "path": "/docs/SDK",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "HowToTranslate/sdk/github-action",
-              "path": "/fr/docs/HowToTranslate/sdk/github-action",
+              "path": "/docs/HowToTranslate/sdk/github-action",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "HowToTranslate/sdk/method-descriptions",
-              "path": "/fr/docs/HowToTranslate/sdk/method-descriptions",
+              "path": "/docs/HowToTranslate/sdk/method-descriptions",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "HowToTranslate/sdk/sdk-quickstart",
-              "path": "/fr/docs/HowToTranslate/sdk/sdk-quickstart",
+              "path": "/docs/HowToTranslate/sdk/sdk-quickstart",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "HowToTranslate/supported-file-types",
-              "path": "/fr/docs/supported-file-types"
+              "path": "/docs/supported-file-types"
             },
             {
               "id": "HowToTranslate/translationFilesManagement",
-              "path": "/fr/docs/translation-files-management",
+              "path": "/docs/translation-files-management",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "HowToTranslate/website-support/website-configuration",
+              "path": "/docs/website-configuration",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "intro",
-              "path": "/fr/docs/intro",
+              "path": "/docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Quickstart",
-              "path": "/fr/docs/quickstart",
+              "path": "/docs/quickstart",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Tutorial - Extras/Translate docusaurus",
-              "path": "/fr/docs/Tutorial - Extras/Translate docusaurus",
+              "path": "/docs/Tutorial - Extras/Translate docusaurus",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -84,7 +79,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/fr/docs/intro",
+                "path": "/docs/intro",
                 "label": "Introduction"
               }
             }

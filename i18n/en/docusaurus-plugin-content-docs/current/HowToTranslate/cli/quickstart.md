@@ -55,7 +55,7 @@ Replace `your_api_key_here` with your actual Frenglish API key and set the corre
 The basic syntax for the Frenglish CLI is:
 
 ```bash
-frenglish-translate [options]
+frenglish translate [options]
 ```
 
 Without any options, the CLI will:

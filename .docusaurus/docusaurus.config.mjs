@@ -8,7 +8,7 @@ export default {
   "tagline": "Set up once, Continuous Translations Forever",
   "favicon": "/assets/logo.svg",
   "url": "https://frenglish.ai",
-  "baseUrl": "/fr/",
+  "baseUrl": "/",
   "organizationName": "viv-cheung",
   "projectName": "frenglish-docs",
   "onBrokenLinks": "throw",
@@ -16,8 +16,7 @@ export default {
   "i18n": {
     "defaultLocale": "en",
     "locales": [
-      "en",
-      "fr"
+      "en"
     ],
     "path": "i18n",
     "localeConfigs": {}
@@ -83,13 +82,13 @@ export default {
           "title": "Docs",
           "items": [
             {
-              "label": "Tutoriel",
+              "label": "Tutorial",
               "to": "/docs/intro"
             }
           ]
         },
         {
-          "title": "Plus",
+          "title": "More",
           "items": [
             {
               "label": "Blog",
@@ -102,7 +101,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2024 Frenglish. Construit avec Docusaurus."
+      "copyright": "Copyright © 2024 Frenglish. Built with Docusaurus."
     },
     "prism": {
       "theme": {

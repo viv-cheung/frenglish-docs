@@ -1,9 +1,9 @@
 {
-  "title": "Articles récents",
+  "title": "Recent posts",
   "items": [
     {
       "title": "A little about Frenglish",
-      "permalink": "/fr/blog/about-us",
+      "permalink": "/blog/about-us",
       "unlisted": false
     }
   ]

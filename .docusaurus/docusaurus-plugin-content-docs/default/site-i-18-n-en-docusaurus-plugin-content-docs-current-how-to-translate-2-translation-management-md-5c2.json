@@ -5,7 +5,7 @@
   "source": "@site/i18n/en/docusaurus-plugin-content-docs/current/HowToTranslate/2-TranslationManagement.md",
   "sourceDirName": "HowToTranslate",
   "slug": "/translation-files-management",
-  "permalink": "/fr/docs/translation-files-management",
+  "permalink": "/docs/translation-files-management",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -19,11 +19,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Configuration",
-    "permalink": "/fr/docs/configuration"
+    "title": "General Configuration",
+    "permalink": "/docs/configuration"
   },
   "next": {
     "title": "SDK Quickstart",
-    "permalink": "/fr/docs/HowToTranslate/sdk/sdk-quickstart"
+    "permalink": "/docs/HowToTranslate/sdk/sdk-quickstart"
   }
 }

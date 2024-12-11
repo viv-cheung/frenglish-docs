@@ -3,132 +3,126 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/fr/blog',
-    component: ComponentCreator('/fr/blog', 'e61'),
+    path: '/blog',
+    component: ComponentCreator('/blog', 'ccf'),
     exact: true
   },
   {
-    path: '/fr/blog/about-us',
-    component: ComponentCreator('/fr/blog/about-us', 'b6e'),
+    path: '/blog/about-us',
+    component: ComponentCreator('/blog/about-us', '981'),
     exact: true
   },
   {
-    path: '/fr/blog/archive',
-    component: ComponentCreator('/fr/blog/archive', '1a3'),
+    path: '/blog/archive',
+    component: ComponentCreator('/blog/archive', '245'),
     exact: true
   },
   {
-    path: '/fr/blog/tags',
-    component: ComponentCreator('/fr/blog/tags', '679'),
+    path: '/blog/tags',
+    component: ComponentCreator('/blog/tags', '4c4'),
     exact: true
   },
   {
-    path: '/fr/blog/tags/frenglish',
-    component: ComponentCreator('/fr/blog/tags/frenglish', '7dd'),
+    path: '/blog/tags/frenglish',
+    component: ComponentCreator('/blog/tags/frenglish', '562'),
     exact: true
   },
   {
-    path: '/fr/blog/tags/introduction',
-    component: ComponentCreator('/fr/blog/tags/introduction', '5c4'),
+    path: '/blog/tags/introduction',
+    component: ComponentCreator('/blog/tags/introduction', 'c65'),
     exact: true
   },
   {
-    path: '/fr/markdown-page',
-    component: ComponentCreator('/fr/markdown-page', 'f67'),
+    path: '/markdown-page',
+    component: ComponentCreator('/markdown-page', '3d7'),
     exact: true
   },
   {
-    path: '/fr/docs',
-    component: ComponentCreator('/fr/docs', '730'),
+    path: '/docs',
+    component: ComponentCreator('/docs', 'de8'),
     routes: [
       {
-        path: '/fr/docs',
-        component: ComponentCreator('/fr/docs', 'dab'),
+        path: '/docs',
+        component: ComponentCreator('/docs', 'ac2'),
         routes: [
           {
-            path: '/fr/docs',
-            component: ComponentCreator('/fr/docs', '376'),
+            path: '/docs',
+            component: ComponentCreator('/docs', 'dc4'),
             routes: [
               {
-                path: '/fr/docs/CLI',
-                component: ComponentCreator('/fr/docs/CLI', 'a0b'),
+                path: '/docs/CLI',
+                component: ComponentCreator('/docs/CLI', 'e6a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/fr/docs/configuration',
-                component: ComponentCreator('/fr/docs/configuration', '3a7'),
+                path: '/docs/configuration',
+                component: ComponentCreator('/docs/configuration', 'c38'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/fr/docs/FAQ',
-                component: ComponentCreator('/fr/docs/FAQ', '069'),
+                path: '/docs/FAQ',
+                component: ComponentCreator('/docs/FAQ', 'aae'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/fr/docs/githubApp',
-                component: ComponentCreator('/fr/docs/githubApp', '2c2'),
+                path: '/docs/HowToTranslate/sdk/github-action',
+                component: ComponentCreator('/docs/HowToTranslate/sdk/github-action', '6bd'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/fr/docs/HowToTranslate/sdk/github-action',
-                component: ComponentCreator('/fr/docs/HowToTranslate/sdk/github-action', '378'),
+                path: '/docs/HowToTranslate/sdk/method-descriptions',
+                component: ComponentCreator('/docs/HowToTranslate/sdk/method-descriptions', 'f2f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/fr/docs/HowToTranslate/sdk/method-descriptions',
-                component: ComponentCreator('/fr/docs/HowToTranslate/sdk/method-descriptions', 'c6e'),
+                path: '/docs/HowToTranslate/sdk/sdk-quickstart',
+                component: ComponentCreator('/docs/HowToTranslate/sdk/sdk-quickstart', '880'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/fr/docs/HowToTranslate/sdk/sdk-quickstart',
-                component: ComponentCreator('/fr/docs/HowToTranslate/sdk/sdk-quickstart', '0b6'),
+                path: '/docs/intro',
+                component: ComponentCreator('/docs/intro', '041'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/fr/docs/intro',
-                component: ComponentCreator('/fr/docs/intro', '8b6'),
+                path: '/docs/quickstart',
+                component: ComponentCreator('/docs/quickstart', '314'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/fr/docs/one-time-translation',
-                component: ComponentCreator('/fr/docs/one-time-translation', 'e2d'),
+                path: '/docs/SDK',
+                component: ComponentCreator('/docs/SDK', '0c2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/fr/docs/quickstart',
-                component: ComponentCreator('/fr/docs/quickstart', '368'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/fr/docs/SDK',
-                component: ComponentCreator('/fr/docs/SDK', '6f7'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/fr/docs/supported-file-types',
-                component: ComponentCreator('/fr/docs/supported-file-types', 'e02'),
+                path: '/docs/supported-file-types',
+                component: ComponentCreator('/docs/supported-file-types', '18e'),
                 exact: true
               },
               {
-                path: '/fr/docs/translation-files-management',
-                component: ComponentCreator('/fr/docs/translation-files-management', '64f'),
+                path: '/docs/translation-files-management',
+                component: ComponentCreator('/docs/translation-files-management', '79b'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/fr/docs/Tutorial - Extras/Translate docusaurus',
-                component: ComponentCreator('/fr/docs/Tutorial - Extras/Translate docusaurus', 'f14'),
+                path: '/docs/Tutorial - Extras/Translate docusaurus',
+                component: ComponentCreator('/docs/Tutorial - Extras/Translate docusaurus', '94f'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/website-configuration',
+                component: ComponentCreator('/docs/website-configuration', '7ab'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -139,8 +133,8 @@ export default [
     ]
   },
   {
-    path: '/fr/',
-    component: ComponentCreator('/fr/', '663'),
+    path: '/',
+    component: ComponentCreator('/', 'e5f'),
     exact: true
   },
   {

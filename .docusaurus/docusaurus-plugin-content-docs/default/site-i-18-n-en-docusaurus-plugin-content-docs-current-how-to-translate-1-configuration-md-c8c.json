@@ -1,11 +1,11 @@
 {
   "id": "HowToTranslate/configuration",
-  "title": "Configuration",
+  "title": "General Configuration",
   "description": "How to configure translation settings",
   "source": "@site/i18n/en/docusaurus-plugin-content-docs/current/HowToTranslate/1-Configuration.md",
   "sourceDirName": "HowToTranslate",
   "slug": "/configuration",
-  "permalink": "/fr/docs/configuration",
+  "permalink": "/docs/configuration",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Quickstart",
-    "permalink": "/fr/docs/quickstart"
+    "permalink": "/docs/quickstart"
   },
   "next": {
     "title": "Translation Files Management",
-    "permalink": "/fr/docs/translation-files-management"
+    "permalink": "/docs/translation-files-management"
   }
 }
