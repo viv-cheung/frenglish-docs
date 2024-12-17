@@ -86,6 +86,47 @@ Here’s how you can use the CLI with different options to manage translations e
   ```bash
   frenglish translate --isFullTranslation=true
   ```
+- **--partialConfig [string]**: Specify a partial configuration as either a JSON string or path to a JSON file.
+  - Can be used to override default configuration settings for this translation.
+  - Accept either a direct JSON string or a path to a JSON configuration file.
+  
+  Examples:
+  ```bash
+  # Using a JSON string
+  frenglish translate --partialConfig='{"targetLanguages":["fr","es"]}'
+
+  # Using a configuration file
+  frenglish translate --partialConfig='./src/configs/translationConfig.json'
+  ```
+
+  Example config.json:
+  ```json
+  {
+    "keyFilters": {
+        "includeFilters": ["fields.*.fields"],
+        "excludeFilters": []
+    },
+    "languages": ["fr","es"],
+    "rules": "use an informal tone"
+  }
+  ```
+
+  The configuration object can include any of these properties:
+  ```typescript
+  {
+    originLanguage: string,      // Source language code
+    languages: string[],         // Target language codes
+    rules: string,              // General translation rules
+    autoMergeToBaseBranch?: boolean,  // Auto-merge setting
+    implicitRules?: ImplicitRule[],    // Array of implicit translation rules
+    rulesPerLanguage: Rule[],    // Language-specific rules
+    useThisConfig: boolean,      // Whether to use this config
+    keyFilters: {               // Filters for translation keys
+      includeFilters: string[],
+      excludeFilters: string[]
+    } | null
+  }
+  ```
 - **--help**: Display all available options and their descriptions.
   Example:
   ```bash

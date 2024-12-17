@@ -19,7 +19,7 @@ Please refer to the [Quickstart Guide](./quickstart.md#installation) for install
 ### translate
 
 ```javascript
-translate(contents: string[], isFullTranslation: boolean, filenames: string[]): Promise<RequestTranslationResponse>
+translate(contents: string[], isFullTranslation: boolean, filenames: string[], partialConfig: PartialConfiguration): Promise<RequestTranslationResponse>
 ```
 
 Sends content for translation. This method handles the polling process automatically and returns the translated content when completed.
@@ -31,6 +31,22 @@ Sends content for translation. This method handles the polling process automatic
   - When false (default): Optimizes translation by checking previously translated content in the database. Only translates new or modified content, reducing translation time and costs.
   - When true: Forces a complete retranslation of all content, ignoring any existing translations.
 - filenames: string[] (optional) - An array of filenames corresponding to each content item. Used to track and identify translations within your project. If provided, must match the length of content array. The filenames should include file extensions (e.g., .json).
+- partialConfig: PartialConfiguration (optional) - Override default configuration settings for this translation. Can include:
+  ```typescript
+  {
+    originLanguage?: string,      // Source language code
+    languages?: string[],         // Target language codes
+    rules?: string,              // General translation rules
+    autoMergeToBaseBranch?: boolean,  // Auto-merge setting
+    implicitRules?: ImplicitRule[],    // Array of implicit translation rules
+    rulesPerLanguage?: Rule[],    // Language-specific rules
+    useThisConfig?: boolean,      // Whether to use this config
+    keyFilters?: {               // Filters for translation keys
+      includeFilters: string[],
+      excludeFilters: string[]
+    } | null
+  }
+  ```
 
 #### Returns:
 
@@ -46,9 +62,13 @@ const contents = [
   '{"goodbye": "Goodbye, world!"}'
 ];
 const filenames = ['greetings.json', 'farewells.json'];
+const partialConfig = {
+  languages: ['fr', 'es'],
+  rules: 'use an informal tone'
+};
 
 try {
-  const translation = await frenglish.translate(contents, false, filenames);
+  const translation = await frenglish.translate(contents, false, filenames, partialConfig);
   if (translation && translation.content) {
     console.log('Translation completed:', translation.content);
   } else {
@@ -66,12 +86,13 @@ try {
 ### translateString 
 
 ```javascript
-translateString(text: string, targetLanguage: string): Promise<string>
+translateString(text: string, targetLanguage: string, partialConfig: PartialConfiguration): Promise<string>
 ```
 #### Parameters:
 
 - content: string - The text content to be translated.
 - lang: string - The target language code (e.g., 'fr' for French).
+- partialConfig: PartialConfiguration (optional) - Override default configuration settings for this translation. Same structure as in translate() method.
 
 #### Returns:
 
