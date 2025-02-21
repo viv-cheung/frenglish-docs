@@ -1,10 +1,10 @@
 {
   "title": {
-    "message": "Frenglish",
+    "message": "",
     "description": "Le titre dans la barre de navigation"
   },
   "logo.alt": {
-    "message": "Frenglish",
+    "message": "",
     "description": "Le texte alternatif du logo de la barre de navigation"
   },
   "item.label.Docs": {

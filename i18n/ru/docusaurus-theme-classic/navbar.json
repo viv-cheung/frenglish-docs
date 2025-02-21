@@ -1,10 +1,10 @@
 {
   "title": {
-    "message": "Frenglish",
+    "message": "",
     "description": "Заголовок в навигационной панели"
   },
   "logo.alt": {
-    "message": "Frenglish",
+    "message": "",
     "description": "Альтернативный текст логотипа в навигационной панели"
   },
   "item.label.Docs": {
