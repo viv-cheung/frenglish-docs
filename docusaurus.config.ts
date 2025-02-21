@@ -6,7 +6,7 @@ import path from 'path';
 const config: Config = {
   title: 'Frenglish',
   tagline: 'Set up once, Continuous Translations Forever',
-  favicon: '/assets/logo.svg',
+  favicon: '/assets/logo_no_bg.png',
 
   url: 'https://frenglish.ai',
   baseUrl: '/',
@@ -44,12 +44,12 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: '/assets/logo.svg',
+    image: '/assets/logo_no_bg.png',
     navbar: {
       title: 'Frenglish',
       logo: {
         alt: 'Frenglish',
-        src: '/assets/logo.svg',
+        src: '/assets/logo_no_bg.png',
       },
       items: [
         {
