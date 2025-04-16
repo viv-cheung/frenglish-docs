@@ -4,7 +4,7 @@ import { execSync } from 'child_process';
     import { FrenglishSDK } from '@frenglish/sdk';
 
     // Start from the current directory (docs)
-    const ORIGIN_LANGUAGE_DIR = path.resolve('./'); // This is the relative path to the origin language directory
+    const ORIGIN_LANGUAGE_DIR = path.resolve('./i18n/en'); // This is the relative path to the origin language directory
     const FRENGLISH_API_KEY = process.env.FRENGLISH_API_KEY;
     const frenglish = FrenglishSDK(FRENGLISH_API_KEY);
 
