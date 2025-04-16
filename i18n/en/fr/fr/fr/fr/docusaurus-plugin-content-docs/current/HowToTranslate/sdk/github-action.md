@@ -263,7 +263,8 @@ Create a new file at `.github/scripts/translate.js`. This script will use the Fr
 ````
 
 fr-translated MOCKDATA + fr-translated fr-translated fr-translated При необходимости адаптируйте этот скрипт под ваши конкретные задачи перевода.
-4\. MOCKDATA + fr-translated **Установите зависимости Frenglish SDK**
+
+**Шаг 4: Установите зависимости Frenglish SDK**
 
 MOCKDATA + fr-translated fr-translated MOCKDATA + fr-translated fr-translated Используйте ваш любимый менеджер пакетов для установки Frenglish:
 
@@ -307,13 +308,13 @@ pnpm add @frenglish/cli @frenglish/sdk @frenglish/utils
 ## fr-translated MOCKDATA + fr-translated fr-translated MOCKDATA + fr-translated Настройка
 
 - MOCKDATA + fr-translated fr-translated MOCKDATA + fr-translated fr-translated Вы можете изменить триггер в файле workflow, чтобы запуск происходил только для определённых веток или событий.
-- MOCKDATA + fr-translated MOCKDATA + fr-translated fr-translated MOCKDATA + fr-translated Измените скрипт `translate.js`, чтобы обрабатывать другие типы файлов или процессы перевода по мере необходимости.
-- fr-translated fr-translated MOCKDATA + fr-translated fr-translated Обновите шаг создания pull request, если хотите изменить способ отправки переводов на проверку.
+- MOCKDATA + fr-translated MOCKDATA + fr-translated fr-translated MOCKDATA + fr-translated Измените скрипт `translate.js`, чтобы при необходимости обрабатывать другие типы файлов или выполнять другие процессы перевода.
+- fr-translated fr-translated MOCKDATA + fr-translated fr-translated Обновите шаг создания pull request, при необходимости изменив способ отправки переводов на проверку.
 
 ## MOCKDATA + fr-translated MOCKDATA + fr-translated fr-translated MOCKDATA + fr-translated Устранение неполадок
 fr-translated fr-translated MOCKDATA + fr-translated fr-translated Если возникли проблемы:
-1. MOCKDATA + fr-translated MOCKDATA + fr-translated fr-translated MOCKDATA + fr-translated Проверьте логи Action во вкладке GitHub Actions на наличие сообщений об ошибках.
-2. fr-translated fr-translated MOCKDATA + fr-translated fr-translated Убедитесь, что ваш приватный API-ключ Frenglish правильно задан в секретах репозитория.
+1. MOCKDATA + fr-translated MOCKDATA + fr-translated fr-translated MOCKDATA + fr-translated Проверьте журналы действий во вкладке GitHub Actions на наличие ошибок.
+2. fr-translated fr-translated MOCKDATA + fr-translated fr-translated Убедитесь, что ваш приватный API-ключ Frenglish правильно указан в секретах репозитория.
 3. MOCKDATA + fr-translated MOCKDATA + fr-translated Убедитесь, что ваш скрипт `translate.js` правильно использует Frenglish SDK.
 
 fr-translated fr-translated Не забывайте держать ваш API-ключ Frenglish в секрете и никогда не добавляйте его напрямую в репозиторий.
