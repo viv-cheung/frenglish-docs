@@ -14,47 +14,47 @@ This guide will walk you through the process of setting up a GitHub Action to au
    Create a new file in your repository at `.github/workflows/frenglish-translation.yml` and copy the provided GitHub Action code into it (see code below).
 
    ```
-    name: Frenglish Translation
+name: Frenglish Translation
 
-    on:
-    push:
-        branches:
-        - '**'
+on:
+  push:
+    branches:
+      - '**'
 
-    jobs:
-    translate:
-        if: github.event_name == 'push' && !contains(github.event.head_commit.message, 'Merge pull request')
-        runs-on: ubuntu-latest
-        permissions:
-        contents: write
-        pull-requests: write
-        steps:
-        - name: Checkout code
-            uses: actions/checkout@v4
-            with:
-            fetch-depth: 0
-            token: ${{ secrets.GITHUB_TOKEN }}
-        - name: Setup Node.js
-            uses: actions/setup-node@v3
-            with:
-            node-version: '18'
+jobs:
+  translate:
+    if: github.event_name == 'push' && !contains(github.event.head_commit.message, 'Merge pull request')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
-        - name: Install dependencies
-            run: |
-            npm install
-            npm install frenglish
+      - name: Install dependencies
+        run: |
+          npm install
+          npm install frenglish
 
-        - name: Setup Git
-            run: |
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git config --global user.name "github-actions[bot]"
-            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+      - name: Setup Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
-        - name: Run translation script
-            env:
-            FRENGLISH_API_KEY: ${{ secrets.FRENGLISH_API_KEY }}
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            run: node .github/scripts/translate.js
+      - name: Run translation script
+        env:
+          FRENGLISH_API_KEY: ${{ secrets.FRENGLISH_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/translate.js
    ```
 
 2. **Set up the Frenglish API key**
