@@ -29,7 +29,7 @@ Frenglish is built with a strong focus on the developer and content manager expe
 - **Docusaurus Example**:
   - Frenglish utilizes Docusaurus to display all the documentation. [View the code](https://github.com/Frenglish/frenglish-docs) to see how it works!
 - **Developer experience**:
-  - Integrate the Frenglish bot onto your Github repository in seconds and have the set up complete in minutes
+  - We optimized for the developer experience with a CLI/SDK solution
   - Never worry about translations again
   - All users that have access to your Github repository will have the translation support
 - **Natural Learning**:
@@ -43,7 +43,7 @@ Frenglish is built with a strong focus on the developer and content manager expe
 
 ## User feedback {#feedback}
 
-For new feature requests, you can create an issue on our [Frenglish repository](https://github.com/viv-cheung/frenglish-website-vite) or feel free to reach out to us directly at support@frenglish.ai. We look forward to hear from you!
+For new feature requests, feel free to reach out to us directly at support@frenglish.ai. We look forward to hear from you!
 
 ## Frenglish's commitment
 

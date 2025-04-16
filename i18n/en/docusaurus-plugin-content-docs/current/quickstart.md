@@ -1,29 +1,59 @@
 ---
 id: Quickstart
 sidebar_position: 2
-description: Quickstart guide
+description: Quickstart guide for different project types
 slug: /quickstart
 ---
 
 # Quickstart
 
-**Integrated Translation Tool**
-1. Click on your profile icon and click "Translate" (or go to http://frenglish.ai/translate)
-2. Download the [Frenglish GitHub App](https://github.com/apps/frenglish-translation) and click **Install** on your Github repository.
-3. Click on the Github repository's gear icon you would like to edit the settings for
+1. Click on your profile icon and click "Translate" (or go to https://www.frenglish.ai/translate)
 
-![Translation Management](../../../../assets/translation-management-page.png)
+Frenglish offers three main ways to translate your content. Choose the method that best suits your needs:
 
-4. In the "General Configuration" tab, 
-    a. Turn on the "Repository Active Status" and click "Save"
-    b. Enter the translation path (ex "src/locales/*" ) you would like the files to manage translations for (all files under that path will be translated), click "Add path" then click "Save".
+## 1. Document Translation
 
-   ![General Configuration](../../../../assets/general-configuration.png)
+Perfect for translating individual documents like PDFs, or Word files.
 
-    In the "Language Configuration" tab,
-    a. Select your origin language (files you regularly manage, ex. English), then click "Save"
-    b. Select languages you want to support, then click "Save"
+1. Click "Add Project" and select the document icon as your project type
+2. Configure your project settings:
+   - Select your origin language (the language of your document)
+   - Choose target languages for translation
+   - Set any translation rules or preferences
+3. Upload your document:
+   - Drag and drop your document into the upload area, or
+   - Click to select a document from your computer
+4. Wait for the translation to complete
+5. Click "Download" to get your translated document
 
-   ![Language Configuration](../../../../assets/language-configuration.png)
+## 2. Website Translation
 
-5. You're ready to translate! Your next translation will be created on your next commit (for changes detected in your language files) or click the green "One-time Translation" to get started.
+Ideal for translating entire websites while maintaining the original design and functionality.
+
+1. Click "Add Project" and select the website icon
+2. Configure your project settings:
+   - Select your origin language
+   - Choose target languages
+   - Set translation rules
+3. Enter your website's domain
+4. [Optional] Click the preview link to see your website translated instantly
+5. Follow the website configuration steps to:
+   - Set up automatic translation updates
+   - Configure language switching
+   - Manage your translation glossary
+6. Use the translation glossary to:
+   - Review all translations
+   - Manually override specific translations
+   - Save changes to update your website immediately
+
+## 3. Developer Solutions
+
+For developers who want to integrate translation into their applications or workflows.
+
+### CLI (Command Line Interface)
+- [CLI Quickstart Guide](./HowToTranslate/cli/quickstart.md) - Learn how to use our command-line tool for automated translations
+
+### SDK (Software Development Kit)
+- [SDK Quickstart Guide](./HowToTranslate/sdk/quickstart.md) - Integrate translations directly into your applications
+
+Choose the method that best fits your needs and start translating today!
