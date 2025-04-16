@@ -1,54 +1,49 @@
 ---
 id: intro
 sidebar_position: 1
-description: Frenglish is designed to help your business enter new markets quickly with automated translations.
+description: Frenglish разработан, чтобы помочь вашему бизнесу быстро выйти на новые рынки с помощью автоматизированных переводов.
 slug: /intro
 ---
 
-reflected + ru-translated # Introduction {#introduction}
+# Введение \{#introduction}
+⏱️ Frenglish помогает быстро создавать новые переводы или поддерживать актуальность существующих.
 
-ru-translated ⏱️ Frenglish helps you generate new translation content or keep existing translations up to date **in no time**.
+💸 Поддержка всех файлов перевода в актуальном состоянии — это дорого и требует времени. С помощью встроенного инструмента автоматизации от Frenglish вы можете забыть о ручной поддержке языков.
 
-reflected + ru-translated 💸 Keeping all your translation files up to date is expensive and time-consuming. Using Frenglish's integrated automation tool, you can forget about maintaining any of your supported languages.
+🌐 Если ваш сайт использует i18n, наш инструмент будет напрямую генерировать и поддерживать файлы перевода.
 
-ru-translated 🌐 If your website uses i18n, our tool will directly generate and maintain your translation files.
+📊 Не нужно осваивать новые панели управления или интерфейсы. Вся локализация автоматизирована и управляется в вашем репозитории на GitHub.
 
-reflected + ru-translated 📊 No need to learn how to use a new dashboard or new GUI. All localization is automated and managed in your Github repository.
-
-ru-translated ## Features {#features}
-
-reflected + ru-translated Frenglish is built with a strong focus on the developer and content manager experience.
-
-ru-translated - **Translation File Support**:
-  - The Frenglish bot supports any of the following file formats (all translated translation files will be keeping the same file type format):
-    - PO files (.po)
+## Возможности \{#features}
+Frenglish разработан с упором на удобство для разработчиков и контент-менеджеров.
+- **Поддержка файлов перевода**:
+  - Бот Frenglish поддерживает следующие форматы файлов (переведённые файлы будут сохранены в исходном формате):
+    - PO-файлы (.po)
     - Markdown (.md, .mdx)
     - JSON (.json)
     - HTML (.html)
-    - Doc files (.docx)
-- **Docusaurus Example**:
-  - Frenglish utilizes Docusaurus to display all the documentation. [View the code](https://github.com/Frenglish/frenglish-docs) to see how it works!
-- **Developer experience**:
-  - Integrate the Frenglish bot onto your Github repository in seconds and have the set up complete in minutes
-  - Never worry about translations again
-  - All users that have access to your Github repository will have the translation support
-- **Natural Learning**:
-  - The longer you use Frenglish, the more attuned our bot will be to your needs. The Frenglish bot learns anytime you make a change in Frenglish translated files and applies those learnings to all future translations.
-  - The bot runs through multiple reflections and reviews to evaluation translations and see how it can improve them before you see the final translation files.
-- **Quick lead times**:
-  - Compared to other translation services on the market, no matter how many translation files you need, they will be ready in minutes. No need to wait days or weeks to receive your translation files!
-- **Cost efficient**:
-  - We only translate the sections you modified. Therefore, if you have an existing translated file, we will parse through that file and only translate content that changed. This is all done automatically for you.
-  - We designed this product for start-ups and companies that don't want to spend a big budget on translations. We want your company to succeed and to unlock new audiences ASAP with low cost.
+    - Документы Word (.docx)
+- **Пример с Docusaurus**:
+  - Frenglish использует Docusaurus для отображения всей документации. [Посмотрите код](https://github.com/Frenglish/frenglish-docs), чтобы понять, как это работает!
+- **Опыт разработчика**:
+  - Мы оптимизировали решение для разработчиков с помощью CLI/SDK
+  - Забудьте о хлопотах с переводами
+  - Все пользователи, имеющие доступ к вашему репозиторию на GitHub, получат поддержку файлов перевода
+- **Естественное обучение**:
+  - Чем дольше вы используете Frenglish, тем лучше бот адаптируется под ваши потребности. Бот Frenglish обучается каждый раз, когда вы вносите изменения в переведённые файлы, и применяет эти знания в будущих переводах.
+  - Бот проходит несколько этапов анализа и проверки, чтобы оценить и улучшить переводы перед тем, как вы получите финальные файлы.
+- **Быстрая обработка**:
+  - В отличие от других сервисов, независимо от количества файлов перевода, они будут готовы всего за несколько минут. Не нужно ждать днями или неделями!
+- **Экономичность**:
+  - Мы переводим только изменённые участки. Если у вас уже есть файл перевода, мы проанализируем его и переведём только то, что было изменено. Всё это происходит автоматически.
+  - Мы хотим помочь вашей компании быстро выйти на новые рынки с минимальными затратами.
 
-reflected + ru-translated ## User feedback {#feedback}
+## Отзывы пользователей \{#feedback}
+Если у вас есть предложения по новым функциям, не стесняйтесь обращаться к нам напрямую по адресу [support@frenglish.ai](mailto:support@frenglish.ai). Будем рады услышать ваше мнение!
 
-ru-translated For new feature requests, you can create an issue on our [Frenglish repository](https://github.com/viv-cheung/frenglish-website-vite) or feel free to reach out to us directly at support@frenglish.ai. We look forward to hear from you!
+## Обязательства компании Frenglish
+Мы регулярно используем этот инструмент внутри команды, чтобы убедиться, что он прост в использовании, и прислушиваемся к отзывам. Наш сайт с открытым исходным кодом показывает, как мы реализовали i18n и служит примером качества наших переводов. Также вы можете увидеть, как бот Frenglish создаёт pull-запросы с файлами перевода.
 
-reflected + ru-translated ## Frenglish's commitment
+Мы обеспечиваем высокое качество переводов, проходя через множество этапов AI-анализа, проверок и обучения. Если вы вносите изменения в файл перевода (не на исходном языке), наш ИИ автоматически учится на этих изменениях и применяет их в будущем.
 
-ru-translated We ensure this tool is easy to use by dogfooding our product regularly (using the Frenglish bot internally) and listening to our feedback. Our website is open-source for you to see how we implemented i18n for our webpages and serves as an example of the quality of our translations. Additionally, you can see how the bot creates the PRs for translation files.
-
-reflected + ru-translated We ensure great translation quality by going through many iterations of AI reflection, reviews, and learnings. If you make any modifications to a translation file that is not in the origin language, our AI will implicitly learn from these changes and apply them in future translations.
-
-ru-translated We regularly perform quality assurance tests on our translation files by running standardized translation tests like the METEOR score, sending them to human translators, and continuously gathering user feedback.
+Мы регулярно проводим тесты качества файлов перевода, используя стандартизированные метрики, такие как METEOR, отправляя переводы профессиональным лингвистам и собирая обратную связь от пользователей.

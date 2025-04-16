@@ -1,29 +1,56 @@
 ---
 id: Quickstart
 sidebar_position: 2
-description: Quickstart guide
+description: Краткое руководство для разных типов проектов
 slug: /quickstart
 ---
 
-# Quickstart
+# Быстрый старт
 
-**Integrated Translation Tool**
-1. Click on your profile icon and click "Translate" (or go to http://frenglish.ai/translate)
-2. Download the [Frenglish GitHub App](https://github.com/apps/frenglish-translation) and click **Install** on your Github repository.
-3. Click on the Github repository's gear icon you would like to edit the settings for
+1. Нажмите на иконку профиля и выберите "Translate" (или перейдите по ссылке [https://www.frenglish.ai/translate](https://www.frenglish.ai/translate))
 
-![Translation Management](../../../../assets/translation-management-page.png)
+Frenglish предлагает три основных способа перевода контента. Выберите тот, который лучше всего подходит вам:
 
-4. In the "General Configuration" tab, 
-    a. Turn on the "Repository Active Status" and click "Save"
-    b. Enter the translation path (ex "src/locales/*" ) you would like the files to manage translations for (all files under that path will be translated), click "Add path" then click "Save".
+## 1. Перевод документов
+Идеально подходит для перевода отдельных документов, таких как PDF или Word.
+1. Нажмите "Add Project" и выберите иконку документа как тип проекта
+2. Настройте параметры проекта:
+   - Выберите исходный язык (язык вашего документа)
+   - Выберите целевые языки для перевода
+   - Установите правила или предпочтения перевода
+3. Загрузите ваш документ:
+   - Перетащите файл в область загрузки или
+   - Нажмите, чтобы выбрать файл с компьютера
+4. Дождитесь завершения перевода
+5. Нажмите "Download", чтобы получить переведённый документ
 
-   ![General Configuration](../../../../assets/general-configuration.png)
+## 2. Перевод сайта
+Подходит для перевода целых сайтов с сохранением дизайна и функциональности.
+1. Нажмите "Add Project" и выберите значок сайта
+2. Настройте параметры проекта:
+   - Выберите исходный язык
+   - Выберите целевые языки
+   - Установите правила перевода
+3. Введите домен вашего сайта
+4. \[Необязательно] Нажмите на ссылку предпросмотра, чтобы увидеть мгновенный перевод сайта
+5. Следуйте шагам настройки сайта для:
+   - Настройте автоматические обновления перевода
+   - Настройте переключение языков
+   - Управляйте глоссарием перевода
+6. Используйте глоссарий перевода для:
+   - Просмотрите все переводы
+   - Выполните ручную замену отдельных переводов
+   - Сохраните изменения для немедленного обновления сайта
 
-    In the "Language Configuration" tab,
-    a. Select your origin language (files you regularly manage, ex. English), then click "Save"
-    b. Select languages you want to support, then click "Save"
+## 3. Решения для разработчиков
+Для разработчиков, желающих интегрировать перевод в свои приложения или рабочие процессы.
 
-   ![Language Configuration](../../../../assets/language-configuration.png)
+### CLI (интерфейс командной строки)
 
-5. You're ready to translate! Your next translation will be created on your next commit (for changes detected in your language files) or click the green "One-time Translation" to get started.
+- [Краткое руководство по CLI](./HowToTranslate/cli/quickstart.md) — узнайте, как использовать наш инструмент командной строки для автоматических переводов
+
+### SDK (набор средств разработки программного обеспечения)
+
+- [Краткое руководство по SDK](./HowToTranslate/sdk/quickstart.md) — интегрируйте переводы напрямую в свои приложения
+
+Выберите метод, наиболее подходящий для ваших нужд, и начните перевод уже сегодня!
