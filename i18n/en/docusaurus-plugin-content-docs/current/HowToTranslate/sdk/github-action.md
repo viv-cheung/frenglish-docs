@@ -153,7 +153,7 @@ This guide will walk you through the process of setting up a GitHub Action to au
                execSync(`git fetch origin ${defaultBranch}:refs/remotes/origin/${defaultBranch}`);
                execSync(`git fetch origin ${currentBranch}:refs/remotes/origin/${currentBranch}`);
                console.log(`Getting changed files between ${defaultBranch} and ${currentBranch}...`);
-               const output = execSync(`git diff --name-only origin/${defaultBranch}...origin/${currentBranch}`).toString().trim();
+               const output = execSync(`git diff --diff-filter=ACM --name-only origin/${defaultBranch}...origin/${currentBranch}`).toString().trim();
                const changedFiles = output.split('\n');
                console.log('All changed files:', changedFiles);
                const supportedFiles = [];
