@@ -1,6 +1,6 @@
 {
   "name": "frenglish-docusaurus",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -17,8 +17,8 @@
     "compile": "lingui compile"
   },
   "dependencies": {
-    "@docusaurus/core": "3.3.2",
-    "@docusaurus/preset-classic": "3.3.2",
+    "@docusaurus/core": "3.7.0",
+    "@docusaurus/preset-classic": "3.7.0",
     "@frenglish/cli": "^1.0.7",
     "@frenglish/sdk": "^1.0.8",
     "@frenglish/utils": "^1.0.6",
@@ -47,12 +47,14 @@
     "@babel/plugin-syntax-jsx": "^7.24.7",
     "@babel/preset-react": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
-    "@docusaurus/module-type-aliases": "3.3.2",
-    "@docusaurus/tsconfig": "3.3.2",
-    "@docusaurus/types": "3.3.2",
+    "@docusaurus/module-type-aliases": "3.7.0",
+    "@docusaurus/tsconfig": "3.7.0",
+    "@docusaurus/types": "3.7.0",
     "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "url-loader": "^4.1.1",
+    "file-loader": "^6.2.0"
   },
   "browserslist": {
     "production": [

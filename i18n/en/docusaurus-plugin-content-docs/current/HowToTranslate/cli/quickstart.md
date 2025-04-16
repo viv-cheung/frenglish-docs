@@ -9,190 +9,114 @@ slug: /CLI
 
 ## Introduction
 
-The Frenglish CLI (Command Line Interface) is a powerful tool that allows developers to integrate translation commands of content files directly into their workflow. With the Frenglish CLI, you can easily submit files for translation, upload new files, check translation status, and retrieve translated content from your terminal. This guide will help you get started with one-time translations or manual translation management outside your automated build pipelines.
+A powerful command-line interface for managing translations with Frenglish.ai. This CLI tool helps you manage your translation projects, configure settings, and generate translations for your localization files all in your terminal.
 
-## Prerequisites
+## Features
 
-Before you begin, ensure you have the following:
-
-- **Node.js** installed on your machine (version 14 or higher recommended)
-- **npm** (Node Package Manager) for package installation
-- **Git** for version control (optional but recommended)
-- A **Frenglish API key** (Sign up on the Frenglish platform to obtain one)
+- 🔐 Secure authentication with Frenglish.ai
+- 📦 Project management (create new projects or use existing ones)
+- 🌍 Multi-language support
+- 📂 Interactive directory navigation for file selection
+- ⚙️ Flexible configuration options
+- 🔄 Support for both full and incremental translations
+- 🧪 Test mode with mock data support
+- 💾 Local configuration persistence. All your configuration and project changes will appear the same on Frenglish.ai
 
 ## Installation
 
-Install the Frenglish CLI globally using npm:
-
 ```bash
-npm install -g frenglish
+npm install -g @frenglish/cli
 ```
 
-## Configuration
+## Usage
 
-1. Create a `.env` file in your project root directory. You'll get the FRENGLISH_API_KEY from [www.frenglish.ai](https://www.frenglish.ai) when you create a new project. It will be under the **Developer Settings** tab:
-
-```bash
-FRENGLISH_API_KEY=your_api_key_here
-ORIGIN_LANGUAGE_TRANSLATION_PATH=/path/to/your/translation/directory
-TRANSLATION_PATH=/path/to/translation/output
-```
-
-Example:
+### Basic Commands
 
 ```bash
-FRENGLISH_API_KEY=123abcdefg
-ORIGIN_LANGUAGE_TRANSLATION_PATH=/src/locales/en
-TRANSLATION_PATH=/src/locales
+# Login to Frenglish.ai
+frenglish login
+
+# Translate files
+frenglish translate
 ```
 
-Replace `your_api_key_here` with your actual Frenglish API key and set the correct paths for `ORIGIN_LANGUAGE_TRANSLATION_PATH` (the directory where your original language files are stored) and `TRANSLATION_PATH` (the directory where the translated files will be saved).
+### Translation Options
 
-2. Ensure your `.gitignore` file includes `.env` to keep your API key secure.
-
-## Basic Usage
-
-The basic syntax for the Frenglish CLI is:
+When running `frenglish translate`, you can use the following options:
 
 ```bash
-frenglish translate [options]
+--apiKey <key>           # Frenglish API key (or set via FRENGLISH_API_KEY)
+--path <path>           # Custom path for translation
+--isFullTranslation     # Perform a full translation (overwrites existing translations)
+--partialConfig <json>  # Partial config as JSON string or file path
 ```
 
-Without any options, the CLI will:
+### Configuration
 
-1. Detect all files in your specified translation directory (`ORIGIN_LANGUAGE_TRANSLATION_PATH`).
-2. Submit these files for translation.
-3. Wait for the translation to complete.
-4. Save the translated files in the appropriate language subdirectories inside `TRANSLATION_PATH`.
-5. After you have reviewed the generated translation files, commit them into your version control branch.
+The CLI supports configuration through:
+- Interactive prompts
+- Local configuration file (`frenglish.config.json`)
+- Environment variables
+- Command-line arguments
 
-### Advanced Usage
+#### Environment Variables [OPTIONAL]
 
-Here’s how you can use the CLI with different options to manage translations effectively.
+The reason this is optional is because if you don't change your .env file, we will create a frenglish.config.json in your root directory that will store all your configuration settings.
 
-### Command Options
+```bash
+FRENGLISH_API_KEY=<your_api_key>
+TRANSLATION_PATH=<path_to_source_files>
+TRANSLATION_OUTPUT_PATH=<path_for_translated_files>
+EXCLUDED_TRANSLATION_PATH=<json_array_of_excluded_paths>
+```
 
-- **--path [string]**: Specify a custom path for translating specific files or directories.
-  - Default: Value of `ORIGIN_LANGUAGE_TRANSLATION_PATH` in your `.env` file.
+## Interactive Flow
 
-  Example:
-  ```bash
-  frenglish translate --path "./custom/path/file.json"
-  ```
+When you run `frenglish login`, you'll be guided through an interactive setup process [optional] or you may proceed with running Frenglish CLI commands on your own:
 
-- **--isFullTranslation [boolean]**: Perform a full translation (translate all files, even if they haven't changed).
-  - Default: `false` (only changed files are translated).
-  Example:
-  ```bash
-  frenglish translate --isFullTranslation=true
-  ```
-- **--partialConfig [string]**: Specify a partial configuration as either a JSON string or path to a JSON file.
-  - Can be used to override default configuration settings for this translation.
-  - Accept either a direct JSON string or a path to a JSON configuration file.
-  
-  Examples:
-  ```bash
-  # Using a JSON string
-  frenglish translate --partialConfig='{"targetLanguages":["fr","es"]}'
+1. **Authentication**: Opens your browser for secure login
+2. **Project Selection**: Choose to create a new project or use an existing one
+3. **Configuration**: Set up your translation preferences:
+   - Project name
+   - Origin language
+   - Target languages
+   - Translation paths
+   - Translation rules
+4. **Translation**: Option to start translation immediately
 
-  # Using a configuration file
-  frenglish translate --partialConfig='./src/configs/translationConfig.json'
-  ```
+## Directory Navigation
 
-  Example config.json:
-  ```json
-  {
-    "keyFilters": {
-        "includeFilters": ["fields.*.fields"],
-        "excludeFilters": []
-    },
-    "languages": ["fr","es"],
-    "rules": "use an informal tone"
-  }
-  ```
+The CLI provides an intuitive directory navigation interface:
+- Use arrow keys to navigate through directories
+- Select directories to enter them
+- Use "../" to go up one level
+- Enter custom paths when needed
+- Confirm your selection before proceeding
 
-  The configuration object can include any of these properties:
-  ```typescript
-  {
-    originLanguage: string,      // Source language code
-    languages: string[],         // Target language codes
-    rules: string,              // General translation rules
-    autoMergeToBaseBranch?: boolean,  // Auto-merge setting
-    implicitRules?: ImplicitRule[],    // Array of implicit translation rules
-    rulesPerLanguage: Rule[],    // Language-specific rules
-    useThisConfig: boolean,      // Whether to use this config
-    keyFilters: {               // Filters for translation keys
-      includeFilters: string[],
-      excludeFilters: string[]
-    } | null
-  }
-  ```
-- **--help**: Display all available options and their descriptions.
-  Example:
-  ```bash
-  frenglish translate --help
-  ```
-### CLI Commands
-1. **Translate Files**:
-   The primary command for translating files. This will detect changed files, submit them for translation, and save the translated files.
-   ```bash
-   frenglish translate
-   ```
-   Options:
-   - `--path`: Specify a file or directory to translate.
-   - `--isFullTranslation`: Translate all files, regardless of changes.
-   Examples:
-   ```bash
-   frenglish translate --path "./custom/path/file.json"
-   frenglish translate --isFullTranslation=true
-   ```
-2. **Upload New Files**:
-   Use this command if you want to initialize translation for existing files. For an example, if you already have some translated files and you don't want to translate them again, you can use this command to upload existing translations. Frenglish will use these initialized files as the base and if the origin-language file changes, it will only translate the changed parts for the translated files.
+## Command Examples if you do not want the interactive experience
 
-   ```bash
-   frenglish upload
-   ```
+```bash
+# Basic translation with default settings
+frenglish translate
 
-   Options:
-   - `--path`: Specify a custom path for uploading files.
+# Translation with custom path
+frenglish translate --path ./src/locales
 
-   Example:
-   ```bash
-   frenglish upload --path ./custom/locales
-   ```
+# Full translation with custom configuration
+frenglish translate --isFullTranslation --partialConfig '{"targetLanguages":["fr","es"]}'
 
-## Workflow Examples
+# Translation using a configuration file
+frenglish translate --partialConfig "./config.json"
+```
 
-1. **Translating Changed Files**:
-   - Make changes to your content files in the specified directory.
-   - Run the Frenglish CLI to translate those changed files:
+## Local Configuration
 
-   ```bash
-   frenglish translate
-   ```
+The CLI saves your configuration in `frenglish.config.json` in your project root. This includes:
+- Project name
+- Translation paths
+- Language settings
+- Translation rules
 
-   - The CLI will detect the changed files, initiate the translation process, and save the translated files in language-specific subdirectories under `TRANSLATION_PATH`.
+## Support
 
-2. **Translating All Files (Full Translation)**:
-   - To translate all files, even if they haven't changed recently, use the `--isFullTranslation` flag:
-   ```bash
-   frenglish translate --isFullTranslation=true
-   ```
-3. **Translating Specific Files**:
-   - To translate specific files or directories, use the `--path` option:
-   ```bash
-   frenglish translate --path "./src/locales/en/specific-file.json"
-   ```
-4. **Uploading New Files**:
-   - To upload newly added files for translation, run:
-   ```bash
-   frenglish upload --path "./src/locales/new_files"
-   ```
-## Troubleshooting
-If you encounter any issues:
-1. **Check Your `.env` File**:
-   Ensure your `.env` file is correctly set up and in the right location. Verify that the `FRENGLISH_API_KEY` and paths (`ORIGIN_LANGUAGE_TRANSLATION_PATH` and `TRANSLATION_PATH`) are set correctly.
-2. **Verify Your API Key**:
-   Check that your API key is valid in your Frenglish account.
-3. **Directory Access**:
-   Ensure the paths specified in `ORIGIN_LANGUAGE_TRANSLATION_PATH` and `TRANSLATION_PATH` are correct and that you have the necessary permissions to read from and write to those directories.
+For more information, visit [https://www.frenglish.ai](https://www.frenglish.ai) 

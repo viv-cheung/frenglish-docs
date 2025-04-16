@@ -7,7 +7,7 @@ slug: /quickstart
 
 # Quickstart
 
-1. Click on your profile icon and click "Translate" (or go to https://www.frenglish.ai/translate)
+Click on your profile icon and click "Translate" (or go to https://www.frenglish.ai/translate)
 
 Frenglish offers three main ways to translate your content. Choose the method that best suits your needs:
 

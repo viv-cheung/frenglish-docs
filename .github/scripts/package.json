@@ -1,0 +1,12 @@
+{
+  "name": "frenglish-translate-script",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "import": "./translate.mjs",
+      "require": "./translate.js",
+      "default": "./translate.js"
+    }
+  }
+} 

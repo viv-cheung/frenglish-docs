@@ -6,7 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Layout from '@theme/Layout'
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
 import { I18nProvider } from '@lingui/react'
-import { i18n, activateLanguage } from '../../i18n' // Ensure correct path to i18n file
+import { i18n } from '@lingui/core'
 import { Trans } from '@lingui/macro'
 import { useHistory } from '@docusaurus/router'
 import BrowserOnly from '@docusaurus/BrowserOnly'
@@ -49,7 +49,7 @@ export default function Home(): JSX.Element {
 
   useEffect(() => {
     const locale = location.pathname.split('/')[1] || 'en'
-    activateLanguage(locale)
+    i18n.activate(locale)
     setLoading(false)
   }, [location.pathname])
 
