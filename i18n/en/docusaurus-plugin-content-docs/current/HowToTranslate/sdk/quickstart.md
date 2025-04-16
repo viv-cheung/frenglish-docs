@@ -10,166 +10,221 @@ description: Learn how to use Frenglish's SDK to integrate automatic translation
 
 The Frenglish SDK is a powerful tool that enables developers to integrate automatic translation of content files into their applications. This SDK handles the entire translation process, from submitting files for translation to retrieving the translated content.
 
-## Prerequisites
-
-Before you begin, ensure you have the following:
-
-- **Node.js** (version 14 or higher recommended)
-- **npm** (Node Package Manager)
-- A **Frenglish API key** (obtainable by signing up on the Frenglish platform)
-
 ## Installation
 
-Install the Frenglish SDK using npm:
-
 ```bash
-npm install -g frenglish
+npm install @frenglish/sdk
 ```
 
-## Getting Started
-
-### 1. Setting Up the SDK
-
-Import the Frenglish SDK and initialize it with your API key:
+## Quick Start
 
 ```javascript
-const FrenglishSDK = require('frenglish').default;
+import { FrenglishSDK } from '@frenglish/sdk';
 
-// Replace with your actual Frenglish API key
-const FRENGLISH_API_KEY = process.env.FRENGLISH_API_KEY || 'YOUR_API_KEY_HERE';
-const frenglish = new FrenglishSDK(FRENGLISH_API_KEY);
-```
+// Initialize the SDK with your API key
+const sdk = FrenglishSDK('your_api_key');
 
-### 2. Registering a Webhook (Optional)
-
-If you prefer to receive a webhook notification when the translation is complete:
-
-```javascript
-const webhookUrl = 'https://yourdomain.com/webhook-endpoint';
-
-await frenglish.registerWebhook(webhookUrl);
-```
-
-### 3. Requesting a Translation
-
-Prepare your files for translation. Adding the filenames is optional. This just tracks which translations should be returned if we see the same filenames under your project:
-
-```javascript
-const filenames = ['greeting.json', 'home.json'];
-const contents = [
-  "{'greetings': 'Hello'}",
-  "{'home': 'This is a home', 'room': 'This is a room'}"
-];
-
-const translation = await frenglish.translate(contents, false, filenames);
-console.log(`Translation requested with ID: ${translation.translationId}`);
-```
-
-The `translate` method sends content for translation and handles the polling process automatically.
-
-#### Parameters
-
-- `contents: string[]` - Array of text content to be translated. Each element represents a separate piece of content.
-- `isFullTranslation: boolean` (optional, default: `false`) - Controls translation behavior:
-  - When `false` (default): Optimizes translation by checking previously translated content in the database. Only translates new or modified content, reducing translation time and costs.
-  - When `true`: Forces a complete retranslation of all content, ignoring any existing translations.
-- `filenames: string[]` (optional) - Array of filenames corresponding to each content item. Used to track and identify translations within your project. If provided, must match the length of `contents` array. The filenames should contain the extension of the file (e.g. `.json`) so that we could properly return the same file structure with the translated content.
-
-#### Returns
-
-Returns a `RequestTranslationResponse` object containing:
-
-- `translationId: number` - Unique identifier for the translation request.
-- `content?: TranslationResponse[]` - Array of `TranslationResponse` objects, each representing translated content for a specific language.
-
-```typescript
-interface RequestTranslationResponse {
-  translationId: number;
-  content?: TranslationResponse[];
-}
-
-interface TranslationResponse {
-  language: string;
-  files: {
-    fileId: string;  // Filename
-    content: string; // Translated file content
-  }[];
+// Example: Translate content
+async function translateContent() {
+  try {
+    const result = await sdk.translate(
+      ['Hello world', 'Welcome to our app'],
+      true, // isFullTranslation
+      ['welcome.txt', 'greeting.txt']
+    );
+    console.log('Translation result:', result);
+  } catch (error) {
+    console.error('Translation failed:', error);
+  }
 }
 ```
 
-### 4. Retrieving Translation Content
+## Core Features
 
-The `translate` method handles polling internally and returns the translated content when completed:
-
-```javascript
-if (translation.content) {
-  console.log('Translation completed:', translation.content);
-} else {
-  console.log('Translation failed or was cancelled');
-}
-```
-
-### 5. Manual Status Checking (Optional)
-
-If you need to check the status manually:
+### Translation
 
 ```javascript
-const translationId = translation.translationId;
-const status = await frenglish.getTranslationStatus(translationId);
-console.log(`Current status: ${status}`);
+// Translate multiple strings
+const result = await sdk.translate(
+  content: string[],           // Array of content to translate
+  isFullTranslation?: boolean, // Whether to perform a full translation
+  filenames?: string[],        // Optional filenames for the content
+  partialConfig?: PartialConfiguration // Optional configuration overrides
+);
+
+// Translate a single string
+const translated = await sdk.translateString(
+  content: string | string[],            // String or string[] to translate
+  lang: string,                          // Target language code
+  partialConfig?: PartialConfiguration
+);
 ```
 
-### 6. Manual Content Retrieval (Optional)
-
-If you need to retrieve the content separately:
+### Project Management
 
 ```javascript
-const translatedContent = await frenglish.getTranslationContent(translationId);
-console.log('Translated content:', translatedContent);
+// Get project information
+const project = await sdk.getProjectInformation();
+
+// Update project name
+await sdk.updateProjectName('New Project Name');
+
+// Toggle project active status
+await sdk.setProjectActiveStatus(true);
+
+// Toggle test mode
+await sdk.setTestMode(true);
 ```
 
-## Types
-
-```typescript
-enum TranslationStatus {
-  PENDING = 'PENDING',
-  IN_PROGRESS = 'IN_PROGRESS',
-  COMPLETED = 'COMPLETED',
-  CANCELLED = 'CANCELLED'
-}
-
-interface RequestTranslationResponse {
-  translationId: number;
-  content?: TranslationResponse[];
-}
-
-interface TranslationResponse {
-  language: string;
-  files: {
-    fileId: string;
-    content: string;
-  }[];
-}
-```
-
-## Error Handling
-
-The SDK throws errors for various scenarios. Always wrap your API calls in try-catch blocks:
+### Configuration
 
 ```javascript
-try {
-  const translation = await frenglish.translate(contents, false, filenames);
-  // Handle successful translation
-} catch (error) {
-  console.error('Translation error:', error.message);
-  // Handle the error appropriately
-}
+// Get default configuration
+const config = await sdk.getDefaultConfiguration();
+
+// Update configuration
+await sdk.updateConfiguration({
+  originLanguage: 'en',
+  languages: ['fr', 'es'],
+  rules: 'Use a casual tone'
+});
+
+// Get supported languages
+const languages = await sdk.getSupportedLanguages();
+
+// Get supported file types
+const fileTypes = await sdk.getSupportedFileTypes();
 ```
 
-## Best Practices
+### File Management
 
-1. **Environment Variables**: Store your API key in environment variables for security. The SDK uses `dotenv`, so you can use a `.env` file in your project root.
-2. **Webhook Security**: Ensure your webhook endpoint is secure and validates incoming requests.
-3. **Rate Limiting**: Be aware of any rate limits on the Frenglish API and handle them accordingly.
-4. **Error Handling**: Implement robust error handling to manage various failure scenarios.
-5. **Logging**: Implement logging for better debugging and monitoring of the translation process.
+```javascript
+// Upload files for translation
+const uploadResult = await sdk.upload([
+  {
+    content: 'Hello world',
+    language: 'en'
+  }
+]);
+
+// Get project's text map
+const textMap = await sdk.getTextMap();
+```
+
+## SDK Methods Reference
+
+### Translation Methods
+
+1. **translate**
+   - Description: Translates multiple strings or content blocks to all configured target languages
+   - Parameters:
+     - `content`: string[] - Array of content to translate
+     - `isFullTranslation`: boolean (optional) - Whether to perform a full translation
+     - `filenames`: string[] (optional) - Filenames for the content
+     - `partialConfig`: PartialConfiguration (optional) - Configuration overrides
+   - Returns: `Promise<{ translationId: number, content: TranslationResponse[] }>`
+
+2. **translateString**
+   - Description: Translates a single string to a specific target language
+   - Parameters:
+     - `content`: string | string [] - Single string to translate or an array of strings to translate
+     - `lang`: string - Target language code
+     - `partialConfig`: PartialConfiguration (optional) - Configuration overrides
+   - Returns: `Promise<string | string[] | undefined>`
+
+3. **getTranslationStatus**
+   - Description: Checks the current status of a translation request (e.g., completed, in progress, cancelled)
+   - Parameters:
+     - `translationId`: number - ID of the translation to check
+   - Returns: `Promise<TranslationStatus>`
+
+4. **getTranslationContent**
+   - Description: Retrieves the translated content for a completed translation
+   - Parameters:
+     - `translationId`: number - ID of the translation to retrieve
+   - Returns: `Promise<TranslationResponse[]>`
+
+### Project Management Methods
+
+1. **getProjectInformation**
+   - Description: Retrieves detailed information about the current project
+   - Returns:`Promise<Project>`
+
+2. **updateProjectName**
+   - Description: Updates the name of the current project
+   - Parameters:
+     - `updatedProjectName`: string - New project name
+   - Returns: `Promise<Project>`
+
+3. **setProjectActiveStatus**
+   - Description: Enables or disables the project's active status
+   - Parameters:
+     - `isActive`: boolean - New active status
+   - Returns: `Promise<Project>`
+
+4. **setTestMode**
+   - Description: Toggles test mode for the project, useful for testing without consuming API credits
+   - Parameters:
+     - `isTestMode`: boolean - New test mode status
+   - Returns: `Promise<Project>`
+
+### Configuration Methods
+
+1. **getDefaultConfiguration**
+   - Description: Retrieves the default configuration settings for the project
+   - Returns: `Promise<Configuration>`
+
+2. **updateConfiguration**
+   - Description: Updates the project's configuration settings
+   - Parameters:
+     - `partiallyUpdatedConfig`: PartialConfiguration - Configuration updates
+   - Returns: `Promise<Configuration>`
+
+3. **getProjectSupportedLanguages**
+   - Description: Gets the list of languages supported by the project and the origin language
+   - Returns: `Promise<{ languages: string[], originLanguage: string }>`
+
+4. **getSupportedLanguages**
+   - Description: Gets all languages supported by the Frenglish service
+   - Returns: `Promise<string[]>`
+
+5. **getSupportedFileTypes**
+   - Description: Gets all file types that can be processed for translation
+   - Returns: `Promise<string[]>`
+
+### File Management Methods
+
+1. **upload**
+   - Description: Uploads files for translation, typically used as base files to compare against
+   - Parameters:
+     - `files`: FileContentWithLanguage[] - Array of files to upload
+   - Returns: `Promise<{ message: string, originFilesInfo: Array<{ fileId: string, originS3Version: string }> }>`
+
+2. **getTextMap**
+   - Description: Retrieves the project's text map, which contains mappings of text content for consistency
+   - Returns: `Promise<{ content: FlatJSON[] } | null>`
+
+### Domain Management Methods
+
+1. **getProjectDomain**
+   - Description: Gets the domain URL associated with the current project
+   - Returns: `Promise<string>`
+
+2. **getPublicAPIKeyFromDomain**
+   - Description: Retrieves the public API key associated with a given domain
+   - Parameters:
+     - `domainURL`: string - Domain URL to get API key for
+   - Returns: `Promise<string>`
+
+## Configuration Types
+
+```ts
+// Define the PartialConfiguration type
+type PartialConfiguration = {
+  originLanguage?: string;
+  languages?: string[];
+  rules?: string;
+  languageSpecificRules?: Record<string, string>;
+  // ... other configuration options
+};
+```
