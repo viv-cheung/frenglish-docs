@@ -11,7 +11,7 @@ This guide will walk you through the process of setting up a GitHub Action to au
 
 1. **Create the GitHub Action workflow file**
 
-   Create a new file in your repository at `.github/workflows/frenglish-translation.yml` and copy the provided GitHub Action code into it.
+   Create a new file in your repository at `.github/workflows/frenglish-translation.yml` and copy the provided GitHub Action code into it (see code below).
 
    ```
     name: Frenglish Translation
@@ -260,19 +260,36 @@ This guide will walk you through the process of setting up a GitHub Action to au
 
    Adjust this script as needed to fit your specific translation requirements.
 
-4. **Update your `package.json`**
+4. **Install Frenglish SDK dependencies**
 
-   Ensure your `package.json` includes the Frenglish SDK as a dependency:
+Use your preferred package manager:
 
-   ```json
-   {
-    "dependencies": {
-        "@frenglish/cli": "latest",
-        "@frenglish/sdk": "latest",
-        "@frenglish/utils": "latest"
-    },
-   }
-   ```
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="npm" label="npm">
+
+  ```bash
+  npm install @frenglish/cli @frenglish/sdk @frenglish/utils
+  ```
+
+  </TabItem>
+  <TabItem value="yarn" label="yarn">
+
+  ```bash
+  yarn add @frenglish/cli @frenglish/sdk @frenglish/utils
+  ```
+
+  </TabItem>
+  <TabItem value="pnpm" label="pnpm">
+
+  ```bash
+  pnpm add @frenglish/cli @frenglish/sdk @frenglish/utils
+  ```
+
+  </TabItem>
+</Tabs>
 
 5. **Commit and push your changes**
 

@@ -25,7 +25,6 @@ const sidebars: SidebarsConfig = {
             'HowToTranslate/sdk/sdk-quickstart',
             'HowToTranslate/sdk/method-descriptions',
             'HowToTranslate/sdk/github-action',
-            'HowToTranslate/sdk/example'  // Changed from 'sdk-example' to 'example'
           ],
         },
         {
