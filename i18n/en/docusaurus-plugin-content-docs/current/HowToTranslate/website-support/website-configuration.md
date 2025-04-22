@@ -1,11 +1,11 @@
 ---
-id: website-configuration
+id: website-quickstart
 sidebar_position: 2
 description: How to automatically translate your website
-slug: /website-configuration
+slug: /website-quickstart
 ---
 
-# Website Translation Configuration
+# Quickstart
 
 Frenglish.ai provides real-time website translation through a reverse proxy system. When visitors access your website, our Cloudflare worker intercepts the request, retrieves your original content, translates it, and serves the translated version in their preferred language.
 
@@ -25,28 +25,20 @@ Frenglish.ai provides real-time website translation through a reverse proxy syst
 
 3. **Configure DNS Settings**
    - Go to your domain provider's DNS management page
-   - Add two CNAME records:
-
-     First record (for your original website):
-     - **Name**: `origin` (or `@` if using root domain)
-     - **Type**: `CNAME`
-     - **Value**: Your website's domain name
-
-     Second record (for the translation proxy):
-     - **Name**: `@` (or your subdomain)
-     - **Type**: `CNAME`
-     - **Value**: `cloudflare.frenglish.ai`
+   - Follow the instructions provided on your project website configuration page on Frenglish
 
 ## Testing Without a Domain
-
-If you want to test the translation feature without configuring DNS, you can add our JavaScript snippet to your website:
+If you want to test the translation feature without configuring DNS, you can add our JavaScript snippet to your website's body:
 
 ```html
-<script type="text/javascript" src="https://api.frenglish.ai/index.min.js"></script>
-<script>
-    Frenglish.initialize({
-        api_key: 'your-public-api-key' 
-    });
+<script src="https://frenglish.ai/frenglish.bundle.js" strategy="beforeInteractive"></script>
+<script id="frenglish-init" strategy="afterInteractive">
+   window.frenglishSettings = {
+      api_key: "your-public-api-key",
+   };
+   if (window.Frenglish) {
+      window.Frenglish.initialize(window.frenglishSettings);
+   }
 </script>
 ```
 
@@ -64,11 +56,13 @@ Your translated pages will be available at language-specific URLs:
 - Spanish: `example.com/es/`
 - (Additional languages as configured in your project)
 
-## Overall Benefits
-- Real-time translation without maintaining separate language versions (no software development required)
+## Benefits of this approach
+- Setup takes a few minutes, no change on your code required
+- Real-time translation without maintaining separate language versions
 - Automatic language detection and routing
 - No need to modify your existing website structure
 - SEO-friendly URLs for each language
+- This server side translation is a must for good localized SEOs
 
 ## SEO Benefits
 
@@ -91,5 +85,9 @@ Our translation system is designed to maximize your website's search engine visi
    - All content is properly translated, including meta titles, descriptions, and keywords
    - Helps improve rankings in local search results for each target language
    - Maintains SEO value across all language versions
+
+5. **Server side translation**
+   - The content is translated before it hits the client
+   - SEO crawlers receive the translated content immediately, allowing them to index it
 
 These optimizations help search engines properly index your multilingual content, potentially improving your rankings in local search results and reaching a broader international audience.

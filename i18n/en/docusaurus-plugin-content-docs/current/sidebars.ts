@@ -36,7 +36,8 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: 'Translate your Website',
           items: [
-            'HowToTranslate/website-support/website-configuration',
+            'HowToTranslate/website-support/website-quickstart',
+            'HowToTranslate/website-support/website-how-it-works',
           ],
         },
       ],

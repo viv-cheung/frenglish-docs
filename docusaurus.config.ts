@@ -31,11 +31,6 @@ const config: Config = {
           path: 'i18n/en/docusaurus-plugin-content-docs/current',
           editLocalizedFiles: true,
         },
-        blog: {
-          showReadingTime: true,
-          path: 'blog',  // Adjusted to point directly to the blog directory
-          editLocalizedFiles: true,
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -58,7 +53,6 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },  // Ensure /blog exists
         {
           type: 'localeDropdown',
           position: 'right',
@@ -85,10 +79,6 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',
