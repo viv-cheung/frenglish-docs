@@ -43,9 +43,10 @@ This is how the request flow works:
 
    - If **cached**, the translated version is returned instantly.
    - If **not cached**, we fetch the original content, enqueue it for translation, and serve the untranslated version (usually English) in the meantime. Once the translation is complete, future users will receive the translated and cached version.
+   - If **not cached** but already translated, we fetch it from Amazon S3, where all translations are stored with double encryption.
 
 4. **Caching**  
-   We use Cloudflare's global edge caching to ensure that translations are served quickly, no matter where your users are in the world. Our caching is “serve while revalidating,” so even if a translation is updated, old content is shown immediately while new content is prepared in the background.
+   We use Cloudflare's global edge caching to ensure that translations are served quickly, no matter where your users are in the world. Our caching is “serve while revalidating,” so even if a translation is updated, the old content is shown immediately while new content is prepared in the background.
 
 ## What Happens if Our API Is Down?
 
@@ -74,10 +75,13 @@ If you'd prefer to self-host the Cloudflare Worker on your own Cloudflare accoun
 
 ## Does it work with JavaScript-heavy frameworks like React, Vue, or Next.js?
 
-Yes. The Frenglish bundle listens to changes in the DOM and translates content as it's rendered client-side. This includes content loaded via client-side navigation in SPA frameworks. We also support server-side translation for pre-rendered pages.
+Yes. The Frenglish bundle listens for DOM changes and translates content as it’s rendered client-side. This includes content loaded via client-side navigation in SPA frameworks. We also support server-side translation for pre-rendered pages.
 
 ## Will this slow down my site?
-No. Frenglish is optimized for speed. Because everything is served at the edge via Cloudflare and cached aggressively, users will experience minimal latency. The JavaScript bundle is tiny and non-blocking.
 
-## How long are translations cached for?
-Translated content are cached for one hour, but you can bust the cache by appending `?frenglish_cache_bust` to any of your URL and it will bust the translation cache for your entire site, forcing new content to be fetched. E.g. `https://example.com?frenglish_cache_bust`. 
+No. Frenglish is optimized for speed. Because everything is served at the edge via Cloudflare and aggressively cached, users will experience minimal latency. The JavaScript bundle is tiny and non-blocking.
+
+## How long are translations cached?
+
+Translated content is cached for one hour by default. You can bust the cache by appending `?frenglish_cache_bust` to any URL. This will clear the translation cache for your entire site and force new content to be fetched.  
+For example: `https://example.com?frenglish_cache_bust`.
