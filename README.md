@@ -4,7 +4,7 @@ Built with Docusaurus
 ### Installation
 
 ```
-$ yarn
+$ yarn install
 ```
 
 ### Local Development
