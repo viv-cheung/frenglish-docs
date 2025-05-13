@@ -1,0 +1,32 @@
+{
+  "id": 33,
+  "projectID": 27,
+  "originLanguage": "en",
+  "languages": [
+    "fr",
+    "ja",
+    "es",
+    "de"
+  ],
+  "languageSelector": null,
+  "excludedTranslationBlocks": null,
+  "rules": "Do not translate Frenglish",
+  "knowledgeBaseFiles": null,
+  "autoMergeToBaseBranch": false,
+  "rulesPerLanguage": [
+    {
+      "language": "fr",
+      "rules": "Use Quebec, Canada french and use informal tones (tu)."
+    },
+    {
+      "language": "ja",
+      "rules": "Do NOT use formal honourifics, keep it somewhat casual but professional. "
+    }
+  ],
+  "oneTimeTranslation": false,
+  "keyFilters": null,
+  "createdAt": "2024-12-07T18:46:04.320Z",
+  "lastModifiedAt": "2025-05-13T14:58:41.261Z",
+  "TRANSLATION_PATH": "i18n",
+  "TRANSLATION_OUTPUT_PATH": "i18n/"
+}

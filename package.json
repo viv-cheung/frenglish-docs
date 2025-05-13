@@ -19,8 +19,8 @@
   "dependencies": {
     "@docusaurus/core": "3.7.0",
     "@docusaurus/preset-classic": "3.7.0",
-    "@frenglish/cli": "^1.0.7",
-    "@frenglish/sdk": "^1.0.8",
+    "@frenglish/cli": "^1.0.10",
+    "@frenglish/sdk": "^1.0.10",
     "@frenglish/utils": "^1.0.6",
     "@lingui/cli": "^4.11.2",
     "@lingui/core": "^4.11.2",
@@ -52,9 +52,9 @@
     "@docusaurus/types": "3.7.0",
     "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
+    "file-loader": "^6.2.0",
     "typescript": "^5.5.3",
-    "url-loader": "^4.1.1",
-    "file-loader": "^6.2.0"
+    "url-loader": "^4.1.1"
   },
   "browserslist": {
     "production": [
