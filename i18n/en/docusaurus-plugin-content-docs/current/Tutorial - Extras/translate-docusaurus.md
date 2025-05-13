@@ -39,7 +39,7 @@ Translate `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` in French.
 Start your site on the French translation file:
 
 ```bash
-npm run start -- --locale fr
+npm run start -- locale fr
 ```
 
 Your localized site is accessible at [http://localhost:3000/fr/](http://localhost:3000/fr/) and the `Getting Started` page is translated.
@@ -81,7 +81,7 @@ The locale dropdown now appears in your navbar:
 Build your site for a specific locale:
 
 ```bash
-npm run build -- --locale fr
+npm run build -- locale fr
 ```
 
 Or build your site to include all the locales at once:

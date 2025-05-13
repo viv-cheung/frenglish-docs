@@ -2106,13 +2106,13 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.25.2.tgz#839f72c2decd378f86b8f525e1979a97b920c67d"
   integrity sha512-kM3HKb16VIXZyIeVrM1ygYmZBKybX8N4p754bw390wGO3Tf2j4L2/WYL+4suWujpgf6GBYs3jv7TyUivdd05JA==
 
-"@frenglish/cli@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.npmjs.org/@frenglish/cli/-/cli-1.0.7.tgz"
-  integrity sha512-hNmGLj9MXTcDjFwuzrvU5Kth+Tl/w1Pja5bDwfJC0zunuQ27mWngiJpTX1YpN6XpJ8kFYkuvUZkFUFtfY9YJsQ==
+"@frenglish/cli@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@frenglish/cli/-/cli-1.0.10.tgz#0d0bb887bdbec5cd3dcb8ea9234b4b658269727d"
+  integrity sha512-A7B6eR2eS8i3iqZGOLC5jTDsvImHc67mPU9LNXXkZCbGWar9hHXJGPTpDkKRYxulmAJVVAlKHRsLFZprCgLToQ==
   dependencies:
-    "@frenglish/sdk" "1.0.8"
-    "@frenglish/utils" "1.0.6"
+    "@frenglish/sdk" "1.0.10"
+    "@frenglish/utils" "1.0.8"
     chalk "^5.4.1"
     dotenv "^16.4.5"
     figlet "^1.8.0"
@@ -2125,12 +2125,12 @@
     vitest "^3.0.4"
     yargs "^17.7.2"
 
-"@frenglish/sdk@1.0.8", "@frenglish/sdk@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.npmjs.org/@frenglish/sdk/-/sdk-1.0.8.tgz"
-  integrity sha512-ES8aIzt2k/GrJkx2NjUvV8U9C27x+7ZbKyynRo5C3u9BPr4cVnkjFetzJOr+49FIo5PRaeyyddIEv6Wjl6QcbQ==
+"@frenglish/sdk@1.0.10", "@frenglish/sdk@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@frenglish/sdk/-/sdk-1.0.10.tgz#f047ee6a9a6ac87399f101472559ec1a4ef05218"
+  integrity sha512-rq9HJWS8Hk0kg/DqycJXWerJkYAl/UXL4MfveqtuKGiw0QZrWxNHRLlF2oUa8v1YV/bfzAPlq98TQ0BRrUAYkQ==
   dependencies:
-    "@frenglish/utils" "1.0.6"
+    "@frenglish/utils" "1.0.8"
     dotenv "^16.4.5"
     glob "8.0.3"
     glob-promise "^6.0.7"
@@ -2138,7 +2138,20 @@
     vitest "^3.0.4"
     yargs "^17.7.2"
 
-"@frenglish/utils@1.0.6", "@frenglish/utils@^1.0.6":
+"@frenglish/utils@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@frenglish/utils/-/utils-1.0.8.tgz#6b9794c472403a3aa3807e140c7b88217d4c9a4b"
+  integrity sha512-AlO/46tpFDeQYpdO5+nza0aahqZvnVaIMktUWsXmtGJHVbS/p2RTTSfisROmKqezfEpA9BKxtBkOCCyi9IkRYg==
+  dependencies:
+    chalk "^5.4.1"
+    crypto-js "^4.2.0"
+    dotenv "^16.4.5"
+    glob "^8.0.3"
+    glob-promise "^6.0.7"
+    jsdom "^24.0.0"
+    minimatch "^10.0.1"
+
+"@frenglish/utils@^1.0.6":
   version "1.0.6"
   resolved "https://registry.npmjs.org/@frenglish/utils/-/utils-1.0.6.tgz"
   integrity sha512-YReQkk/XtK1Pw7huIqldf1ppMDHuCCh+6FqjJE5XPTuvOUJYqcRebci2Z7fK/jMj6Zb5D50gLcpJi1jIyS/dMQ==
