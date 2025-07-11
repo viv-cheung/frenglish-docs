@@ -97,10 +97,6 @@ const config: Config = {
   plugins: [
     path.resolve(__dirname, 'custom-webpack-plugin'),
   ],
-
-  clientModules: [
-    require.resolve('./src/clientModules/i18nLoader.js'),
-  ],
 };
 
 export default config;

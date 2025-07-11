@@ -1,21 +1,14 @@
-// src/pages/index.tsx
-import React, { useEffect, useState } from 'react'
-import clsx from 'clsx'
-import Link from '@docusaurus/Link'
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import Layout from '@theme/Layout'
-import HomepageFeatures from '@site/src/components/HomepageFeatures'
-import { I18nProvider } from '@lingui/react'
-import { i18n } from '@lingui/core'
-import { Trans } from '@lingui/macro'
-import { useHistory } from '@docusaurus/router'
-import BrowserOnly from '@docusaurus/BrowserOnly'
+import React from 'react';
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import { Trans } from '@lingui/macro';
 
-import styles from './index.module.css'
+import styles from './index.module.css';
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext()
-  console.log('Rendering HomepageHeader') // Debugging log
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className='container'>
@@ -31,47 +24,30 @@ function HomepageHeader() {
           <Link
             className={clsx(
               'button button--secondary button--lg',
-              styles.customButton
+              styles.customButton,
             )}
-            to='/docs/intro'>
+            to='/docs/intro'
+          >
             <Trans>Frenglish Tutorial - 4min ⏱️</Trans>
           </Link>
         </div>
       </div>
     </header>
-  )
+  );
 }
 
 export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext()
-  const { location } = useHistory()
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    const locale = location.pathname.split('/')[1] || 'en'
-    i18n.activate(locale)
-    setLoading(false)
-  }, [location.pathname])
-
-  console.log('Rendering Home') // Debugging log
-  if (loading) {
-    return <div>Loading translations...</div>
-  }
+  const { siteConfig } = useDocusaurusContext();
 
   return (
-    <BrowserOnly>
-      {() => (
-        <I18nProvider i18n={i18n}>
-          <Layout
-            title={`${siteConfig.title} - Automate your translations`}
-            description='Description will go into a meta tag in <head />'>
-            <HomepageHeader />
-            <main>
-              <HomepageFeatures />
-            </main>
-          </Layout>
-        </I18nProvider>
-      )}
-    </BrowserOnly>
-  )
+    <Layout
+      title={`${siteConfig.title} - Automate your translations`}
+      description='Description will go into a meta tag in <head />'
+    >
+      <HomepageHeader />
+      <main>
+        <HomepageFeatures />
+      </main>
+    </Layout>
+  );
 }

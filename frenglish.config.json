@@ -27,6 +27,6 @@
   "keyFilters": null,
   "createdAt": "2024-12-07T18:46:04.320Z",
   "lastModifiedAt": "2025-05-13T14:58:41.261Z",
-  "TRANSLATION_PATH": "i18n",
-  "TRANSLATION_OUTPUT_PATH": "i18n/"
+  "TRANSLATION_PATH": "src/locales/en",
+  "TRANSLATION_OUTPUT_PATH": "src/locales"
 }

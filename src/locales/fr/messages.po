@@ -6,35 +6,41 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
 #: src/components/HomepageFeatures/index.tsx:10
 msgid "Easy to Use"
-msgstr "Easy to Use"
+msgstr "Tellement facile à utiliser"
 
 #: src/components/HomepageFeatures/index.tsx:21
 msgid "Focus on What Matters"
-msgstr "Focus on What Matters"
+msgstr "Concentre-toi sur l’essentiel"
 
 #: src/components/HomepageFeatures/index.tsx:24
 msgid "Frenglish lets you focus on all your other important priorities instead of worrying to keep all your locale files up to date."
-msgstr "Frenglish lets you focus on all your other important priorities instead of worrying to keep all your locale files up to date."
+msgstr "Frenglish te permet de te concentrer sur toutes tes autres priorités importantes au lieu de t’inquiéter de garder tes fichiers de langue à jour."
 
-#: src/pages/index.tsx:37
+#: src/pages/index.tsx:31
 msgid "Frenglish Tutorial - 4min ⏱️"
-msgstr "Frenglish Tutorial - 4min ⏱️"
+msgstr "Tutoriel Frenglish - 4 min ⏱️"
 
 #: src/components/HomepageFeatures/index.tsx:13
 msgid "Frenglish was designed to provide multilingual support for all your content automatically utilizing your company's context. Finish your automated language support in minutes."
-msgstr "Frenglish was designed to provide multilingual support for all your content automatically utilizing your company's context. Finish your automated language support in minutes."
+msgstr "Frenglish a été conçu pour offrir un soutien multilingue automatique pour tout ton contenu en utilisant le contexte de ton entreprise. Termine ton soutien linguistique automatisé en quelques minutes."
 
 #: src/components/HomepageFeatures/index.tsx:34
 msgid "If your website utilizes i18n, the Frenglish bot will automatically update and generate all locale files from your origin."
-msgstr "If your website utilizes i18n, the Frenglish bot will automatically update and generate all locale files from your origin."
+msgstr "Si ton site web utilise i18n, le bot Frenglish va automatiquement mettre à jour et générer tous les fichiers de langue à partir de ta version d’origine."
 
 #: src/components/HomepageFeatures/index.tsx:31
 msgid "Integrates directly to your website"
-msgstr "Integrates directly to your website"
+msgstr "S’intègre directement à ton site web"
 
-#: src/pages/index.tsx:28
+#: src/pages/index.tsx:21
 msgid "Set Up Once, Up to Date Translations Forever"
-msgstr "Set Up Once, Up to Date Translations Forever"
+msgstr "Installe-le une fois, tes traductions resteront toujours à jour."
