@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-07-11 10:53-0400\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ru\n"
+
+#: src/components/HomepageFeatures/index.tsx:10
+msgid "Easy to Use"
+msgstr ""
+
+#: src/components/HomepageFeatures/index.tsx:21
+msgid "Focus on What Matters"
+msgstr ""
+
+#: src/components/HomepageFeatures/index.tsx:24
+msgid "Frenglish lets you focus on all your other important priorities instead of worrying to keep all your locale files up to date."
+msgstr ""
+
+#: src/pages/index.tsx:37
+msgid "Frenglish Tutorial - 4min ⏱️"
+msgstr ""
+
+#: src/components/HomepageFeatures/index.tsx:13
+msgid "Frenglish was designed to provide multilingual support for all your content automatically utilizing your company's context. Finish your automated language support in minutes."
+msgstr ""
+
+#: src/components/HomepageFeatures/index.tsx:34
+msgid "If your website utilizes i18n, the Frenglish bot will automatically update and generate all locale files from your origin."
+msgstr ""
+
+#: src/components/HomepageFeatures/index.tsx:31
+msgid "Integrates directly to your website"
+msgstr ""
+
+#: src/pages/index.tsx:28
+msgid "Set Up Once, Up to Date Translations Forever"
+msgstr ""
