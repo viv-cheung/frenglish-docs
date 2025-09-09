@@ -24,7 +24,8 @@ const sidebars: SidebarsConfig = {
           items: [
             'HowToTranslate/sdk/sdk-quickstart',
             'HowToTranslate/sdk/method-descriptions',
-            'HowToTranslate/sdk/github-action',
+            'HowToTranslate/sdk/github-action',,
+            'HowToTranslate/sdk/json-field-filters',
           ],
         },
         {
