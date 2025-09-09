@@ -1,4 +1,4 @@
-# Frenglish Documentation
+# Frenglish Documentation 
 Built with Docusaurus
 
 ### Installation
