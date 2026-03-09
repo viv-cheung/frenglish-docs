@@ -14,6 +14,79 @@ The Frenglish SDK is a powerful tool that enables developers to integrate automa
 
 Please refer to the [Quickstart Guide](./quickstart.md#installation) for installation instructions.
 
+## Rules and key filters
+
+Configuration options that control *what* gets translated and *how* can be grouped under rules and key filters. You can pass these via `partialConfig` when calling `translate()` or `translateString()`, or set them in your project dashboard.
+
+### Translation rules
+
+- **rules** (string, optional) – General instructions for the translator (e.g. tone, terminology, style). Applied to all target languages unless overridden by language-specific rules.
+- **rulesPerLanguage** (array of `{ language, rules }`, optional) – Override rules for specific target languages. Each entry has a language code (e.g. `"fr"`) and a `rules` string. Useful when one locale needs different style or terminology.
+- **implicitRules** (array, optional) – Structured implicit rules applied by the translation pipeline.
+
+### Include and exclude filters (key filters)
+
+Key filters control which **keys** in your JSON (or other structured content) are sent for translation. They apply to the key path (e.g. top-level key `"title"` or nested path like `"meta.description"`).
+
+- **keyFilters** (object or `null`, optional):
+  - **includeFilters** – Array of patterns. When **non-empty**, only keys whose path matches **at least one** of these patterns are translated. All other keys are left unchanged.
+  - **excludeFilters** – Array of patterns. Keys whose path matches **any** of these patterns are **not** translated; they are left as in the origin language.
+  - If both `includeFilters` and `excludeFilters` are `null` or empty, **all** keys are translated (no filtering).
+  - **Behavior when both are set:** Include is applied first (only matching keys are candidates); then exclude is applied (matching keys are removed from that set). So a key is translated only if it matches an include pattern (when includes are present) and does not match any exclude pattern.
+
+- **keyFiltersPerLanguage** (array of `{ language, keyFilters }`, optional) – Override key filters per target language. Each entry has a language code and a `keyFilters` object with its own `includeFilters` and `excludeFilters`. If you don’t set a per-language filter for a language, the global `keyFilters` is used for that language.
+
+**Pattern format:** Each pattern is a dot-separated key path (e.g. `title`, `meta.description`). The key path of an entry is matched against these patterns. A segment can be `*` to match any single key at that level (e.g. `meta.*` matches `meta.title`, `meta.description`, etc.). You cannot use the same pattern in both include and exclude.
+
+**Typical use cases:**
+
+- **Include only certain keys:** Set `includeFilters` to patterns for the keys you want translated (e.g. `["title", "meta.label"]`). Everything else is left untranslated.
+- **Exclude sensitive or non-translatable keys:** Set `excludeFilters` to patterns for keys that must not be translated (e.g. `["internalId", "code", "url"]`). All other keys are translated.
+- **Different keys per language:** Use `keyFiltersPerLanguage` so that, for example, one language gets only a subset of keys while another gets all keys.
+
+**Example: input JSON vs output with filters**
+
+Assume origin language is English and you translate to French. Input JSON:
+
+```json
+{
+  "id": "user-42",
+  "title": "Welcome",
+  "meta": {
+    "label": "Home",
+    "code": "H1"
+  }
+}
+```
+
+- **With `includeFilters: ["title", "meta.label"]`** — Only those key paths are translated; the rest stay in the origin language:
+
+```json
+{
+  "id": "user-42",
+  "title": "Bienvenue",
+  "meta": {
+    "label": "Accueil",
+    "code": "H1"
+  }
+}
+```
+
+- **With `excludeFilters: ["id", "code"]`** — Everything is translated except keys whose path contains `id` or `code`:
+
+```json
+{
+  "id": "user-42",
+  "title": "Bienvenue",
+  "meta": {
+    "label": "Accueil",
+    "code": "H1"
+  }
+}
+```
+
+You can pass key filters in `partialConfig` when calling `translate()`; see the [translate](#translate) parameters and the example below in that section.
+
 ## SDK Methods
 
 ### translate
@@ -31,22 +104,12 @@ Sends content for translation. This method handles the polling process automatic
   - When false (default): Optimizes translation by checking previously translated content in the database. Only translates new or modified content, reducing translation time and costs.
   - When true: Forces a complete retranslation of all content, ignoring any existing translations.
 - filenames: string[] (optional) - An array of filenames corresponding to each content item. Used to track and identify translations within your project. If provided, must match the length of content array. The filenames should include file extensions (e.g., .json).
-- partialConfig: PartialConfiguration (optional) - Override default configuration settings for this translation. Can include:
-  ```typescript
-  {
-    originLanguage?: string,      // Source language code
-    languages?: string[],         // Target language codes
-    rules?: string,              // General translation rules
-    autoMergeToBaseBranch?: boolean,  // Auto-merge setting
-    implicitRules?: ImplicitRule[],    // Array of implicit translation rules
-    rulesPerLanguage?: Rule[],    // Language-specific rules
-    useThisConfig?: boolean,      // Whether to use this config
-    keyFilters?: {               // Filters for translation keys
-      includeFilters: string[],
-      excludeFilters: string[]
-    } | null
-  }
-  ```
+- partialConfig: PartialConfiguration (optional) - Override default configuration settings for this translation. Main options:
+  - **originLanguage**, **languages** – Source and target language codes.
+  - **rules**, **rulesPerLanguage**, **implicitRules** – Translation rules (see [Rules and key filters](#rules-and-key-filters)).
+  - **keyFilters** – `{ includeFilters: string[], excludeFilters: string[] } | null` to include or exclude keys from translation (see [Include and exclude filters](#include-and-exclude-filters-key-filters)).
+  - **keyFiltersPerLanguage** – Per-language overrides for key filters (see [Include and exclude filters](#include-and-exclude-filters-key-filters)).
+  - **autoMergeToBaseBranch**, **useThisConfig** – Other behavior flags.
 
 #### Returns:
 
@@ -78,6 +141,31 @@ try {
   console.error('Translation error:', error.message);
 }
 ```
+
+**Example with include/exclude filters** (only translate certain keys, or exclude others):
+
+```javascript
+// Only translate keys matching these patterns; leave all other keys unchanged
+const partialConfigInclude = {
+  languages: ['fr'],
+  keyFilters: {
+    includeFilters: ['title', 'description', 'meta.*'],
+    excludeFilters: null
+  }
+};
+
+// Translate all keys except those matching these patterns
+const partialConfigExclude = {
+  languages: ['fr'],
+  keyFilters: {
+    includeFilters: null,
+    excludeFilters: ['internalId', 'code', 'url']
+  }
+};
+
+const translation = await frenglish.translate(contents, false, filenames, partialConfigExclude);
+```
+
 #### Errors:
 
 - Throws an error if the translation request fails or if the polling exceeds the maximum allowed time.

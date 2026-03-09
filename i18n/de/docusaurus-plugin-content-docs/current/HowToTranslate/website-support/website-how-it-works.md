@@ -45,6 +45,22 @@ So läuft der Anfrageprozess ab:
 4.  **Caching**\
     Wir nutzen das globale Edge-Caching von Cloudflare, damit Übersetzungen überall auf der Welt schnell ausgeliefert werden. Unser Caching ist „serve while revalidating“, das heißt, auch wenn eine Übersetzung aktualisiert wird, wird der alte Inhalt sofort angezeigt, während im Hintergrund die neue Version vorbereitet wird.
 
+## Übersetzte URLs
+Sie können **URLs pro Sprache übersetzen** lassen, sodass Pfade lokalisiert werden, nicht nur der Inhalt. Zum Beispiel:
+- **Original (z. B. Englisch):** `example.com/about-us`
+- **Französisch:** `example.com/fr/a-propos`
+- **Spanisch:** `example.com/es/sobre-nosotros`
+
+Wenn diese Option in Ihrer Projektkonfiguration aktiviert ist, pflegt Frenglish eine Zuordnung zwischen Ihren ursprünglichen URL-Pfaden und deren übersetzten Entsprechungen für jede Sprache. Links, Weiterleitungen und Sitemaps verwenden dann den richtigen lokalisierten Pfad für jede Sprache. Das verbessert sowohl das **SEO** (Suchmaschinen sehen sprachspezifische URLs) als auch die **Nutzererfahrung** (Besucher sehen URLs in ihrer Sprache). Sie können übersetzte URLs in den **Website**- (oder Konfigurations-) Einstellungen Ihres Projekts im Frenglish-Dashboard aktivieren und verwalten.
+
+## Geo-Routing
+**Geo-Routing** leitet Besucher zu einer Sprachversion basierend auf ihrem **Land oder ihrer Region** weiter. Zum Beispiel:
+- Besucher aus Frankreich → französische Version (`/fr/`)
+- Besucher aus Quebec → kanadisch-französische Version (`/fr-ca/`), wenn Sie regionsbasierte Regeln verwenden
+- Besucher aus Spanien → spanische Version (`/es/`)
+
+Sie konfigurieren Zuordnungen wie Land → Sprache (und optional Region → Sprache, z. B. Quebec) in Ihren Projekteinstellungen. Wenn ein Nutzer Ihre Seite ohne Sprachangabe im Pfad aufruft (z. B. `example.com/`), kann unser Proxy seinen Standort erkennen und ihn zur passenden Sprachversion weiterleiten. So landen viele Nutzer direkt auf der richtigen Sprache, ohne den Sprachumschalter zu benutzen. **Wenn ein Nutzer bereits eine Sprache gewählt hat** (zum Beispiel über den Sprachumschalter), wird diese Auswahl in Cookies gespeichert und **hat Vorrang** vor dem Geo-Routing – so sehen wiederkehrende Besucher ihre bevorzugte Sprache, anstatt standortbasiert weitergeleitet zu werden. Geo-Routing ist optional und kann im Bereich **Website** oder Konfiguration Ihres Projekts im Frenglish-Dashboard eingerichtet werden.
+
 ## Was passiert, wenn unsere API ausfällt?
 Sollte unsere Übersetzungs-API vorübergehend nicht verfügbar sein, sehen Ihre Nutzer weiterhin Ihren Originalinhalt in der Standardsprache. Wir haben unser Proxy-System so konzipiert, dass es bei einem Ausfall der Übersetzungsdienste automatisch und reibungslos auf die Originalsprache zurückfällt, sodass Ihre Website stets funktioniert, selbst wenn der Übersetzungsdienst unterbrochen ist.
 

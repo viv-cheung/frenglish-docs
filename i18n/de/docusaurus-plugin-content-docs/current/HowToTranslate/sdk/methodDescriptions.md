@@ -12,6 +12,75 @@ Das Frenglish SDK ist ein leistungsstarkes Werkzeug, mit dem Entwickler automati
 ## Installation
 Siehe die [Schnellstart-Anleitung](./quickstart.md#installation) für Installationshinweise.
 
+## Regeln und Schlüsselfilter
+Konfigurationsoptionen, die steuern, _was_ übersetzt wird und _wie_, können unter Regeln und Schlüsselfiltern zusammengefasst werden. Sie können diese über `partialConfig` beim Aufruf von `translate()` oder `translateString()` übergeben oder in Ihrem Projekt-Dashboard festlegen.
+
+### Übersetzungsregeln
+
+- **rules** (String, optional) – Allgemeine Anweisungen für die Übersetzer (z. B. Tonfall, Terminologie, Stil). Gelten für alle Zielsprachen, sofern sie nicht durch sprachspezifische Regeln überschrieben werden.
+- **rulesPerLanguage** (Array von `{ language, rules }`, optional) – Überschreibt Regeln für bestimmte Zielsprachen. Jeder Eintrag enthält einen Sprachcode (z. B. `"fr"`) und einen `rules`-String. Nützlich, wenn eine Sprache einen anderen Stil oder andere Begriffe benötigt.
+- **implicitRules** (Array, optional) – Strukturierte implizite Regeln, die von der Übersetzungs-Pipeline angewendet werden.
+
+### Include- und Exclude-Filter (Schlüsselfilter)
+Schlüsselfilter steuern, welche **Schlüssel** in Ihrem JSON (oder anderen strukturierten Inhalten) zur Übersetzung gesendet werden. Sie beziehen sich auf den Schlüsselpfad (z. B. oberster Schlüssel `"title"` oder verschachtelter Pfad wie `"meta.description"`).
+-   **keyFilters** (Objekt oder `null`, optional):
+    - **includeFilters** – Array von Mustern. Wenn **nicht leer**, werden nur Schlüssel übersetzt, deren Pfad **mindestens einem** dieser Muster entspricht. Alle anderen Schlüssel bleiben unverändert.
+    - **excludeFilters** – Array von Mustern. Schlüssel, deren Pfad **einem** dieser Muster entspricht, werden **nicht** übersetzt und bleiben in der Ursprungssprache.
+    - Wenn sowohl `includeFilters` als auch `excludeFilters` `null` oder leer sind, werden **alle** Schlüssel übersetzt (kein Filtern).
+    - **Verhalten, wenn beide gesetzt sind:** Zuerst wird Include angewendet (nur passende Schlüssel sind Kandidaten); dann wird Exclude angewendet (passende Schlüssel werden aus dieser Menge entfernt). Ein Schlüssel wird also nur übersetzt, wenn er einem Include-Muster entspricht (sofern vorhanden) und keinem Exclude-Muster entspricht.
+
+-   **keyFiltersPerLanguage** (Array von `{ language, keyFilters }`, optional) – Überschreibt Schlüsselfilter für bestimmte Zielsprachen. Jeder Eintrag enthält einen Sprachcode und ein `keyFilters`-Objekt mit eigenen `includeFilters` und `excludeFilters`. Wenn Sie keinen sprachspezifischen Filter für eine Sprache festlegen, wird der globale `keyFilters` für diese Sprache verwendet.
+
+**Musterformat:** Jedes Muster ist ein durch Punkte getrennter Schlüsselpfad (z. B. `title`, `meta.description`). Der Schlüsselpfad eines Eintrags wird mit diesen Mustern abgeglichen. Ein Segment kann `*` sein, um jeden beliebigen Schlüssel auf dieser Ebene zu erfassen (z. B. `meta.*` passt auf `meta.title`, `meta.description` usw.). Sie können dasselbe Muster nicht sowohl in Include als auch in Exclude verwenden.
+
+**Typische Anwendungsfälle:**
+- **Nur bestimmte Schlüssel einbeziehen:** Setzen Sie `includeFilters` auf Muster für die Schlüssel, die Sie übersetzen möchten (z. B. `["title", "meta.label"]`). Alles andere bleibt unübersetzt.
+- **Sensible oder nicht zu übersetzende Schlüssel ausschließen:** Setzen Sie `excludeFilters` auf Muster für Schlüssel, die nicht übersetzt werden dürfen (z. B. `["internalId", "code", "url"]`). Alle anderen Schlüssel werden übersetzt.
+- **Unterschiedliche Schlüssel pro Sprache:** Verwenden Sie `keyFiltersPerLanguage`, sodass beispielsweise eine Sprache nur eine Teilmenge der Schlüssel erhält, während eine andere alle Schlüssel bekommt.
+
+**Beispiel: Eingabe-JSON vs. Ausgabe mit Filtern**
+
+Angenommen, die Ursprungssprache ist Englisch und Sie übersetzen ins Französische. Eingabe-JSON:
+
+```json
+{
+  "id": "user-42",
+  "title": "Welcome",
+  "meta": {
+    "label": "Home",
+    "code": "H1"
+  }
+}
+```
+
+- **Mit `includeFilters: ["title", "meta.label"]`** — Nur diese Schlüsselpfade werden übersetzt; der Rest bleibt in der Ursprungssprache:
+
+```json
+{
+  "id": "user-42",
+  "title": "Bienvenue",
+  "meta": {
+    "label": "Accueil",
+    "code": "H1"
+  }
+}
+```
+
+- **Mit `excludeFilters: ["id", "code"]`** — Alles wird übersetzt, außer Schlüsseln, deren Pfad `id` oder `code` enthält:
+
+```json
+{
+  "id": "user-42",
+  "title": "Bienvenue",
+  "meta": {
+    "label": "Accueil",
+    "code": "H1"
+  }
+}
+```
+
+Sie können Schlüsselfilter in `partialConfig` beim Aufruf von `translate()` übergeben; siehe die [translate](#translate)-Parameter und das Beispiel unten in diesem Abschnitt.
+
 ## SDK-Methoden
 
 ### translate
@@ -29,22 +98,12 @@ Sendet Inhalte zur Übersetzung. Diese Methode übernimmt das Polling automatisc
   - Wenn false (Standard): Optimiert die Übersetzung, indem bereits übersetzte Inhalte in der Datenbank überprüft werden. Nur neue oder geänderte Inhalte werden übersetzt, was Zeit und Kosten spart.
   - Wenn true: Erzwingt eine vollständige Neuübersetzung aller Inhalte und ignoriert vorhandene Übersetzungen.
 - filenames: string\[] (optional) – Ein Array von Dateinamen, das jedem Inhalt zugeordnet ist. Dient zur Nachverfolgung und Identifikation der Übersetzungen im Projekt. Falls angegeben, muss die Länge mit dem Content-Array übereinstimmen. Die Dateinamen sollten Dateiendungen enthalten (z. B. .json).
-- partialConfig: PartialConfiguration (optional) – Überschreibt die Standardkonfiguration für diese Übersetzung. Kann beinhalten:
-  ```typescript
-  {
-    originLanguage?: string,      // Source language code
-    languages?: string[],         // Target language codes
-    rules?: string,              // General translation rules
-    autoMergeToBaseBranch?: boolean,  // Auto-merge setting
-    implicitRules?: ImplicitRule[],    // Array of implicit translation rules
-    rulesPerLanguage?: Rule[],    // Language-specific rules
-    useThisConfig?: boolean,      // Whether to use this config
-    keyFilters?: {               // Filters for translation keys
-      includeFilters: string[],
-      excludeFilters: string[]
-    } | null
-  }
-  ```
+- partialConfig: PartialConfiguration (optional) – Überschreibt die Standardkonfigurationseinstellungen für diese Übersetzung. Hauptoptionen:
+  - **originLanguage**, **languages** – Quell- und Zielsprachcodes.
+  - **rules**, **rulesPerLanguage**, **implicitRules** – Übersetzungsregeln (siehe [Regeln und Schlüsselfilter](#rules-and-key-filters)).
+  - **keyFilters** – `{ includeFilters: string[], excludeFilters: string[] } | null`, um Schlüssel von der Übersetzung ein- oder auszuschließen (siehe [Include- und Exclude-Filter](#include-and-exclude-filters-key-filters)).
+  - **keyFiltersPerLanguage** – Sprachspezifische Überschreibungen für Schlüsselfilter (siehe [Include- und Exclude-Filter](#include-and-exclude-filters-key-filters)).
+  - **autoMergeToBaseBranch**, **useThisConfig** – Weitere Verhaltensoptionen.
 
 #### Rückgabewert:
 Ein Promise, das auf ein RequestTranslationResponse-Objekt mit folgenden Inhalten aufgelöst wird:
@@ -74,6 +133,30 @@ try {
 } catch (error) {
   console.error('Translation error:', error.message);
 }
+```
+
+**Beispiel mit Include-/Exclude-Filtern** (nur bestimmte Schlüssel übersetzen oder andere ausschließen):
+
+```javascript
+// Only translate keys matching these patterns; leave all other keys unchanged
+const partialConfigInclude = {
+  languages: ['fr'],
+  keyFilters: {
+    includeFilters: ['title', 'description', 'meta.*'],
+    excludeFilters: null
+  }
+};
+
+// Translate all keys except those matching these patterns
+const partialConfigExclude = {
+  languages: ['fr'],
+  keyFilters: {
+    includeFilters: null,
+    excludeFilters: ['internalId', 'code', 'url']
+  }
+};
+
+const translation = await frenglish.translate(contents, false, filenames, partialConfigExclude);
 ```
 
 #### Fehler:

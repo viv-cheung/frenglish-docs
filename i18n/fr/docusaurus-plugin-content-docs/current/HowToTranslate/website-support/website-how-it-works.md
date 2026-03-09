@@ -45,6 +45,22 @@ Voici comment se déroule le flux de requête :
 4.  **Mise en cache**\
     On utilise la mise en cache edge globale de Cloudflare pour que les traductions soient servies rapidement, peu importe où se trouvent tes utilisateurs. Notre cache fonctionne en “serve while revalidating”, donc même si une traduction est mise à jour, l’ancien contenu s’affiche tout de suite pendant que le nouveau est préparé en arrière-plan.
 
+## Traduction des URLs
+Vous pouvez faire **traduire les URLs par langue** afin que les chemins soient localisés, et pas seulement le contenu. Par exemple :
+- **Original (ex : anglais) :** `example.com/about-us`
+- **Français :** `example.com/fr/a-propos`
+- **Espagnol :** `example.com/es/sobre-nosotros`
+
+Lorsque cette option est activée dans la configuration de votre projet, Frenglish maintient une correspondance entre vos chemins d'URL d'origine et leurs équivalents traduits pour chaque langue. Les liens, redirections et sitemaps utilisent alors le bon chemin localisé pour chaque locale. Cela améliore à la fois le **SEO** (les moteurs de recherche voient des URLs spécifiques à chaque langue) et **l'expérience utilisateur** (les visiteurs voient les URLs dans leur langue). Vous pouvez activer et gérer la traduction des URLs dans les paramètres **Site web** (ou configuration) de votre projet sur le tableau de bord Frenglish.
+
+## Routage géographique
+**Le routage géographique** envoie les visiteurs vers une version linguistique en fonction de leur **pays ou région**. Par exemple :
+- Visiteurs de France → version française (`/fr/`)
+- Visiteurs du Québec → version française canadienne (`/fr-ca/`) si vous utilisez des règles par région
+- Visiteurs d'Espagne → version espagnole (`/es/`)
+
+Vous configurez les correspondances comme pays → langue (et éventuellement région → langue, ex : Québec) dans les paramètres de votre projet. Lorsqu'un utilisateur arrive sur votre site sans langue dans le chemin (ex : `example.com/`), notre proxy peut détecter sa localisation et le rediriger vers la langue appropriée. Ainsi, de nombreux utilisateurs arrivent directement sur la bonne langue sans utiliser le sélecteur de langue. **Si un utilisateur a déjà choisi une langue** (par exemple via le sélecteur de langue), ce choix est stocké dans les cookies et **a priorité sur le routage géographique**—ainsi, les visiteurs de retour voient leur langue préférée au lieu d'être redirigés selon leur localisation. Le routage géographique est optionnel et peut être configuré dans la section **Site web** ou la zone de configuration du tableau de bord Frenglish de votre projet.
+
 ## Que se passe-t-il si notre API est hors ligne ?
 Si, pour une raison quelconque, notre API de traduction est temporairement indisponible, tes utilisateurs verront quand même ton contenu original dans sa langue par défaut. On a conçu notre système proxy pour qu’il retombe toujours sur ses pattes, donc ton site reste accessible même si la traduction est interrompue.
 

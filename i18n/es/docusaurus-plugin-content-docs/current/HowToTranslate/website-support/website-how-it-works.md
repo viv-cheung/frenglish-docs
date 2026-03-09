@@ -45,6 +45,22 @@ Así es el flujo de la solicitud:
 4.  **Caché**\
     Utilizamos la caché global edge de Cloudflare para asegurar que las traducciones se sirvan rápidamente, sin importar dónde estén tus usuarios. Nuestra caché es “servir mientras se revalida”, así que incluso si una traducción se actualiza, el contenido antiguo se muestra de inmediato mientras se prepara el nuevo en segundo plano.
 
+## URLs traducidas
+Puedes tener **URLs traducidas por idioma** para que las rutas estén localizadas, no solo el contenido. Por ejemplo:
+- **Original (por ejemplo, inglés):** `example.com/about-us`
+- **Francés:** `example.com/fr/a-propos`
+- **Español:** `example.com/es/sobre-nosotros`
+
+Cuando esta opción está habilitada en la configuración de tu proyecto, Frenglish mantiene un mapeo entre tus rutas de URL originales y sus equivalentes traducidos para cada idioma. Los enlaces, redirecciones y mapas del sitio usan la ruta localizada correcta para cada localización. Eso mejora tanto el **SEO** (los motores de búsqueda ven URLs específicas por idioma) como la **experiencia del usuario** (los visitantes ven URLs en su idioma). Puedes habilitar y gestionar URLs traducidas en la sección **Sitio web** (o configuración) del panel de Frenglish de tu proyecto.
+
+## Enrutamiento geográfico
+El **enrutamiento geográfico** envía a los visitantes a una versión de idioma según su **país o región**. Por ejemplo:
+- Visitantes de Francia → versión en francés (`/fr/`)
+- Visitantes de Quebec → versión en francés canadiense (`/fr-ca/`) si usas reglas a nivel de región
+- Visitantes de España → versión en español (`/es/`)
+
+Configuras las asignaciones de país → idioma (y opcionalmente región → idioma, por ejemplo Quebec) en la configuración de tu proyecto. Cuando un usuario accede a tu sitio sin un idioma en la ruta (por ejemplo, `example.com/`), nuestro proxy puede detectar su ubicación y redirigirlo al idioma correspondiente. Así, muchos usuarios llegan directamente a la versión regional correcta sin usar el selector de idioma. **Si un usuario ya eligió un idioma** (por ejemplo, mediante el selector de idioma), esa elección se guarda en cookies y **tiene prioridad** sobre el enrutamiento geográfico, por lo que los visitantes recurrentes ven su idioma preferido en vez de ser redirigidos por ubicación. El enrutamiento geográfico es opcional y se puede configurar en la sección **Sitio web** o configuración del panel de Frenglish de tu proyecto.
+
 ## ¿Qué pasa si nuestra API está caída?
 Si por alguna razón nuestra API de traducción no está disponible temporalmente, tus usuarios seguirán viendo tu contenido original en su idioma predeterminado. Diseñamos nuestro sistema proxy para que haga una transición suave, así tu sitio siempre funciona aunque los servicios de traducción se interrumpan.
 

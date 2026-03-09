@@ -48,6 +48,26 @@ This is how the request flow works:
 4. **Caching**  
    We use Cloudflare's global edge caching to ensure that translations are served quickly, no matter where your users are in the world. Our caching is “serve while revalidating,” so even if a translation is updated, the old content is shown immediately while new content is prepared in the background.
 
+## Translated URLs
+
+You can have **URLs translated per language** so that paths are localized, not only the content. For example:
+
+- **Original (e.g. English):** `example.com/about-us`
+- **French:** `example.com/fr/a-propos`
+- **Spanish:** `example.com/es/sobre-nosotros`
+
+When this option is enabled in your project configuration, Frenglish maintains a mapping between your original URL paths and their translated equivalents for each language. Links, redirects, and sitemaps then use the correct localized path for each locale. That improves both **SEO** (search engines see language-specific URLs) and **user experience** (visitors see URLs in their language). You can enable and manage translated URLs in your project’s **Website** (or configuration) settings in the Frenglish dashboard.
+
+## Geo routing
+
+**Geo routing** sends visitors to a language version based on their **country or region**. For example:
+
+- Visitors from France → French version (`/fr/`)
+- Visitors from Quebec → Canadian French version (`/fr-ca/`) if you use region-level rules
+- Visitors from Spain → Spanish version (`/es/`)
+
+You configure mappings such as country → language (and optionally region → language, e.g. Quebec) in your project settings. When a user hits your site without a language in the path (e.g. `example.com/`), our proxy can detect their location and redirect them to the appropriate language. That way, many users land on the right locale without using the language switcher. **If a user has already chosen a language** (for example via the language switcher), that choice is stored in cookies and **takes precedence** over geo routing—so returning visitors see their preferred language instead of being redirected by location. Geo routing is optional and can be set up in your project’s **Website** or configuration area in the Frenglish dashboard.
+
 ## What Happens if Our API Is Down?
 
 If, for any reason, our translation API is temporarily unavailable, your users will still see your original content in its default language. We designed our proxy system to gracefully fall back so your site always works, even if translation services are interrupted.

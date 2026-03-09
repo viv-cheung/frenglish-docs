@@ -7,7 +7,7 @@ slug: /FAQ
 
 # FAQ
 
-## Comment savoir si la qualité est bonne ?
+## Comment puis-je être sûr de la qualité ?
 Le bot Frenglish suit les étapes de validation suivantes :
 - Plusieurs boucles de réflexion et de révision pour s’assurer que la traduction respecte tes règles et sonne naturel
 - Fonction d’apprentissage automatique implicite pour s’adapter aux règles à partir des fichiers de traduction modifiés manuellement
@@ -30,10 +30,10 @@ Le bot Frenglish ne traduira que le contenu pertinent selon le type de fichier. 
 **Fichiers JSON**
 - Les clés ne seront pas traduites, seulement les valeurs
 
-## Tu ne supportes que les traductions en français?
+## Proposez-vous uniquement des traductions en français ?
 Non, le nom « Frenglish » a été choisi pour représenter ses origines québécoises. Beaucoup de Québécois utilisent le terme « Frenglish » pour décrire la façon dont ils parlent (en mélangeant le français et l’anglais dans une conversation naturelle).
 
-On prend en charge les langues suivantes :
+Nous prenons en charge les langues suivantes :
 
 Afrikaans, arabe, arménien, azerbaïdjanais, biélorusse, bosniaque, bulgare, catalan, chinois, croate, tchèque, danois, néerlandais, anglais, estonien, finnois, français, galicien, allemand, grec, hébreu, hindi, hongrois, islandais, indonésien, italien, japonais, kannada, kazakh, coréen, letton, lituanien, macédonien, malais, marathi, maori, népalais, norvégien, persan, polonais, portugais, roumain, russe, serbe, slovaque, slovène, espagnol, swahili, suédois, tagalog, tamoul, thaï, turc, ukrainien, ourdou, vietnamien et gallois.
 

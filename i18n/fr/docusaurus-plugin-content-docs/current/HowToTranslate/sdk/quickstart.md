@@ -180,7 +180,7 @@ const textMap = await sdk.getTextMap();
     - Retourne : `Promise<Configuration>`
 
 3.  **getProjectSupportedLanguages**
-    - Description : Récupère la liste des langues prises en charge par le projet ainsi que la langue d'origine
+    - Description : Récupère la liste des langues supportées par le projet ainsi que la langue d'origine
     - Retourne : `Promise<{ languages: string[], originLanguage: string }>`
 
 4.  **getSupportedLanguages**

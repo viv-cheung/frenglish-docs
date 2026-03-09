@@ -12,6 +12,75 @@ Frenglish SDKは、開発者がアプリケーションに自動翻訳機能を�
 ## インストール方法
 インストール方法については[クイックスタートガイド](./quickstart.md#installation)を参照してください。
 
+## ルールとキー・フィルター
+\_何を\_翻訳し、\_どのように\_翻訳するかを制御する設定オプションは、ルールとキー・フィルターにまとめられます。これらは `translate()` や `translateString()` を呼び出す際に `partialConfig` 経由で渡すか、プロジェクトのダッシュボードで設定できます。
+
+### 翻訳ルール
+
+- **rules**（文字列、省略可）– 翻訳者への一般的な指示（例：トーン、用語、スタイル）。特定の言語用のルールで上書きされない限り、すべてのターゲット言語に適用されます。
+- **rulesPerLanguage**（`{ language, rules }` の配列、省略可）– 特定のターゲット言語用のルールを上書きします。各エントリは言語コード（例：`"fr"`）と `rules` 文字列を持ちます。あるロケールだけ異なるスタイルや用語が必要な場合に便利です。
+- **implicitRules**（配列、省略可）– 翻訳パイプラインによって適用される構造化された暗黙のルール。
+
+### インクルード・除外フィルター（キー・フィルター）
+キー・フィルターは、JSON（または他の構造化コンテンツ）内のどの**キー**が翻訳対象になるかを制御します。これはキーのパス（例：トップレベルのキー `"title"` や、`"meta.description"` のようなネストされたパス）に適用されます。
+-   **keyFilters**（オブジェクトまたは `null`、省略可）：
+    - **includeFilters** – パターンの配列。**空でない場合**、パスがこれらのパターンの**いずれか**に一致するキーのみが翻訳されます。それ以外のキーは変更されません。
+    - **excludeFilters** – パターンの配列。パスが**いずれか**のパターンに一致するキーは**翻訳されず**、元の言語のまま残ります。
+    - `includeFilters` と `excludeFilters` の両方が `null` または空の場合、**すべて**のキーが翻訳されます（フィルタリングなし）。
+    - **両方設定されている場合の動作：** まずインクルードが適用され（該当するキーのみ候補）、次に除外が適用されます（該当するキーがそのセットから除外されます）。したがって、キーが翻訳されるのは、インクルードパターンに一致し（インクルードがある場合）、かつ除外パターンのいずれにも一致しない場合のみです。
+
+-   **keyFiltersPerLanguage**（`{ language, keyFilters }` の配列、省略可）– ターゲット言語ごとにキー・フィルターを上書きします。各エントリは言語コードと、それぞれ独自の `includeFilters` と `excludeFilters` を持つ `keyFilters` オブジェクトを持ちます。言語ごとのフィルターを設定しない場合、その言語にはグローバルな `keyFilters` が使われます。
+
+**パターン形式：** 各パターンはドット区切りのキー・パスです（例：`title`、`meta.description`）。エントリのキー・パスがこれらのパターンと照合されます。セグメントには `*` を使って、その階層の任意のキーに一致させることができます（例：`meta.*` は `meta.title`、`meta.description` などに一致）。同じパターンをインクルードと除外の両方で使うことはできません。
+
+**主な利用例：**
+- **特定のキーのみ翻訳したい場合：** 翻訳したいキーのパターンを `includeFilters` に設定します（例：`["title", "meta.label"]`）。それ以外は翻訳されません。
+- **機密情報や翻訳不要なキーを除外したい場合：** 翻訳してはいけないキーのパターンを `excludeFilters` に設定します（例：`["internalId", "code", "url"]`）。それ以外は翻訳されます。
+- **言語ごとに異なるキーを翻訳したい場合：** `keyFiltersPerLanguage` を使うことで、例えばある言語には一部のキーだけ、別の言語にはすべてのキーを翻訳することができます。
+
+**例：入力JSONとフィルター適用後の出力**
+
+元の言語が英語で、フランス語に翻訳する場合の入力JSON：
+
+```json
+{
+  "id": "user-42",
+  "title": "Welcome",
+  "meta": {
+    "label": "Home",
+    "code": "H1"
+  }
+}
+```
+
+- **`includeFilters: ["title", "meta.label"]` を使った場合** — これらのキー・パスのみ翻訳され、それ以外は元の言語のまま残ります：
+
+```json
+{
+  "id": "user-42",
+  "title": "Bienvenue",
+  "meta": {
+    "label": "Accueil",
+    "code": "H1"
+  }
+}
+```
+
+- **`excludeFilters: ["id", "code"]` を使った場合** — パスに `id` または `code` を含むキー以外はすべて翻訳されます：
+
+```json
+{
+  "id": "user-42",
+  "title": "Bienvenue",
+  "meta": {
+    "label": "Accueil",
+    "code": "H1"
+  }
+}
+```
+
+`translate()` を呼び出す際に `partialConfig` でキー・フィルターを渡すことができます。詳細は [translate](#translate) のパラメータや、下記の例をご覧ください。
+
 ## SDKメソッド一覧
 
 ### translate
@@ -29,22 +98,12 @@ translate(contents: string[], isFullTranslation: boolean, filenames: string[], p
   - false（デフォルト）の場合：データベース内の既存の翻訳をチェックして、新規または変更されたコンテンツのみを翻訳します。これにより、翻訳時間とコストを削減できます。
   - trueの場合：既存の翻訳を無視して、すべてのコンテンツを強制的に再翻訳します。
 - filenames: string\[]（オプション）- 各コンテンツに対応するファイル名の配列。プロジェクト内で翻訳を追跡・識別するために使います。指定する場合はcontent配列と同じ長さにしてください。ファイル名には拡張子（例：.json）を含めてください。
-- partialConfig: PartialConfiguration（オプション）- この翻訳のデフォルト設定を上書きします。含められる内容：
-  ```typescript
-  {
-    originLanguage?: string,      // Source language code
-    languages?: string[],         // Target language codes
-    rules?: string,              // General translation rules
-    autoMergeToBaseBranch?: boolean,  // Auto-merge setting
-    implicitRules?: ImplicitRule[],    // Array of implicit translation rules
-    rulesPerLanguage?: Rule[],    // Language-specific rules
-    useThisConfig?: boolean,      // Whether to use this config
-    keyFilters?: {               // Filters for translation keys
-      includeFilters: string[],
-      excludeFilters: string[]
-    } | null
-  }
-  ```
+- partialConfig: PartialConfiguration（省略可）- この翻訳のデフォルト設定を上書きします。主なオプション：
+  - **originLanguage**, **languages** – 元言語とターゲット言語のコード。
+  - **rules**, **rulesPerLanguage**, **implicitRules** – 翻訳ルール（[ルールとキー・フィルター](#rules-and-key-filters) を参照）。
+  - **keyFilters** – `{ includeFilters: string[], excludeFilters: string[] } | null` で翻訳対象キーを指定（[インクルード・除外フィルター](#include-and-exclude-filters-key-filters) を参照）。
+  - **keyFiltersPerLanguage** – 言語ごとのキー・フィルター上書き（[インクルード・除外フィルター](#include-and-exclude-filters-key-filters) を参照）。
+  - **autoMergeToBaseBranch**, **useThisConfig** – その他の動作フラグ。
 
 #### 戻り値：
 Promiseで、RequestTranslationResponseオブジェクト（以下を含む）を返します：
@@ -74,6 +133,30 @@ try {
 } catch (error) {
   console.error('Translation error:', error.message);
 }
+```
+
+**インクルード／除外フィルターの例**（特定のキーのみ翻訳、または一部を除外）：
+
+```javascript
+// Only translate keys matching these patterns; leave all other keys unchanged
+const partialConfigInclude = {
+  languages: ['fr'],
+  keyFilters: {
+    includeFilters: ['title', 'description', 'meta.*'],
+    excludeFilters: null
+  }
+};
+
+// Translate all keys except those matching these patterns
+const partialConfigExclude = {
+  languages: ['fr'],
+  keyFilters: {
+    includeFilters: null,
+    excludeFilters: ['internalId', 'code', 'url']
+  }
+};
+
+const translation = await frenglish.translate(contents, false, filenames, partialConfigExclude);
 ```
 
 #### エラー：
